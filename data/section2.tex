@@ -1,0 +1,238 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  New template code for TAMU Theses and Dissertations starting Fall 2016.  
+%
+%
+%  Author: Sean Zachary Roberson
+%  Version 3.17.09
+%  Last Updated: 9/21/2017
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                           SECTION II
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{THEORETICAL FRAMEWORK}
+\section{The Standard Model}
+Particle physics is the study of the fundamental constituents of matter and the forces between them. For more than 40 years these have been described by the so-called standard model of particle physics (SM), which provides, at least in principle, a basis for understanding most particle interactions, with the only exception of gravity.
+
+The SM can be understood as a gauge theory combining the theory of electroweak interactions(EW) and quantum chromodynamics(QCD), or $SU(3)\times SU(2) \times U(1)$. Several experiments have validated this theory to a great accuracy. However, we know the SM to be incomplete as it does not provide answers to questions like the origin of neutrino masses, the existence of dark matter, or that of dark energy.
+
+\section{Structure and Particle Content}
+In this section, the particle content of the SM will be intriduced, along with the various force carriers. In the following section, the specifics of particle-particle interactions will be explained in detail.
+
+Elementary particles have an associated quantum number call spin, which allows for particle classification in terms of this quantity as fermions and bosons.
+
+\subsection{Fermions}
+Fermions are elementary particles with half-integer spin. They constitute the matter content of the SM, which accounts for 12 named fermions, which interact via the weak and electromagnetic force (with the exception of neutrinos). Also, they obey Fermi-Dirac statistics and the Pauli exclusion principle, meaning that no two fermions may be described by the same quantum numbers. Each fermion has its own anti-particle with the same mass but opposite quantum numbers.
+
+The particle content of the SM can be divided into two additional categories of six fermions each, i.e. quarks and gluons. the quarks, which must bind together due to their strong force interaction and the leptons, which can exist independently. Quarks are known to bind into triplets and doublets, called baryons and mesons, respectively. Leptons come into three flavors, each one corresponding to a doublet where the electron, muon and tau are paired with a neutrino. %with the same quantum numbers?
+
+Moreover, fermions are grouped into 3 families or generations of 4 particles (2 quarks and 2 leptons), according to their masses. Each subsequent generation being a heavier version of the previous generation, with the same quantum numbers (neutrinos may have a different mass order). Therefore, the particle formed from Generation I particles are usually more stable and long-lived than those made from Generation III particles. Protons and neutrins themselves are made up of up and down quarks.
+
+%\subsubsection{Quarks}
+%Quarks must bind together due to their strong force interaction. They are known to bind into triplets and doublets, called baryons and mesons, respectively.
+
+%\subsubsection{Leptons}
+%Leptons, unlike quarks, can exist independently. They come into three flavors, each one corresponding to a doublet where the electron, muon and tau are paired with a neutrino. %with the same quantum numbers?
+
+\subsection{Bosons}
+The SM bosons are the mediators of the interaction between the matter content of the SM, but also within themselves. They have integral spin quantum number and follow Bose-Einstein statistics. There are 5 named bosons, the gluons, photons, and W and Z with spin 1 since they go with vector fields, and the Higgs boson which corresponds to a scalar field and therefore has spin 0.
+
+\section{Particle Interactions}
+The interactions of the particles described in the previous section can be described in the mathematical framework of the gauge field theory. Three of the four fundamental forces of nature are described in the SM (electromagnetism, the strong and the weak force). Each force has its own corresponding charge, (i.e. electric charge, color or flavor) and has an associated boson as mediator.
+
+Modern theories describe these forces in terms of Quantum fields, namely QED, QCD and the unified electroweak quantum field theory. One feature all these theories have in commmon is that they are all gauge invariant. Gauge theories are of particular interest to particle physicists because their invariance under gauge transformations result in conservation laws and outline the rules of particle interactions, as we will see in the remainder of the section.  
+
+\subsection{Quantum Electrodynamics}
+
+Quantum Electrodynamics (QED) describes the dynamics of the electromagnetic interaction. In this theory, spin 1/2 particles or fermions are represented by fields. It was the first discovered example of gauge symmetry, and it was developed from classical field theory, thus, the dynamics of a given system is completely specified by its Lagrangian.
+
+If we start with the Lagrangian density for a free electron of mass m:
+
+\begin{equation}
+\mathcal{L} = \bar{\psi}(i\gamma^{\mu}\partial_{\mu} - m)\psi
+\end{equation}
+
+where $\gamma^{\mu}$ are the gamma matrices, $\phi$ is a 4-component column vector representing the elctron wave function and $\bar{\psi}=\psi^{\dagger}\gamma^{0}$. We will see that the Lagrangian is invariant under a global U(1) transformation when:
+
+\begin{equation}
+\psi \rightarrow \psi '= e^{-i\alpha}\psi
+\end{equation}
+while the parameter $\alpha$ is kept a constant. If instead, $\alpha$ is allowed to vary as a function of spacetime, the Lagrangian is not invariant under the local transformation anymore. 
+
+In order to restore local gauge invariance, a gauge field $A_{\mu}$ representing the photon and the covariant derivative $D_{\mu} = \partial_{\mu} + iq A_{\mu}$ are introduced. The latter has the same transformation properties as the electron field and is chosen to replace $\partial_{\mu}$.
+
+After introducing these modifications, the Lagrangian takes the form:
+
+\begin{equation}
+\mathcal{L} = \bar{\psi}(i\gamma^{\mu}D_{\mu}-m)\psi - \frac{1}{4}F_{\mu\nu}F^{\mu\nu}
+\end{equation}
+
+where $F_{\mu\nu}= \partial_{\mu}A_{\nu} - \partial_{\nu}A_{\mu}$ is the electromagnetic field strenght tensor. As a result of local gauge invariance, the Lagrangian now includes the electron-photon interaction $e^{+}e^{-}\gamma$ and a term representing the photon kinetic energy.
+
+Finally, the Lagrangian can be generalized to include the muon and tau leptons:
+
+\begin{equation}
+\mathcal{L} = \sum_{i}\bar{\psi_{i}}(i\gamma^{\mu}D_{\mu}-m_{i})\psi_{i} - \frac{1}{4}F_{\mu\nu}F^{\mu\nu}
+\end{equation}
+
+where $i=e,\mu,\tau,u,d,c,s,t,b$.
+
+\subsection{Electroweak Interaction}
+
+The electroweak interaction is based on a local $SU(2)\times U(1)$ gauge symmetry where L and Y are the generators of the symmetry. As a result, electromagnetic and weak interactions are unified into a single interaction. Also, just like in Section, the requirement of local gauge invariance leads to the introduction of gauge fields and determined the interactions mediated by those fields.
+
+The left-handed components of the elctron neutrino and electron are grouped into an SU(2) doublet. Since the right-handed component of the electron is invariant under SU(2), it is placed in a singlet, i.e.:
+
+\begin{equation}
+L_{e} = (\nu_{e} e_{L}), e_{R}
+\end{equation}
+ And so on for the heavier generations of leptons. So far, there is no evidence of right-handed neutrinos in the SM.
+
+ The dynamic portion of the electroweak Lagrangian for first generation leptons can be represented by:
+
+ \begin{equation}
+ \mathcal{L}_{dyn}^{e} = L_{e}^{\dagger}\sigma^{\mu}i\partial_{\mu}L_{e}+ e_{R}^{\dagger}\sigma^{\mu}i\partial_{\mu}e_{R}% CHECK should be sigma tilde
+ \end{equation}
+where $\sigma = (\sigma^{0}, \sigma^{1},\sigma^{2}, \sigma^{3})$, $\sigma = (\sigma^{0}, -\sigma^{1},-\sigma^{2}, -\sigma^{3})$, $\sigma^{0}$ is the identity matrix, and the $\sigma^{i}$ are the Pauli matrices. This Lagrangian is invariant under the global transformation:
+
+\begin{equation}
+L\rightarrow L' = e^{i\theta}UL\\
+\end{equation}
+
+\begin{equation}
+e_{R}\rightarrow e'_{R} = e^{2i\theta}e_{R}
+\end{equation}
+
+where
+
+\begin{equation}
+U = e^{-ia^{k}\sigma^{k}}
+\end{equation}
+
+and $\theta$ and $a^{k}$ are real numbers parameterizing the transformation. However, the Lagrangian is not invariant under a transformation where these parameters are allowed to vary as a function of space-time, i.e. a local transformation.
+
+Following the same reasoning as in the previous section, we can introduce gauge fields and replace the space-time derivatives with an appropiately chosen covariant derivative. This time, we introduce a U(1) gauge field $B_{\mu}(x)$ and three SU(2) gauge fields $W_{\mu}(x)= W_{\mu}^{k}(x)\sigma_{k}$. Such fields must transform as
+
+\begin{equation}
+B_{\mu}(x)\rightarrow B'_{\mu}(x) = B_{\mu}(x) + \frac{2}{g_{1}}\partial_{\mu}\theta(x)
+\end{equation}
+\begin{equation}
+W_{\mu}(x)\rightarrow W'_{\mu}(x) = U(x)W_{\mu}(x)U^{\dagger}(x) + \frac{2i}{g_{2}}(\partial_{\mu}U(x))U^{\dagger}(x)
+\end{equation}
+
+where $g_{1}$ and $g_{2}$ are dimensionless parameters of the theory, the coupling strengths of the interactions. The necessary covariant derivatives are given by
+
+\begin{equation}
+D_{\mu}L_{e} = (\partial_{\mu}+i\frac{g_{1}}{2}YB_{\mu}+i\frac{g_{2}}{2}W_{\mu})L_{e}
+\end{equation}
+
+\begin{equation}
+D_{\mu}e_{R} = (\partial_{\mu}+i\frac{g_{1}}{2}YB_{\mu})e_{R}
+\end{equation}
+ 
+ where Y is the hypercharge operator, whose values are listed in Table 
+
+ These covariant derivatives transform according to the same rule as the fields themselves. The Lagrangian Eq becomes
+
+ \begin{equation}
+ \mathcal{L}^{e}_{dyn} = L_{e}^{\dagger}\tilde{\sigma}^{\mu}iD_{\mu}L_{e}+e_{R}^{\dagger}\sigma^{\mu}iD_{\mu}e_{R} - \frac{1}{4}B_{\mu\nu}B^{\mu\nu}- \sum_{i=1}^{3}\frac{1}{4}W_{\mu\nu}^{i}W^{i\mu\nu}
+ \end{equation}
+
+ where $B_{\mu\nu}=\partial_{\mu}B_{\nu}-\partial_{\nu}B_{\mu}$ and $W_{\mu\nu} = [\partial_{\mu}+(\frac{ig_{2}}{2})W_{\mu}]W_{\nu} - [\partial_{\nu}+(\frac{ig_{2}}{2})W_{\nu}]W_{\mu}$ are the field strength tensors, allowing for the Lagrangian to be locally gauge invariant.
+
+ The mediators of the electroweak force are the physical bosons $W^{\pm}$, the Z and the photon. All these are combinations of the gauge fields in the following way. 
+
+ The $W^{\pm}$ are linear combinations of the $W_{1}$ and $W_{2}$, which are electrically chargede and given by
+
+ \begin{equation}
+W_{\mu}^{\pm} = \frac{W_{\mu}^{1}\mp i W_{\mu}^{2}}{\sqrt{2}}
+ \end{equation}
+
+The $W_{3}$ and $B$ gauge fields are electrically neutral. The physical Z and photon are linear combinations of these fields, given by
+
+\begin{equation}
+Z_{\mu} = W_{\mu}^{3}cos\theta_{W} - B_{\mu}sin\theta_{W}
+\end{equation}
+\begin{equation}
+A_{\mu} = W_{\mu}^{3}sin\theta_{W} - B_{\mu}cos\theta_{W}
+\end{equation}
+
+where the Weinberg angle $\theta_{W}$ is defined by $sin\theta_{W}= g_{1}/\sqrt{g_{1}^{2}+g_{2}^{2}}$.
+
+Now, the interactions contained in the Lagrangian only couple the $W^{\pm}$ to the left-handed lepton components, but couple the Z and photon to both the left- and right-handed components. 
+
+We can also see from here that the interaction strength is equal to the electromagnetic charge unit $e$, i.e. $g_{2}sin\theta_{W}=g_{1}cos\theta_{W}=e$.
+
+Finally, in order to include second and third generation leptons, the Lagrangian generalizes to 
+
+\begin{equation}
+\mathcal{L}^{l}_{dyn} = \sum_{leptons}(L_{e}^{\dagger}\tilde{\sigma}^{\mu}iD_{\mu}L_{e}+e_{R}^{\dagger}\sigma^{\mu}iD_{\mu}e_{R}) - \frac{1}{4}B_{\mu\nu}B^{\mu\nu}- \sigma_{i=1}^{3}\frac{1}{4}W_{\mu\nu}^{i}W^{i\mu\nu}
+\end{equation}
+
+Quarks are included in the electroweak sector in a similar manner. The left-handed components of the $u$ and $d$ quark are place in SU(2) doublets, and the right-handed components in singlets.
+
+\begin{equation}
+Q_{u} = \begin{pmatrix}
+	u_{L} \\
+	d_{L}
+\end{pmatrix}, u_{R}, d_{R}
+\end{equation}
+Two additional doublets and four singlets exist for the second and third generation quarks. The covariant derivatives acting on the quark fields are the same as those which act on the lepton fields, but the quarks have different weak hypercharge assignments from the leptons. Therefore, the dynamic portion of the $u$ and $d$ quark Lagrangian is given by:
+
+\begin{equation}
+\mathcal{L}^{q}_{dyn} = \sum_{quarks}Q_{u}^{\dagger}\tilde{\sigma}^{\mu}iD_{\mu}Q_{\mu}+u_{R}^{\dagger}\sigma^{\mu}iD_{\mu}u_{R}+d^{\dagger}_{R}\sigma^{\mu}iD_{\mu}d_{R}
+\end{equation}
+Again, the W bosons couple only to the left-handed quark kcomponents, while the Z and photon couple to the right-handed components as well.
+
+The dynamic portion of the electroweak Lagrangian is a result of the addition of the lepton and quark components
+
+\begin{equation}
+\mathcal{L}^{EW}_{dyn} = \mathcal{L}^{l}_{dyn} + \mathcal{L}_{dyn}^{q}
+\end{equation}
+
+Here, we should notice that a couple of symmetries arise from the form of the Lagrandian in Eq. If a U(1) transformation of the form $L_{e,\mu,\tau}\rightarrow e^{i\alpha}L_{e,\mu,\tau}$, $e,\mu,\tau_{R}\rightarrow e,\mu,\tau^{i\alpha}e,\mu,\tau_{R}$ leaves the Lagrangian invariant, which leads to conservation of lepton number. Additionally, a U(1) transformation multiplying all negatively (positively) charged fields by $e^{i\alpha}(e^{-i\alpha})$ leaves the Lagrangian invariant, and implies conservation of electric charge.
+
+On the other hand, the EW Lagrangian is not invariant under charge conjugation $C$ of a parity conservation $P$. Charge conjugation is the operation of changing the sign of all discrete quantum numbers, or equivalently exchanging all particles with antiparticles and vice-versa. A parity transformation is the inversion of spatial coordinates, $r\rightarrow -r$. The neutral current interactions, mediated by the Z and photon, preserve combined CP invariance. However, even combined CP symmetry is violated by weak current interactions, mediated by the $W^{\pm}$, in the quark sector. A third important potential symmetry is time reversal $T$, where $t\rightarrow -t$. Combined CPT invariance is required to mantain Lorentz invariance. Therefore, the breaking of CP also implied the breaking of T symmetry.
+
+The SM can be understood in terms of its particle content, the so-called fermions and the mediators of the interactions
+
+The matter content of the SM can be classified into two categories, according to the particle's spin. Particles with half-integer spin are referred to fermions, while those having integer spin are usually referred to as bosons.
+
+Fermions follow Dirac-Fermi statistics interact electromagnetically, except for the neutrinos and can be further classified into leptons and quarks, which interact via the strong force.
+
+Bosons follow Bose-Einstein statistics and provide the mechanism by which the matter particles, i.e. the fermions interact with each other. The gluon, photon, W, and Z bosons all have spin-1 and are responsible for the strong, electromagnetic, and weak interaction, respectively.
+
+The final piece of the SM if the Higgs boson, which is the only spin-0 boson and is responsible for the masses of the other particles in the SM.
+
+But how do these particles arise?
+
+
+
+\section{Lepton universality}
+One of the current assumptions of the SM is that electron, muon, and tau couplings are the same when interacting weakly. This is often referred to as lepton universality. 
+
+\section{B-hadron anomalies}
+So far, no definite violation of this rule has been observed, but recent studies involving the decay rates of B mesons seem to challenge it. BaBar, LHCb and Belle experiments have reported anomalous deviations from SM in measurements of:
+
+\begin{enumerate}
+    \item The angular distributions of the decay rate of $B\rightarrow K^{*}\mu^{+}\mu^{-}$.
+    \item The branching ratios $R_{K} = \frac{BR(B^{+}\rightarrow K^{+}\mu^{+}\mu^{-})}{BR(B^{+}\rightarrow K^{+}e^{+}e^{-})}$ and $R_{K^{*}} = \frac{BR(B^{+}\rightarrow K^{*}\mu^{+}\mu^{-})}{BR(B^{+}\rightarrow K^{*}e^{+}e^{-})}$.
+\end{enumerate}
+Each of these results show a deviation from the expected SM value of 1 in the 2.4-2.6 $\sigma$ range. These decay processes are very rare in the SM, making it hard to obtain a precise measurement. Also, a better understanding of the SM physics behind them (in terms of hadronic uncertainties) could also provide reconciliation with SM predictions. A more recent study combined the results for $R_{K}$ and $R_{K^{*}}$, resulting in a 4$\sigma$ deviation from the SM. 
+\subsection{$b\rightarrow s$ quark transitions}
+This anomaly hints at the posibility that $b\rightarrow s$ quark transitions cannot be understood entirely within the SM framework. 
+
+Within the SM, the lowest order processes that could mediate the $b\rightarrow s$ quark transitions are at least of third order. Therefore, these processes are rarely observed.
+\section{The Z'}
+As an alternative, a possible explanation to the B-decay anomalies could postulate the existence of a new heavy neutral gauge boson, the Z'. Such a particle would couple to $b-s$ quarks and non-universally to leptons. In addition, it would be assumed to couple mostly to third generation quarks to explain why it has not been seen yet by any experiment.
+%Basic properties/ Feynman diagram
+\subsection{Flavour-violating coupling $\delta_{bs}$}
+In order to provide an explanation for B-decay anomalies, we need to consider the flavour-violating coupling $\delta_{bs}$. Allowing the Z' boson to couple to $s$ quarks in addition to $b$ quarks results in two times more ways to produce the Z' and two times more ways for it to decay. A non-zero $\delta_{bs}$ will allow the Z's to be produced by $b$ and $\bar{s}$ quarks (in addition to $b\bar{b}$ ones) and this significantly enhances the production cross section.
+
+\subsection{Lifetime calculation}
+\subsection{4b Bottom Fermion Fusion}
+If we make the assumption that the Z' couples mostly to b quarks, the particle could have diagrams like the on on Figure, which we will refer to as Bottom Fermion fusion diagram (BFF) due to its similarity with Vector Boson Fusion (VBF) diagrams.
