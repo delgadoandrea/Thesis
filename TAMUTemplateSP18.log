@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.5.24)  13 MAY 2019 12:17
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.5.24)  16 MAY 2019 16:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -431,7 +431,10 @@ tly
 )
 \Hy@SectionHShift=\skip91
 )
-(./TAMUTemplateSP18.aux)
+(./TAMUTemplateSP18.aux (./data/titlepage.aux) (./data/abstract.aux)
+(./data/dedication.aux) (./data/acknowledgements.aux) (./data/contributors.aux)
+(./data/nomenclature.aux) (./data/lists.aux) (./data/section1.aux)
+(./data/section2.aux))
 \openout1 = `TAMUTemplateSP18.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
@@ -510,13 +513,9 @@ LaTeX Info: Redefining \nameref on input line 76.
 \@outlinefile=\write3
 \openout3 = `TAMUTemplateSP18.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 \openout2 = `data/titlepage.aux'.
 
-(./data/titlepage.tex
+ (./data/titlepage.tex
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
@@ -552,7 +551,6 @@ File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
  (./data/contributors.tex
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 43.
-Missing character: There is no – in font ptmr8t!
 ) [5
 
 
@@ -561,269 +559,132 @@ Missing character: There is no – in font ptmr8t!
 \openout2 = `data/nomenclature.aux'.
 
 
-(./data/nomenclature.tex
-Underfull \hbox (badness 1072) in paragraph at lines 43--43
-[]|\T1/ptm/m/n/12 Space of ab-so-lutely Lebesgue in-te-grable func-tions; i.e.,
-
- []
-
-[6
+(./data/nomenclature.tex [6
 
 
 
-] [7])
+])
 \openout2 = `data/lists.aux'.
 
  (./data/lists.tex
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
-
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+ (./TAMUTemplateSP18.toc)
 \tf@toc=\write4
 \openout4 = `TAMUTemplateSP18.toc'.
 
-[8
+
+[7
 
 
-]
-
-Package hyperref Warning: old lof file detected, not used; run LaTeX again.
-
+] (./TAMUTemplateSP18.lof)
 \tf@lof=\write5
 \openout5 = `TAMUTemplateSP18.lof'.
 
-[9]
-
-Package hyperref Warning: old lot file detected, not used; run LaTeX again.
-
+ [8] (./TAMUTemplateSP18.lot)
 \tf@lot=\write6
 \openout6 = `TAMUTemplateSP18.lot'.
 
-[10])
+ [9])
 \openout2 = `data/section1.aux'.
 
- (./data/section1.tex
+
+(./data/section1.tex
 Chapter 1.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 22.
 
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 44.
-[1
+) [1
 
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 49.
+\openout2 = `data/section2.aux'.
+
+ (./data/section2.tex
+Chapter 2.
+[2
+
+
+
+] [3] [4]
+Overfull \hbox (6.36113pt too wide) in paragraph at lines 98--99
+[]\T1/ptm/m/n/12 An in-ter-est-ing re-sult is that the La-grangian does not con
+-tain a mass term for the newly-introduced
+ []
+
+[5] [6] [7] [8] [9] [10] [11] [12] [13]
+Overfull \hbox (33.56607pt too wide) in paragraph at lines 373--374
+[]\T1/ptm/m/n/12 Remember from pre-vi-ous sec-tion that there are four mass-les
+s elec-troweak gauge bosons, $\OML/cmm/m/it/12 W[]; W[]; W[]$\T1/ptm/m/n/12 ,
+ []
+
+[14]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 423.
+
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 423.
+ [15]
+[16]
+Overfull \hbox (53.0961pt too wide) in paragraph at lines 504--504
+[] 
+ []
 
-
-LaTeX Warning: Citation `REALCAR' on page 2 undefined on input line 66.
-
-
-LaTeX Warning: Citation `einstein' on page 2 undefined on input line 67.
-
-
-LaTeX Warning: Citation `Barn-JORVQ' on page 2 undefined on input line 67.
-
-
-LaTeX Warning: Citation `TAMU' on page 2 undefined on input line 69.
-
-
-LaTeX Warning: Citation `GIGEM' on page 2 undefined on input line 70.
-
-
-LaTeX Warning: Citation `WAGFJ' on page 2 undefined on input line 70.
-
-
-LaTeX Warning: Citation `Over9000' on page 2 undefined on input line 70.
-
-[2]
-File: ./graphic/Haskell1.jpg Graphic file (type QTm)
- <use  "./graphic/Haskell1.jpg" > [3]
-File: ./graphic/DOSBox1.jpg Graphic file (type QTm)
- <use  "./graphic/DOSBox1.jpg" >
-[4]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 109.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-File: ./graphic/Footnote.png Graphic file (type QTm)
-
-<use  "./graphic/Footnote.png" >
-File: ./graphic/Mint_XFCE.png Graphic file (type QTm)
- <use  "./graphic/Mint_XFCE.png" > [5]
-File: ./graphic/TOC2.png Graphic file (type QTm)
-
-<use  "./graphic/TOC2.png" >
-File: ./graphic/Rachl3.png Graphic file (type QTm)
- <use  "./graphic/Rachl3.png" > [6]) [7]
-\openout2 = `data/section2.aux'.
-
-
-(./data/section2.tex
-Chapter 2.
-[8
-
-
-
-] [9] [10] [11] [12] [13] [14] [15]
+[17] [18]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 226.
+(hyperref)                removing `math shift' on input line 529.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 226.
+(hyperref)                removing `\rightarrow' on input line 529.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 226.
+(hyperref)                removing `math shift' on input line 529.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 233.
+(hyperref)                removing `math shift' on input line 536.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\delta' on input line 233.
+(hyperref)                removing `\delta' on input line 536.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 233.
+(hyperref)                removing `subscript' on input line 536.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 233.
+(hyperref)                removing `math shift' on input line 536.
 
-) [16] [17]
-\openout2 = `data/section3.aux'.
-
- (./data/section3.tex
-Chapter 3.
-
-LaTeX Warning: Citation `ANCONS' on page 18 undefined on input line 38.
-
-
-LaTeX Warning: Citation `ANCONS' on page 18 undefined on input line 38.
-
-[18
-
-
-
-]
-File: ./graphic/LowPass_Filter_Design.png Graphic file (type QTm)
- <use  "./graphic/LowPass_Filter_Design.png" >
-File: ./graphic/Workspace1.png Graphic file (type QTm)
-
-<use  "./graphic/Workspace1.png" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: ./graphic/Rachl1.png Graphic file (type QTm)
-<use  "./graphic/Rachl1.png" > [19] [20]
-File: ./graphic/TAM_Logo1.png Graphic file (type QTm)
- <use  "./graphic/TAM_Logo1.png" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: ./graphic/Filter1.png Graphic file (type QTm)
-<use  "./graphic/Filter1.png" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[21] [22]) [23]
-\openout2 = `data/section4.aux'.
-
- (./data/section4.tex
-Chapter 4.
-File: ./graphic/GraphicDir.png Graphic file (type QTm)
-<use  "./graphic/GraphicDir.png" >
-File: ./graphic/CustomPackage.png Graphic file (type QTm)
- <use  "./graphic/CustomPackage.png" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: ./graphic/CartesianCoordinate.png Graphic file (type QTm)
-<use  "./graphic/CartesianCoordinate.png" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[24
-
-
-
-]
-File: ./graphic/CompileChange.png Graphic file (type QTm)
- <use  "./graphic/CompileChange.png" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[25] [26]
-File: ./graphic/Changelog.png Graphic file (type QTm)
- <use  "./graphic/Changelog.png" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[27] [28]) [29] (./TAMUTemplateSP18.bbl) [30
-
-
-]
-\openout2 = `data/appendices.aux'.
-
- (./data/appendices.tex
-(./data/appendix1.tex
-APPENDIX A.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 18.
-
-File: figures/Penguins.jpg Graphic file (type QTm)
-<use  "figures/Penguins.jpg" >) (./data/appendix2.tex [31
-
-
-]
-APPENDIX B.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 16.
-
-File: figures/Penguins.jpg Graphic file (type QTm)
-<use  "figures/Penguins.jpg" > [32
-
-]))
+) [19] [20] (./TAMUTemplateSP18.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
+ [21
+
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
  (./TAMUTemplateSP18.aux
 (./data/titlepage.aux) (./data/abstract.aux) (./data/dedication.aux)
 (./data/acknowledgements.aux) (./data/contributors.aux)
 (./data/nomenclature.aux) (./data/lists.aux) (./data/section1.aux)
-(./data/section2.aux) (./data/section3.aux) (./data/section4.aux)
-(./data/appendices.aux))
+(./data/section2.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 161.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 161.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 11729 strings out of 493706
- 167655 string characters out of 6145769
- 251935 words of memory out of 5000000
- 14867 multiletter control sequences out of 15000+600000
- 27326 words of font info for 42 fonts, out of 8000000 for 9000
+ 11655 strings out of 493706
+ 166569 string characters out of 6145769
+ 256408 words of memory out of 5000000
+ 14817 multiletter control sequences out of 15000+600000
+ 16566 words of font info for 33 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 43i,10n,53p,1900b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,16n,50p,1078b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on TAMUTemplateSP18.pdf (42 pages).
+Output written on TAMUTemplateSP18.pdf (30 pages).
