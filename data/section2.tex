@@ -516,23 +516,94 @@ Finally, a notable property of the weak interaction is that it only acts on part
 	Finally, the coupling constants, $G$, and the fermion masses are not predicted by the SM, so they must be measured and added to the model.
 
 \section{Beyond the Standard Model}
-Several experiments have validated the SM to a great accuracy. However, we know the SM to be incomplete as it does not provide answers to questions like the origin of neutrino masses, the existence of dark matter, or that of dark energy.
+\begin{itemize}
+The SM evolved in response to a series of experimental discoveries over a period of several decades, and it turned out to be a remarkably successful theory. At the present time, provided non-zero neutrino masses are incorporated, all experimental observations in particle physics are consistent with the SM, but there is no reason to suppose that there will not be more surprises in the future, as higher energy regions are explored.
+
+Also, there are a few experimental hints which suggest that the SM may not be a complete theory of nature. For example, there is strong evidence that the particles of the SM can only account for a small fraction of the matter in the Universe, and the observed predominance of matter over antimatter cannot be understood in the framework of the SM.
+
+Moreover, although evidence has recently been reported for the existence of gravitational waves, which are a necessary consequence of any quantum theory of gravity, we have no consistent theory of quantum gravity.
+
+Finally, the SM itself embodies many assumptions and more than twenty free parameters, giving rise to many questions like
+
+\begin{itemize}
+ \item Can the number of prameters be reduced?
+ \item Why are there three families of quarks and leptons, rather than just the one that is required to describe "ordinary matter", i.e. the neutrons and protons?
+ \item Are the quarks really point-like particles, or will they turn out to be composite when we are able to explore a higher energy regime?
+ \item Why does the weak interaction violate CP invariance, but not the strong interaction?
+\end{itemize}
+
+Many theories have been proposed to try to answer these and other questions, and a few experimental programmes have been set up to test them. %They typically predict the existence of particles or unknown phenomena beyond the SM.
 
 \section{Lepton universality}
-One of the current assumptions of the SM is that electron, muon, and tau couplings are the same when interacting weakly. This is often referred to as lepton universality. 
+%One of the current assumptions of the SM is that electron, muon, and tau couplings are the same when interacting weakly. This is often referred to as lepton universality. 
+	All known experimental data are consistent with the assumption that the interactions of the electron and its neutrino are identical with those of the muon and its associated neutrino and the tau and its neutrino, provided the mass differences are taken into account. This fundamental assumption is called the universality of lepton interactions.
+
+	We will illustrate universality of this rule by looking at the leptonic decays \cite{MartinShaw}
+
+	\begin{align}\label{eq2.4.1}
+	\mu^{+}&\rightarrow e^{+} + \nu_{e} + \bar{\nu}_{\mu},\\
+	\mu^{-}&\rightarrow e^{-} + \bar{\nu}_{e} + \nu_{\mu},\\
+	\tau^{-}&\rightarrow \mu^{-} + \bar{\nu}_{\mu} + \nu_{\tau}, and\\
+	\tau^{-}&\rightarrow e^{-} + \bar{\nu}_{e} + \nu_{\tau}
+	\end{align}
+	of the muon and tau leptons at rest. 
+
+	To simplify the calculation, we will work to lowest order only and we will use the zero-range approximation (a zero-range point interaction with strength equal to the Fermi constant $G_{F}=1.66\times 10^{-5} GeV^{-2}$), since the masses of the leptons are very small ompared with the rest energy of the W bosons mediating the weak interaction.
+
+	We start by considering the muon decay whose rate has the form (in the zero-range appproximation)
+
+	\begin{equation}\label{eq2.4.2}
+	\Gamma(\mu^{-}&\rightarrow e^{-} + \bar{\nu}_{e} + \nu_{\mu}) = KG_{F}^{2}m_{\mu}^{5}
+	\end{equation}
+
+	since we are assuming the electron and neutrino masses are zero. Here, $K$ is a dimensionless constant whose value will depend on the precise form of the interaction. If we assume this is the same for muon and tau leptons the same argument gives
+
+	\begin{equation}
+	\Gamma(\tau^{-}&\rightarrow e^{-} + \bar{\nu}_{e} + \nu_{\tau}) = KG_{F}^{2}m_{\tau}^{5}
+	\end{equation}
+
+	Likewise, $e - \mu$ universality gives
+
+	\begin{equation}
+	\Gamma(\tau^{-}&\rightarrow e^{-} + \bar{\nu}_{e} + \nu_{\tau}) = \Gamma(\tau^{-}&\rightarrow \mu^{-} + \bar{\nu}_{\mu} + \nu_{\tau})
+	\end{equation}
+
+	This explains why the experimental branching ratios for the two leptonic decay modes of the tau lepton are, to a good approximation, equal. A full calculation, taking into account final state masses, gives the ratio $\Gamma(\tau^{-}&\rightarrow \mu^{-} + \bar{\nu}_{\mu} + \nu_{\tau})/\Gamma(\tau^{-}&\rightarrow e^{-} + \bar{\nu}_{e} + \nu_{\tau})=0.973$, whereas the experimental value is $0.976\pm0.003$.
+
+	It also gives a relation between the $\mu$ and $\tau$ lifetimes 
+
+	\begin{equation}
+	\tau_{l}= \frac{1}{\Gamma_{tot}} = \frac{B(l^{-}\rightarrow e^{-}\bar{\nu}_{e}\nu_{l})}{\Gamma(l^{-}\rightarrow e^{-}\bar{\nu}_{e}\nu_{l})}
+	\end{equation}
+
+	where $l$ can be the $\mu$ or $\tau$ lepton and $\Gamma_{tot}$ is the total decay rate and therefore
+
+	\begin{equation}
+	B(l^{-}\rightarrow e^{-}\bar{\nu}_{e}\nu_{l}) = \frac{\Gamma(l^{-}\rightarrow e^{-}\bar{\nu}_{e}\nu_{l})}{\Gamma_{tot}}
+	\end{equation}
+
+	is the branching ratio. Experimentally, $B=1$ and $0.1783\pm0.0004$ for $l=\mu$ and $\tau$. Thus from \ref{eq2.4.1}and \ref{eq2.4.2} we have
+
+	\begin{equation}
+	\frac{\tau_{\tau}}{\tau_{\mu}} = \frac{B(\tau^{-}\rightarrow e^{-}\bar{\nu}_{e}\nu_{\tau})}{B(\mu^{-}\rightarrow e^{-}\bar{\nu}_{e}\nu_{\mu})}\(\frac{m_{\nu}}{m_{\tau}}\)^{5} = (1.326\pm0.003)\times 10^{-7}
+	\end{equation}
+
+	This agreement, involving lifetimes that differ by seven orders of magnitude, is impressive evidence of the universality of lepton interactions.
 
 \section{B-hadron anomalies}
-So far, no definite violation of this rule has been observed, but recent studies involving the decay rates of B mesons seem to challenge it. BaBar, LHCb and Belle experiments have reported anomalous deviations from SM in measurements of:
+	So far, no definite violation of this rule has been observed, but recent studies involving the decay rates of B mesons seem to challenge it. BaBar, LHCb and Belle experiments have reported anomalous deviations from SM in measurements of:
 
-\begin{enumerate}
-    \item The angular distributions of the decay rate of $B\rightarrow K^{*}\mu^{+}\mu^{-}$.
-    \item The branching ratios $R_{K} = \frac{BR(B^{+}\rightarrow K^{+}\mu^{+}\mu^{-})}{BR(B^{+}\rightarrow K^{+}e^{+}e^{-})}$ and $R_{K^{*}} = \frac{BR(B^{+}\rightarrow K^{*}\mu^{+}\mu^{-})}{BR(B^{+}\rightarrow K^{*}e^{+}e^{-})}$.
-\end{enumerate}
+	\begin{enumerate}
+    	\item The angular distributions of the decay rate of $B\rightarrow K^{*}\mu^{+}\mu^{-}$.
+    	\item The branching ratios $R_{K} = \frac{BR(B^{+}\rightarrow K^{+}\mu^{+}\mu^{-})}{BR(B^{+}\rightarrow K^{+}e^{+}e^{-})}$ and $R_{K^{*}} = \frac{BR(B^{+}\rightarrow K^{*}\mu^{+}\mu^{-})}{BR(B^{+}\rightarrow K^{*}e^{+}e^{-})}$.
+	\end{enumerate}
 Each of these results show a deviation from the expected SM value of 1 in the 2.4-2.6 $\sigma$ range. These decay processes are very rare in the SM, making it hard to obtain a precise measurement. Also, a better understanding of the SM physics behind them (in terms of hadronic uncertainties) could also provide reconciliation with SM predictions. A more recent study combined the results for $R_{K}$ and $R_{K^{*}}$, resulting in a 4$\sigma$ deviation from the SM. 
+
 \subsection{$b\rightarrow s$ quark transitions}
 This anomaly hints at the posibility that $b\rightarrow s$ quark transitions cannot be understood entirely within the SM framework. 
 
 Within the SM, the lowest order processes that could mediate the $b\rightarrow s$ quark transitions are at least of third order. Therefore, these processes are rarely observed.
+
 \section{The Z'}
 As an alternative, a possible explanation to the B-decay anomalies could postulate the existence of a new heavy neutral gauge boson, the Z'. Such a particle would couple to $b-s$ quarks and non-universally to leptons. In addition, it would be assumed to couple mostly to third generation quarks to explain why it has not been seen yet by any experiment.
 %Basic properties/ Feynman diagram
