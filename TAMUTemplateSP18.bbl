@@ -1,27 +1,107 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{ANCONS}
-``Animecons.com - {A}nime {C}onventions and {G}uests.'' Web, 2015.
+\bibitem{MartinShaw}
+B.~Martin and G.~Shaw, {\em Particle Physics}.
+\newblock Wiley, 2017.
 
-\bibitem{REALCAR}
-N.~Carothers, {\em Real Analysis}.
-\newblock Cambridge University Press, 2000.
+\bibitem{Aaij2014}
+{The LHCb collaboration}, ``Differential branching fractions and isospin
+  asymmetries of $b{\rightarrow} k^{*}\mu^{+}\mu^{−}$ decays,'' {\em Journal
+  of High Energy Physics}, vol.~2014, p.~133, Jun 2014.
 
-\bibitem{einstein}
-A.~Einstein, ``{Zur Elektrodynamik bewegter K{\"o}rper}. ({German}) [{On} the
-  electrodynamics of moving bodies],'' {\em Annalen der Physik}, vol.~322,
-  no.~10, pp.~891--921, 1905.
+\bibitem{Aaij20162}
+{The LHCb collaboration}, ``Measurements of the s-wave fraction in $b^{0}
+  {\rightarrow} k^{+}\pi^{−}\mu^{+}\mu^{−}$ decays and the $b^{0}
+  {\rightarrow} k^{*0}(892)\mu^{+}\mu^{−}$ differential branching fraction,''
+  {\em Journal of High Energy Physics}, vol.~2016, p.~47, Nov 2016.
 
-\bibitem{Barn-JORVQ}
-C.~F. Barnes and R.~L. Frost, ``Residual vector quantizers with jointly
-  optimized code books,'' {\em Advances in Electronics and Electron Physics},
-  vol.~84, pp.~1--59, 1992.
+\bibitem{PhysRevLett.113.151601}
+R.~Aaij {\em et~al.}, ``Test of lepton universality using
+  ${B}^{+}\ensuremath{\rightarrow}{K}^{+}{\ensuremath{\ell}}^{+}{\ensuremath{\ell}}^{\ensuremath{-}}$
+  decays,'' {\em Phys. Rev. Lett.}, vol.~113, p.~151601, Oct 2014.
 
-\bibitem{WAGFJ}
-G.~T. Gilbert and R.~L. Hatcher, ``Wagering in final jeopardy!,'' {\em
-  Mathematics Magazine}, vol.~67, pp.~268--277, October 1994.
+\bibitem{Aaij2017}
+{The LHCb collaboration}, ``Test of lepton universality with $b_{0} \rightarrow
+  k^{*0}l^{+}l^{−}$ decays,'' {\em Journal of High Energy Physics},
+  vol.~2017, p.~55, Aug 2017.
 
-\bibitem{ARCADIA}
-``Results - {A}rcadia {F}estival of {B}ands.'' Web, November 2011.
+\bibitem{PhysRevLett.111.191801}
+R.~Aaij {\em et~al.}, ``Measurement of form-factor-independent observables in
+  the decay
+  ${B}^{0}\ensuremath{\rightarrow}{K}^{*0}{\ensuremath{\mu}}^{\mathbf{+}}{\ensuremath{\mu}}^{\mathbf{\ensuremath{-}}}$,''
+  {\em Phys. Rev. Lett.}, vol.~111, p.~191801, Nov 2013.
+
+\bibitem{Aaij2016}
+T.~L. collaboration, ``Angular analysis of the
+  ${B}^{0}\ensuremath{\rightarrow}{K}^{*0}{\ensuremath{\mu}}^{\mathbf{+}}{\ensuremath{\mu}}^{\mathbf{\ensuremath{-}}}$
+  decay using 3 fb−1 of integrated luminosity,'' {\em Journal of High Energy
+  Physics}, vol.~2016, p.~104, Feb 2016.
+
+\bibitem{Abdesselam:2016llu}
+A.~Abdesselam {\em et~al.}, ``{Angular analysis of $B^0 \to K^\ast(892)^0
+  \ell^+ \ell^-$},'' in {\em {Proceedings, LHCSki 2016 - A First Discussion of
+  13 TeV Results: Obergurgl, Austria, April 10-15, 2016}}, 2016.
+
+\bibitem{Altmannshofer2017}
+W.~Altmannshofer, C.~Niehoff, P.~Stangl, and D.~M. Straub, ``Status of the
+  $b\rightarrow k^{*}mu ^{+}mu^{-}$ anomaly after moriond 2017,'' {\em The
+  European Physical Journal C}, vol.~77, p.~377, Jun 2017.
+
+\bibitem{Bordone2016}
+M.~Bordone, G.~Isidori, and A.~Pattori, ``On the standard model predictions for
+  $r_{K}$ and $r_{K^{*}}$,'' {\em The European Physical Journal C}, vol.~76,
+  p.~440, Aug 2016.
+
+\bibitem{D’Amico2017}
+G.~D'Amico, M.~Nardecchia, P.~Panci, F.~Sannino, A.~Strumia, R.~Torre, and
+  A.~Urbano, ``Flavour anomalies after the rk∗ measurement,'' {\em Journal of
+  High Energy Physics}, vol.~2017, p.~10, Sep 2017.
+
+\bibitem{Capdevila2018}
+B.~Capdevila, A.~Crivellin, S.~Descotes-Genon, J.~Matias, and J.~Virto,
+  ``Patterns of new physics in $b {\rightarrow} sl^{}l^{−}$ transitions in
+  the light of recent data,'' {\em Journal of High Energy Physics}, vol.~2018,
+  p.~93, Jan 2018.
+
+\bibitem{NatFCNC}
+F.~Archilli, M.~O. Bettler, P.~Owen, and K.~A. Petridis, ``Flavour-changing
+  neutral currents making and breaking the standard model,'' {\em Nature},
+  vol.~546, pp.~221 EP --, 06 2017.
+
+\bibitem{Buras:2013}
+A.~J. Buras and J.~Girrbach, ``{Left-handed Z' and Z FCNC quark couplings
+  facing new $b \rightarrow s \mu^{+} mu^{-}$ data},'' {\em J. High Energ.
+  Phys.}, vol.~9, 2013.
+
+\bibitem{201757}
+T.~C. Collaboration, ``Search for narrow resonances in dilepton mass spectra in
+  proton-proton collisions at $\sqrt{s}=13$ tev and combination with 8 tev
+  data,'' {\em Physics Letters B}, vol.~768, pp.~57 -- 80, 2017.
+
+\bibitem{Sirunyan:2018exx}
+A.~M. Sirunyan {\em et~al.}, ``{Search for high-mass resonances in dilepton
+  final states in proton-proton collisions at $\sqrt{s}=$ 13 TeV},'' {\em
+  JHEP}, vol.~06, p.~120, 2018.
+
+\bibitem{ATLAS-CONF-2016-045}
+T.~A. Collaboration", ``{Search for new high-mass resonances in the dilepton
+  final state using proton-proton collisions at $\sqrt{s}$ = 13 TeV with the
+  ATLAS detector},'' Tech. Rep. ATLAS-CONF-2016-045, CERN, Geneva, Aug 2016.
+
+\bibitem{Dalchenko:2017shg}
+M.~Abdullah, M.~Dalchenko, B.~Dutta, R.~Eusebi, P.~Huang, T.~Kamon,
+  D.~Rathjens, and A.~Thompson, ``{Bottom-quark fusion processes at the LHC for
+  probing Z′ models and $B$ -meson decay anomalies},'' {\em Phys. Rev.},
+  vol.~D97, no.~7, p.~075035, 2018.
+
+\bibitem{PhysRevD.96.055008}
+W.~Altmannshofer, P.~Stangl, and D.~M. Straub, ``Interpreting hints for lepton
+  flavor universality violation,'' {\em Phys. Rev. D}, vol.~96, p.~055008, Sep
+  2017.
+
+\bibitem{PhysRevD.89.095033}
+W.~Altmannshofer, S.~Gori, M.~Pospelov, and I.~Yavin, ``Quark flavor
+  transitions in ${L}_{\mu}-{L}_{\tau}$ models,'' {\em Phys. Rev. D}, vol.~89,
+  p.~095033, May 2014.
 
 \end{thebibliography}

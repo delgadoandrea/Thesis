@@ -14,17 +14,19 @@
 \contentsline {section}{\numberline {2.1}The Standard Model}{2}{section.2.1}
 \contentsline {section}{\numberline {2.2}Structure and Particle Content}{2}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Fermions}{2}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Bosons}{3}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Particle Interactions}{3}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Quantum Electrodynamics}{4}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Electroweak Interaction}{5}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Strong Interaction}{12}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Brout-Englert-Higgs Mechanism and the Higgs Boson}{13}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Lepton universality}{18}{section.2.4}
-\contentsline {section}{\numberline {2.5}B-hadron anomalies}{18}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}$b\rightarrow s$ quark transitions}{19}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}The Z'}{19}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Flavour-violating coupling $\delta _{bs}$}{19}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Lifetime calculation}{19}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}4b Bottom Fermion Fusion}{19}{subsection.2.6.3}
-\contentsline {chapter}{REFERENCES}{21}{section*.10}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Leptons}{3}{subsubsection.2.2.1.1}
+\contentsline {subsubsection}{\numberline {2.2.1.2}Quarks}{3}{subsubsection.2.2.1.2}
+\contentsline {subsection}{\numberline {2.2.2}Bosons}{4}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Particle Interactions}{5}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Quantum Electrodynamics}{5}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Electroweak Interaction}{7}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Strong Interaction}{13}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Brout-Englert-Higgs Mechanism and the Higgs Boson}{15}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Beyond the Standard Model}{20}{section.2.4}
+\contentsline {section}{\numberline {2.5}Lepton universality}{21}{section.2.5}
+\contentsline {section}{\numberline {2.6}B-hadron anomalies}{22}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}$b\rightarrow s$ quark transitions}{23}{subsection.2.6.1}
+\contentsline {section}{\numberline {2.7}The Z'}{24}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}4b Bottom Fermion Fusion}{25}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Flavour-violating coupling $\delta _{bs}$}{27}{subsection.2.7.2}
+\contentsline {chapter}{REFERENCES}{28}{section*.12}
