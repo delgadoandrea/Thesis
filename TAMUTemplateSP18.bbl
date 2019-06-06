@@ -104,4 +104,41 @@ W.~Altmannshofer, S.~Gori, M.~Pospelov, and I.~Yavin, ``Quark flavor
   transitions in ${L}_{\mu}-{L}_{\tau}$ models,'' {\em Phys. Rev. D}, vol.~89,
   p.~095033, May 2014.
 
+\bibitem{Breskin:1244506}
+A.~Breskin and R.~Voss, {\em {The CERN Large Hadron Collider: Accelerator and
+  Experiments}}.
+\newblock Geneva: CERN, 2009.
+
+\bibitem{Chatrchyan:2008aa}
+S.~Chatrchyan {\em et~al.}, ``{The CMS experiment at the CERN LHC},'' {\em
+  JINST}, vol.~3, p.~S08004, 2008.
+
+\bibitem{1748-0221-3-08-S08003}
+G.~Aad {\em et~al.}, ``{The ATLAS Experiment at the CERN Large Hadron
+  Collider},'' {\em Journal of Instrumentation}, vol.~3, no.~08, p.~S08003,
+  2008.
+
+\bibitem{Aamodt:2008zz}
+K.~Aamodt {\em et~al.}, ``{The ALICE experiment at the CERN LHC},'' {\em
+  JINST}, vol.~3, p.~S08002, 2008.
+
+\bibitem{Alves:2008zz}
+A.~A. Alves, Jr. {\em et~al.}, ``{The LHCb Detector at the LHC},'' {\em JINST},
+  vol.~3, p.~S08005, 2008.
+
+\bibitem{LHC-schematic}
+K.~Andersen and T.~Eberle, ``The genesis 2.0 project.''
+  \url{http://media.vanityfair.com/photos/54cbf6ad1ca1cf0a23ac6c85/master/w_690,c_limit/image.jpg},
+  2010.
+\newblock [Online; accessed May 29, 2019.
+
+\bibitem{CMS-schematic}
+T.~Sakuma, ``A cutaway diagram of the cms detector.''
+  \url{https://en.wikipedia.org/wiki/Compact_Muon_Solenoid}, 2013.
+\newblock [Online; accessed May 29, 2019.
+
+\bibitem{Chatrchyan:2012xi}
+S.~Chatrchyan {\em et~al.}, ``{Performance of CMS muon reconstruction in $pp$
+  collision events at $\sqrt{s}=7TeV$},'' {\em JINST}, vol.~7, p.~P10002, 2012.
+
 \end{thebibliography}

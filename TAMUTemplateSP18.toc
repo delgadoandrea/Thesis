@@ -6,8 +6,8 @@
 \contentsline {chapter}{CONTRIBUTORS AND FUNDING SOURCES}{v}{chapter*.4}
 \contentsline {chapter}{NOMENCLATURE}{vi}{chapter*.5}
 \contentsline {chapter}{TABLE OF CONTENTS}{vii}{section*.6}
-\contentsline {chapter}{LIST OF FIGURES}{viii}{section*.7}
-\contentsline {chapter}{LIST OF TABLES}{ix}{section*.8}
+\contentsline {chapter}{LIST OF FIGURES}{ix}{section*.7}
+\contentsline {chapter}{LIST OF TABLES}{x}{section*.8}
 \contentsline {chapter}{\numberline {1}\uppercase {Introduction}}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}THEORETICAL FRAMEWORK}{2}{chapter.2}
 \vskip +10pt
@@ -29,4 +29,16 @@
 \contentsline {section}{\numberline {2.7}The Z'}{24}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}4b Bottom Fermion Fusion}{25}{subsection.2.7.1}
 \contentsline {subsection}{\numberline {2.7.2}Flavour-violating coupling $\delta _{bs}$}{27}{subsection.2.7.2}
-\contentsline {chapter}{REFERENCES}{28}{section*.12}
+\contentsline {chapter}{\numberline {3}The LHC and CMS Detector}{28}{chapter.3}
+\vskip +10pt
+\contentsline {section}{\numberline {3.1}The Large Hadron Collider}{28}{section.3.1}
+\contentsline {section}{\numberline {3.2}The CMS Detector}{30}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Coordinate System}{31}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Tracker and Pixel Detector}{32}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Electromagnetic Calorimeter}{34}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Hadron Calorimeter}{35}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Solenoid}{36}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Muon System}{37}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}Trigger}{40}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}Luminosity Measurement}{40}{subsection.3.2.8}
+\contentsline {chapter}{REFERENCES}{42}{section*.20}
