@@ -77,7 +77,7 @@ The layout of the detector can be seen in Figure \ref{fig:cmsdia}. The following
  \subsection{Tracker and Pixel Detector}
  Momentum analysis in CMS makes use of the magnetic field provided by its super-conducting solenoid. The tracker sub-detector is not only able to measure the momentum of charged particles but also determines their direction at their production vertex.
 
- The Tracker is the inner most layer of the detector and therefore receives the highest volume of particles. It consists of a subsystem made entirely of silicon, the pixels, at the very core of the detector; and the silicon micro-strip detectors that surround it. In total, the sub-detector is 5.8 m long and 2.5 m in diameter with an ability to measure the momentum of charged particles in the region $|\eta|<$ 2.5. Figure \ref{fig:cmstracker} shows the layout of the tracker and its subsystems.
+ The full sillicon inner tracking system\cite{trackeradd} is a cylinder-shaped detector with an outer radius of 1.2 m and a length of 5.6 m. The barrel(each of the two endcaps) includes three(two) layers of pixel detectors, surrounded by ten(twelve) layers of micro-strip detectors. The 16,588 silicon sensor moduels are finely segmented into 66 million 150$\times$100 $\mu$m pixels and 9.6 million 80-to180 $\mu$m-wide strips. Figure \ref{fig:cmstracker} shows the layout of the tracker and its subsystems.
 
    \begin{figure}[H]
  	\centering
@@ -91,9 +91,11 @@ The pixel detector is made up of three barrel layers, called BPIX, and two endca
 
 Likewise, the silicon strip detector is made up of four subsystems. The Tracker Inner Barrel (TIB) has four layers of 320 $\mu m$ strips. At each end of the TIB is a three-layer Tracker Inner Disks (TID), which contains strips of the same thickness. The Tracker Outer Barrel (TOB) is the six layer system which surrounds the TIB/TID. The first four layers of the TOB use 500$\mu m$ thick strips, and the last two layers use 122 $\mu m$ thick strips. The Tracker EndCaps (TEC) are on either side of the previous setup and contain nine disks with up to seven layers of strips. These strips are 320 $\mu m$ thick in the inner four rings and 500 $\mu m$ in the outer three rings. In total, the strip detector contains 9.3 million silicon strips.
 
+The tracker measures the $p_{T}$ of charged hadrons at normal incidence with a resolution of 1$\%$ for $p_{T}<$ 20 GeV\cite{Sirunyan_2017}. The relative resolution then degrades with increasing $p_{T}$ to reach the calorimeter energy resolution for track momenta of several hundred GeV.
+
  \subsection{Electromagnetic Calorimeter}
 
- The ECAL is a homogeneous calorimeter made out of lead tungstate ($PbWO_{4}$) crystals totaling 75,848 units. The detector is divided up into two sections which provide a coverage of $|\eta| < 1.479$ in the barrel region (EB) and $1.479 < |\theta| < 3.0$ in two endcap regions (EE). There are also preshower detectors (PS) in each of the endcaps, in fornt of the EE, which cover a pseudorapidity range of $1.653 < |\eta| < 2.6$. Figure \ref{fig:cmsecal} shows the structure of the ECAL.
+ The CMS ECAL\cite{CERN-LHCC-97-033} is a homogeneous calorimeter made out of lead tungstate ($PbWO_{4}$) crystals totaling 75,848 units. The detector is divided up into two sections which provide a coverage of $|\eta| < 1.479$ in the barrel region (EB) and $1.479 < |\theta| < 3.0$ in two endcap regions (EE). There are also preshower detectors (PS) in each of the endcaps, in fornt of the EE, which cover a pseudorapidity range of $1.653 < |\eta| < 2.6$. Figure \ref{fig:cmsecal} shows the structure of the ECAL.
 
     \begin{figure}[H]
  	\centering
@@ -103,20 +105,21 @@ Likewise, the silicon strip detector is made up of four subsystems. The Tracker 
  	\label{fig:cmsecal}
 	 \end{figure}
 
-Each calorimeter cristal has a depth of 230 mm, which corresponds to 25.8 radiation lengths ($X_{0}$) for $PbWO_{4}$. The scintillation light produced in the crystals is read out by avalanche photodiodes (APDs), which produce approximately 4.5 photoelectrons per MeV at room temperature.
+Each calorimeter cristal has a depth of 230 mm, which corresponds to 25.8 radiation lengths ($X_{0}$) for $PbWO_{4}$, sufficient to contain more than 98$\%$ of the energy of electrons and photont up to 1 TeV. The scintillation light produced in the crystals is read out by avalanche photodiodes (APDs), which produce approximately 4.5 photoelectrons per MeV at room temperature. 
 
-The energy resolution ($\sigma$) is typically parameterized according to
+The crystal transverse size matches the small Moliére radius of $PbWO_{4}$, 2.2 cm. This fine transverse granularity makes it possible to fully resolve hadron and photon energy deposits as close as 5 cm from one another.
+
+The intrinsic energy resolution ($\sigma$) of the ECAL barrel was measured with an ECAL supermodule directly exposed to an electron beam\cite{Ingram_2007}. The relative energy resolution is typically parameterized as a function of the electron energy as
 
 \begin{equation}
-(\frac{\sigma_{E}}{E})^{2} = (\frac{N}{E[GeV]})^{2} + (\frac{S}{\sqrt{E[GeV]}})^{2} + C^{2}
+\frac{\sigma_{E}}{E} = \frac{2.8\%}{E[GeV]} \oplus \frac{12\%}{\sqrt{E[GeV]}} \oplus 0.3\%
 \end{equation}
-
-where $N$ is a term representing a contribution due to electronic and pileup noise, $S$ is the stochastic contribution to mis-measurement, and $C$ is the constant term. 
-
 
  \subsection{Hadron Calorimeter}
 
- The CMS HCAL is a sampling calorimeter, meaning it finds a particle's position, energy and arrival time using alternating layers of "absorber" and fluorescent scintillator or "active" materials that produce a rapid light pulse when the particle passes through. The produced light is then collected by optic fibers that feed it into readout boxes where photodetectors amplify the signal. The amount of light in a given region is summed up over many layers of tiles in depth, called a "tower". The HCAL is organized into barrel (HB and HO), endcap (HE), and forward (HF). There are 36 barrel "wedges", each weighting 26 tonnes. These form the last layer of detector inside the magnetic coil. A few additional layers, the outer barrel (HO), sit outside the coil, ensuring no energy leaks out the back of the HB undetected. Similarly, 36 endcap wedges measure particle energies as they emerge through the ends of the solenoid magnet.
+ The CMS HCAL\cite{CMS:1997tfa} is a sampling calorimeter, meaning it finds a particle's position, energy and arrival time using alternating layers of "absorber" and fluorescent scintillator or "active" materials that produce a rapid light pulse when the particle passes through.The produced light is then collected by optic fibers that feed it into readout boxes where photodetectors amplify the signal. The amount of light in a given region is summed up over many layers of tiles in depth, called a "tower". 
+
+ The HCAL is organized into barrel (HB and HO), endcap (HE), and forward (HF). There are 36 barrel "wedges", each weighting 26 tonnes. These form the last layer of detector inside the magnetic coil. A few additional layers, the outer barrel (HO), sit outside the coil, ensuring no energy leaks out the back of the HB undetected. Similarly, 36 endcap wedges measure particle energies as they emerge through the ends of the solenoid magnet. In the barrel, the HCAL absorber thickness amounts to almost six interaction lengths at normal incidence, and increases to over ten interaction lengths at larger pseudorapidities. The HO material corresponds to 1.4 interaction lengths at normal incidence.
 
  Lastly, the two hadronic forward calorimeters (HF) are positioned at either end of CMS, to detect particles coming out of the collision region at shallow angles relative to the beam line. These receive the bulk of the particle energy contained in the collision so must be very radiation resistant. Figure \ref{fig:cmshcal} shows the structure and position of the HCAL subsystems. 
 
@@ -128,11 +131,11 @@ where $N$ is a term representing a contribution due to electronic and pileup noi
  	\label{fig:cmshcal}
 	 \end{figure}
 
-Combined, the ECAL and HCAL can measure the energy deposited by a charged pion with a resolution of $\sigma/E\approx100\%/\sqrt{E[GeV]}\oplus5\%$, where $E$ is the jet energy.
+Combined, the ECAL and HCAL can measure the energy deposited by a charged pion with a resolution of $\sigma/E\approx100\%/\sqrt{E[GeV]}\oplus5\%$ \cite{Yazgan_2009}.
 
  \subsection{Solenoid}
 
- The CMS magnet is the central device around which the experiment is built. It provides a 4T magnetic field, which is 100,000 times stronger than that of Earth.
+ The CMS magnet\cite{Acquistapace:1997fm} is the central device around which the experiment is built. It delivers a 4T magnetic field, which is 100,000 times stronger than that of Earth over a length of 12.5 m and a free-bore radius of 3.15 m.
 
  Its job is to bend the paths of charged particles emerging from high-energy collisions in the LHC. The higher momentum particles get their path curved less than the lighter ones, and as a result, curvature is an important tool for momentum measurements. 
 
@@ -172,12 +175,6 @@ iron "return yoke" (shown in red in Figure \ref{fig:cmsmuchambers}, for the barr
 The CSCs track the particle's position and allow for triggering, while the RPCs form a redundant trigger system, which quickly decides to keep the acquired muon data or not. Because of the many layers of detector and different specialties of each type, the system is naturally robust and able to filter out background noise.
 
 The muon system on its own has a resolution of 15-40$\%$ depending on $\eta$. Matching muons to tracks measured in the silicon tracker results in a relative transverse momentum resolution for muons with 20$< p_{T} < $ 100 GeV of 1.3-2.0$\%$ in the barrel and better than 6$\%$ in the endcaps. The $p_{T}$ resolution in the barrel is better than 10$\%$ for muons up to 1 TeV \cite{Chatrchyan:2012xi}.
-
-
- \subsection{Trigger}
- When CMS is performing at its peak, about one billion proton-proton interactions will take place every second inside the detector. In order to record only those events generated from energetic, head-on collisions, a "trigger" system was implemented.
-
-Level 1 of the trigger is an extremely fast, hardware based process that looks for simple signs of interesting physics, e.g. particles with a large amount of energy or in unusual combinations. The L1 trigger selects events at a rate of around 100 kHz within a time interval of 4$\mu$s. The next step is the HLT, which combines the information from different parts of the detector to recreate the entire event and send it to a farm of more than 1000 computers to filter even more events, reducing the event rate to less than 1 kHz before recording them on tape.
 
 \subsection{Luminosity Measurement}
 
