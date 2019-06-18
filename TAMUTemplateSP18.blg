@@ -11,46 +11,49 @@ A level-1 auxiliary file: data/lists.aux
 A level-1 auxiliary file: data/section1.aux
 A level-1 auxiliary file: data/section2.aux
 A level-1 auxiliary file: data/section3.aux
+A level-1 auxiliary file: data/section4.aux
 The style file: ieeetr.bst
 Database file #1: data/myReference.bib
-You've used 28 entries,
+Warning--empty publisher in Cheng:1985bj
+You've used 50 entries,
             1876 wiz_defined-function locations,
-            668 strings with 8763 characters,
-and the built_in function-call counts, 6832 in all, are:
-= -- 690
-> -- 262
-< -- 1
-+ -- 99
-- -- 71
-* -- 412
-:= -- 953
-add.period$ -- 32
-call.type$ -- 28
-change.case$ -- 26
+            802 strings with 11897 characters,
+and the built_in function-call counts, 12210 in all, are:
+= -- 1262
+> -- 406
+< -- 3
++ -- 158
+- -- 108
+* -- 731
+:= -- 1677
+add.period$ -- 60
+call.type$ -- 50
+change.case$ -- 46
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 421
-empty$ -- 594
-format.name$ -- 71
-if$ -- 1732
+cite$ -- 51
+duplicate$ -- 715
+empty$ -- 1119
+format.name$ -- 108
+if$ -- 3109
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 27
-newline$ -- 91
-num.names$ -- 28
-pop$ -- 82
+int.to.str$ -- 50
+missing$ -- 45
+newline$ -- 163
+num.names$ -- 50
+pop$ -- 148
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 345
+skip$ -- 579
 stack$ -- 0
-substring$ -- 233
-swap$ -- 216
-text.length$ -- 1
+substring$ -- 562
+swap$ -- 356
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 51
-width$ -- 30
-write$ -- 279
+warning$ -- 1
+while$ -- 98
+width$ -- 52
+write$ -- 499
+(There was 1 warning)

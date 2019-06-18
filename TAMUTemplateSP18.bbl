@@ -1,8 +1,64 @@
 \begin{thebibliography}{10}
 
+\bibitem{20121}
+G.~Aad {\em et~al.}, ``Observation of a new particle in the search for the
+  standard model higgs boson with the atlas detector at the lhc,'' {\em Physics
+  Letters B}, vol.~716, no.~1, pp.~1 -- 29, 2012.
+
+\bibitem{201230}
+S.~Chatrchyan {\em et~al.}, ``Observation of a new boson at a mass of 125 gev
+  with the cms experiment at the lhc,'' {\em Physics Letters B}, vol.~716,
+  no.~1, pp.~30 -- 61, 2012.
+
+\bibitem{StandardModelDiagram}
+D.~Dominguez, ``Particles of the standard model of particle physics.''
+  \url{https://home.cern/science/physics/standard-model}, 2016.
+\newblock [Online; accessed June 7, 2019.
+
+\bibitem{wiki:charge}
+{Wikipedia contributors}, ``Charge (physics) --- {Wikipedia}{,} the free
+  encyclopedia,'' 2019.
+\newblock [Online; accessed 7-June-2019].
+
+\bibitem{Noether1918}
+E.~Noether, ``Invariante variationsprobleme,'' {\em Nachrichten von der
+  Gesellschaft der Wissenschaften zu Göttingen, Mathematisch-Physikalische
+  Klasse}, vol.~1918, pp.~235--257, 1918.
+
+\bibitem{Peskin:1995ev}
+M.~E. Peskin and D.~V. Schroeder, {\em {An Introduction to quantum field
+  theory}}.
+\newblock Reading, USA: Addison-Wesley, 1995.
+
+\bibitem{wiki:diracfield}
+{Wikipedia contributors}, ``Fermionic field --- {Wikipedia}{,} the free
+  encyclopedia,'' 2018.
+\newblock [Online; accessed 7-June-2019].
+
+\bibitem{wiki:gammam}
+{Wikipedia contributors}, ``Gamma matrices --- {Wikipedia}{,} the free
+  encyclopedia,'' 2019.
+\newblock [Online; accessed 7-June-2019].
+
+\bibitem{Rajasekaran:2014vza}
+G.~Rajasekaran, ``{Fermi and the Theory of Weak Interactions},'' {\em Resonance
+  J. Sci. Educ.}, vol.~19, no.~1, pp.~18--44, 2014.
+
+\bibitem{PhysRev.82.914}
+J.~Schwinger, ``The theory of quantized fields. i,'' {\em Phys. Rev.}, vol.~82,
+  pp.~914--927, Jun 1951.
+
+\bibitem{Cheng:1985bj}
+T.~P. Cheng and L.~F. Li, {\em {GAUGE THEORY OF ELEMENTARY PARTICLE PHYSICS}}.
+\newblock 1984.
+
 \bibitem{MartinShaw}
 B.~Martin and G.~Shaw, {\em Particle Physics}.
 \newblock Wiley, 2017.
+
+\bibitem{Patrignani:2016xqp}
+C.~Patrignani {\em et~al.}, ``{Review of Particle Physics},'' {\em Chin.
+  Phys.}, vol.~C40, no.~10, p.~100001, 2016.
 
 \bibitem{Aaij2014}
 {The LHCb collaboration}, ``Differential branching fractions and isospin
@@ -24,6 +80,11 @@ R.~Aaij {\em et~al.}, ``Test of lepton universality using
 {The LHCb collaboration}, ``Test of lepton universality with $b_{0} \rightarrow
   k^{*0}l^{+}l^{−}$ decays,'' {\em Journal of High Energy Physics},
   vol.~2017, p.~55, Aug 2017.
+
+\bibitem{Aaij:2019wad}
+R.~Aaij {\em et~al.}, ``{Search for lepton-universality violation in $B^+\to
+  K^+\ell^+\ell^-$ decays},'' {\em Phys. Rev. Lett.}, vol.~122, no.~19,
+  p.~191801, 2019.
 
 \bibitem{PhysRevLett.111.191801}
 R.~Aaij {\em et~al.}, ``Measurement of form-factor-independent observables in
@@ -104,6 +165,10 @@ W.~Altmannshofer, S.~Gori, M.~Pospelov, and I.~Yavin, ``Quark flavor
   transitions in ${L}_{\mu}-{L}_{\tau}$ models,'' {\em Phys. Rev. D}, vol.~89,
   p.~095033, May 2014.
 
+\bibitem{Ball:2014uwa}
+R.~D. Ball {\em et~al.}, ``{Parton distributions for the LHC Run II},'' {\em
+  JHEP}, vol.~04, p.~040, 2015.
+
 \bibitem{Breskin:1244506}
 A.~Breskin and R.~Voss, {\em {The CERN Large Hadron Collider: Accelerator and
   Experiments}}.
@@ -140,5 +205,43 @@ T.~Sakuma, ``A cutaway diagram of the cms detector.''
 \bibitem{Chatrchyan:2012xi}
 S.~Chatrchyan {\em et~al.}, ``{Performance of CMS muon reconstruction in $pp$
   collision events at $\sqrt{s}=7TeV$},'' {\em JINST}, vol.~7, p.~P10002, 2012.
+
+\bibitem{TRK-11-001}
+S.~Chatrchyan {\em et~al.}, ``{Description and performance of track and
+  primary-vertex reconstruction with the CMS tracker},'' {\em JINST}, vol.~9,
+  p.~P10009, 2014.
+
+\bibitem{Billoir:1989mh}
+P.~Billoir, ``{Progressive track recognition with a Kalman like fitting
+  procedure},'' {\em Comput. Phys. Commun.}, vol.~57, pp.~390--394, 1989.
+
+\bibitem{BILLOIR1990219}
+P.~Billoir and S.~Qian, ``Simultaneous pattern recognition and track fitting by
+  the kalman filtering method,'' {\em Nuclear Instruments and Methods in
+  Physics Research Section A: Accelerators, Spectrometers, Detectors and
+  Associated Equipment}, vol.~294, no.~1, pp.~219 -- 228, 1990.
+
+\bibitem{Mankel:1997dy}
+R.~Mankel, ``{A Concurrent track evolution algorithm for pattern recognition in
+  the HERA-B main tracking system},'' {\em Nucl. Instrum. Meth.}, vol.~A395,
+  pp.~169--184, 1997.
+
+\bibitem{Fruhwirth:1987fm}
+R.~Fruhwirth, ``{Application of Kalman filtering to track and vertex
+  fitting},'' {\em Nucl. Instrum. Meth.}, vol.~A262, pp.~444--450, 1987.
+
+\bibitem{Speer:927395}
+T.~Speer, K.~Prokofiev, R.~Frühwirth, W.~Waltenberger, and P.~Vanlaer,
+  ``{Vertex Fitting in the CMS Tracker},'' Tech. Rep. CMS-NOTE-2006-032, CERN,
+  Geneva, Feb 2006.
+
+\bibitem{726788}
+K.~{Rose}, ``Deterministic annealing for clustering, compression,
+  classification, regression, and related optimization problems,'' {\em
+  Proceedings of the IEEE}, vol.~86, pp.~2210--2239, Nov 1998.
+
+\bibitem{Fruhwirth:1027031}
+R.~Frühwirth, W.~Waltenberger, and P.~Vanlaer, ``{Adaptive Vertex Fitting},''
+  Tech. Rep. CMS-NOTE-2007-008, CERN, Geneva, Mar 2007.
 
 \end{thebibliography}

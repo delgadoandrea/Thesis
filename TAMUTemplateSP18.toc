@@ -15,30 +15,38 @@
 \contentsline {section}{\numberline {2.2}Structure and Particle Content}{2}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Fermions}{2}{subsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.1.1}Leptons}{3}{subsubsection.2.2.1.1}
-\contentsline {subsubsection}{\numberline {2.2.1.2}Quarks}{3}{subsubsection.2.2.1.2}
+\contentsline {subsubsection}{\numberline {2.2.1.2}Quarks}{4}{subsubsection.2.2.1.2}
 \contentsline {subsection}{\numberline {2.2.2}Bosons}{4}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Particle Interactions}{5}{section.2.3}
+\contentsline {section}{\numberline {2.3}Particle Interactions}{4}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Quantum Electrodynamics}{5}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Electroweak Interaction}{7}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Strong Interaction}{13}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Strong Interaction}{14}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Brout-Englert-Higgs Mechanism and the Higgs Boson}{15}{subsection.2.3.4}
 \contentsline {section}{\numberline {2.4}Beyond the Standard Model}{20}{section.2.4}
 \contentsline {section}{\numberline {2.5}Lepton universality}{21}{section.2.5}
-\contentsline {section}{\numberline {2.6}B-hadron anomalies}{22}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}$b\rightarrow s$ quark transitions}{23}{subsection.2.6.1}
-\contentsline {section}{\numberline {2.7}The Z'}{24}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}4b Bottom Fermion Fusion}{25}{subsection.2.7.1}
+\contentsline {section}{\numberline {2.6}B-hadron anomalies}{23}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}$b\rightarrow s$ quark transitions}{24}{subsection.2.6.1}
+\contentsline {section}{\numberline {2.7}The Z'}{25}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}4b Bottom Fermion Fusion}{26}{subsection.2.7.1}
 \contentsline {subsection}{\numberline {2.7.2}Flavour-violating coupling $\delta _{bs}$}{27}{subsection.2.7.2}
-\contentsline {chapter}{\numberline {3}The LHC and CMS Detector}{28}{chapter.3}
+\contentsline {chapter}{\numberline {3}The LHC and CMS Detector}{29}{chapter.3}
 \vskip +10pt
-\contentsline {section}{\numberline {3.1}The Large Hadron Collider}{28}{section.3.1}
-\contentsline {section}{\numberline {3.2}The CMS Detector}{30}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Coordinate System}{31}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Tracker and Pixel Detector}{32}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Electromagnetic Calorimeter}{34}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Hadron Calorimeter}{35}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.1}The Large Hadron Collider}{29}{section.3.1}
+\contentsline {section}{\numberline {3.2}The CMS Detector}{31}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Coordinate System}{32}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Tracker and Pixel Detector}{33}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Electromagnetic Calorimeter}{35}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Hadron Calorimeter}{36}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Solenoid}{36}{subsection.3.2.5}
 \contentsline {subsection}{\numberline {3.2.6}Muon System}{37}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}Trigger}{40}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.7}Trigger}{39}{subsection.3.2.7}
 \contentsline {subsection}{\numberline {3.2.8}Luminosity Measurement}{40}{subsection.3.2.8}
-\contentsline {chapter}{REFERENCES}{42}{section*.20}
+\contentsline {chapter}{\numberline {4}EVENT RECONSTRUCTION }{42}{chapter.4}
+\vskip +10pt
+\contentsline {section}{\numberline {4.1}Tracks and Vertices}{43}{section.4.1}
+\contentsline {section}{\numberline {4.2}Particle Flow}{45}{section.4.2}
+\contentsline {section}{\numberline {4.3}Jets}{45}{section.4.3}
+\contentsline {section}{\numberline {4.4}b-tagging}{45}{section.4.4}
+\contentsline {section}{\numberline {4.5}Event Generation}{45}{section.4.5}
+\contentsline {section}{\numberline {4.6}Detector Simulation}{45}{section.4.6}
+\contentsline {chapter}{REFERENCES}{46}{section*.23}

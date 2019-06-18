@@ -1,15 +1,20 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \vskip -10pt
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Lowest order Feynmann diagrams for $b\rightarrow s$ quark transition.\relax }}{24}{figure.caption.10}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Feynman diagram for bottom fermion fusion (BFF).\relax }}{26}{figure.caption.11}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Particles of the Standard Model of particle physics. Reprinted from \cite {StandardModelDiagram}\relax }}{3}{figure.caption.9}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Lowest order Feynmann diagrams for $b\rightarrow s$ quark transition.\relax }}{25}{figure.caption.11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Feynman diagram for bottom fermion fusion (BFF).\relax }}{27}{figure.caption.12}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces PDF for the LHC Run II. Reprinted from \cite {Ball:2014uwa}.\relax }}{28}{figure.caption.13}
 \addvspace {10\p@ }
 \vskip -10pt
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Schematic diagram for the LHC experiment at CERN. Retrieved from \cite {LHC-schematic}.\relax }}{29}{figure.caption.12}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematic diagram for the CMS experiment with its sub-detector systems and a person for scale. Retrieved from \cite {CMS-schematic}.\relax }}{31}{figure.caption.13}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagram for the CMS detector coordinate system.\relax }}{32}{figure.caption.14}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Layout of the CMS detector tracker with subsystems labeled.\relax }}{33}{figure.caption.15}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces A schematic of the CMS ECAL detector with its subsystems labeled.\relax }}{34}{figure.caption.16}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Structure and position of the CMS HCAL sub-detector systems.\relax }}{36}{figure.caption.17}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Layout of the CMS muon system.\relax }}{38}{figure.caption.18}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces A muon, in the plane perpendicular to the LHC beams, leaves a curved trajectory in four layers of muon detectors or stations.\relax }}{39}{figure.caption.19}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Schematic diagram for the LHC experiment at CERN. Retrieved from \cite {LHC-schematic}.\relax }}{30}{figure.caption.14}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematic diagram for the CMS experiment with its sub-detector systems and a person for scale. Retrieved from \cite {CMS-schematic}.\relax }}{32}{figure.caption.15}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagram for the CMS detector coordinate system.\relax }}{33}{figure.caption.16}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Layout of the CMS detector tracker with subsystems labeled.\relax }}{34}{figure.caption.17}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces A schematic of the CMS ECAL detector with its subsystems labeled.\relax }}{35}{figure.caption.18}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Structure and position of the CMS HCAL sub-detector systems.\relax }}{37}{figure.caption.19}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Layout of the CMS muon system.\relax }}{38}{figure.caption.20}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces A muon, in the plane perpendicular to the LHC beams, leaves a curved trajectory in four layers of muon detectors or stations.\relax }}{39}{figure.caption.21}
+\addvspace {10\p@ }
+\vskip -10pt
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Schematic diagram for an event at the LHC.\relax }}{42}{figure.caption.22}
