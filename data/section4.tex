@@ -209,7 +209,7 @@ as close as possible to unity. Here $p_{T}^{reco}$ is the reconstructed jet $p_{
 
 The process of correcting the jet 4-momentum by means of a scale or weight obtained from matching the reconstructed jet information to that of the reference jet in Monte Carlo is referred to as jet energy correction (JEC).
 
-The first level of correction, commonly referred to as the L1FastJet corrections, starts by removing pileup or electronic noise energy that may have made it into the jet reconstruction. This multiplicative correction will only remove energy from within the jet and will take the form in Equation \ref{pileupeq}, where $\rho$ is the median energy density of the event, $A$ is the jet area, and $f$ is an estimate of the offset inside the jet per unit of jet area.
+The first level of correction, commonly referred to as the L1FastJet corrections, starts by removing pileup or electronic noise energy that may have made it into the jet reconstruction. This multiplicative correction will only remove energy from within the jet and will take the form in Equation \ref{pileupeq}, where $\rho$ is the median energy density of the event, $A$ is the jet area, and $f$ is an estimate of the offset inside the jet per unit of jet area \cite{JINST2011,Cacciari2007}.
 
 \begin{equation}
 \label{pileupeq}
@@ -220,7 +220,91 @@ The L2Relative correction compensates for the non-linearity in the jet response 
 
 A final level of modification to the reconstructed objects is an $\eta$ dependent smearing factor applied to the jet 4-momenta coming from the MC samples. The distribution of jet energies within the MC simulation tends to be more sharply peaked and less broad tha the same distribution in data, resulting in a smaller jet energy resolution (JER) than we can reallistically measure using the CMS detector. The deterministic "smearing" method recommended by CMS matches the MC jet energy resolution to that in data. 
 
+The reconstructed jet $p_{T}$ is scaled by a correction factor $C_{JER}$ as determined in Equation \ref{eq:C_JER}, where $C_{\eta}$ is a correction factor derived as a function of $\eta$ whose values can be found in Table \ref{tab:JER_Ceta}. The multiplicative JER correction factor is then used to modify the jet 4-momentum as in Equation \ref{eq:Jet_JER}.
+
+\begin{equation}
+\label{eq:C_JER}
+C_{JER} = max\big(0.0,\frac{p_{T}^{GEN}}{p_{T}^{RECO}} + C_{\eta}\dot \big(1 - \frac{p_{T}^{GEN}}{p_{T}^{RECO}}\big) \big)
+\end{equation}
+
+\begin{equation}
+\label{eq:Jet_JER}
+\textbf{X}_{jet}^{corrected} = C_{JER}\dot \textbf{X}_{Jet}^{RECO}
+\end{equatin}
+
+\begin{table}[htbp]
+    \caption{Jet energy resolution (JER) scale factors.}
+    \centering
+    \begin{tabular}{l l}
+        \hline
+        $|\eta|$ & Correction Factor $C_{\eta}$ \\
+        \hline
+        $<0.5$ & \longmassasym{1.052}{0.012}{0.012}{0.061}{0.062}{} \\
+        $\geqslant0.5$ \& $<1.1$ & \longmassasym{1.057}{0.012}{0.012}{0.055}{0.056}{} \\
+        $\geqslant1.1$ \& $<1.7$ & \longmassasym{1.096}{0.017}{0.017}{0.062}{0.063}{} \\
+        $\geqslant1.7$ \& $<2.3$ & \longmassasym{1.134}{0.035}{0.035}{0.085}{0.087}{} \\
+        $\geqslant2.3$ \& $<5.0$ & \longmassasym{1.288}{0.127}{0.127}{0.153}{0.155}{} \\
+        \hline
+    \end{tabular}
+    \label{tab:JER_Ceta}
+\end{table}
+
+A set of quality cuts, collectively called PF jet identification, are applied to the resulting collection of jets to ensure that only real, hard scatter PF jets are used during the analysis\cite{CMS-AN-2010-003}. Several working point are defined at varying levels of efficiency and purity, but this analysis makes use of the tight criteria shown in Table \ref{tab:PFJetID}\cite{PFJetID}.
+
+\begin{table}[htbp]
+    \caption{Cut based PF jet identification requirements for the tight working point.}
+    \centering
+    \begin{tabular}{ll}
+        \hline
+        \multirow{2}{*}{Cut Variable}               & Cut Value \\\cline{2-2}
+                                                    & Tight\\ 
+        \hline 
+        \eta                     & |\eta| < 2.7  &2.7 < |\eta|\lessthanequal 3.0  & |\eta| > 3.0\\
+        \hline 
+        Neutral Hadron Fraction  & <0.90  & <0.98 & -\\  
+        Neutral EM Fraction      & <0.90  & > 0.01 & <0.90\\
+        $n_{constituents}$       & >1     & -      & - \\
+        Muon fraction            & <0.8   & -      & -\\
+        Number of Neutral Particles & - & > 2      & >10\\
+        \hline
+        and for |\eta| \lessthanequal 2.4 in addition apply
+        \hline
+        Charged Hadron Fraction & > 0 \\
+        Charged Multiplicity    & > 0 \\
+        Charged EM Fraction     & < 0.90
+        \hline 
+    \end{tabular}
+    \label{tab:PFJetID}
+\end{table}
+
+All cuts on the jet energy fractions are made on the raw jets, before any energy correction is applied. In addition to the PF jet quality cuts, this analysis requires that all jets be within |$\eta$| < 2.6 and to have a $p_{T} > $ 30 GeV. 
+
 \section{b-tagging}
+Some jets are produced from a b-quark that after hadronization gets transformed into a B meson that has a large lifetime, and subsequently decay after it has traveled some distance. B-tagging is the identification of jets at some confidence level as having decayed from a B meson.
+
+\begin{figure}[h]
+  	\label{fig:antikt}
+ 	\centering
+ 	\includegraphics[width=0.75\textwidth]{figures/Btag.png}
+ 	\singlespace
+ 	\caption{Diagram showing the common principle of identification of jets initiated by B hadron decays. Reprinted from \cite{wiki:btag}}
+ \end{figure}
+
+A variety of b-tagging algorithms has been developed by CMS to select b-quark jets\cite{BTV-12-001} based on variables such as the impact parameters of the charged-particle tracks, the properties of reconstructed decay vertices, and he presence or abscence of a lepton, or combinations thereof. These algorithms heavily rely on machine learning tools and are thus natural candidates for advanced tools like deep neural networks. 
+
+A new algorithm, DeepCSV\cite{Sirunyan_2018, PhysRevD.94.112002}, uses a deep neural network. The input is the same set of observables used by the existing CSVv2 b-tagger\cite{Weiser:927399}, with the extension that it uses information of more tracks. Also, the training strategy was adapted and about 50 million jets are used for the training of the deep neural network. The new DeepCSV algorithm outperforms the CSVv2 tagger, with an absolute b-tagging efficiency improvement of about 4$\%$ for a misidentification probability for light flavour jets of 1$\%$. 
+
+This algorithm is based on a deep neural network, with four hidden layers (i.e. six hidden layers altogether) of a width of 10 nodes each. The tagger can categorize individual jets in so-called `Tight' (DeepCSVT), `Medium'(DeepCSVM), and ``Loose''(DeepCSVL) categories or working points. These working points correspond to 0.1, 1, and 10 $\%$ misidentification rates, respectively.
+
+Figure \ref{fig:deepcsv} shows the b-jet efficiency as a function of the jet $p_{T}$ for the DeepCSV algorithm at different working points. These efficiencies are obtianed on simulated $t\bar{t}$ events using jets within tracker acceptance with $p_{T}$ > 30 GeV.
+
+\begin{figure}[h]
+  	\label{fig:deepcsv}
+ 	\centering
+ 	\includegraphics[width=0.75\textwidth]{figures/effvspt_b_deep.pdf}
+ 	\singlespace
+ 	\caption{b-jet efficiency as a function of jet $p_{T}$ for the DeepCSV algorithm. \cite{Sirunyan_2018}}
+ \end{figure}
 
 \section{Event Generation}
 
