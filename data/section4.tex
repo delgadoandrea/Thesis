@@ -292,9 +292,47 @@ Some jets are produced from a b-quark that after hadronization gets transformed 
 
 A variety of b-tagging algorithms has been developed by CMS to select b-quark jets\cite{BTV-12-001} based on variables such as the impact parameters of the charged-particle tracks, the properties of reconstructed decay vertices, and he presence or abscence of a lepton, or combinations thereof. These algorithms heavily rely on machine learning tools and are thus natural candidates for advanced tools like deep neural networks. 
 
-A new algorithm, DeepCSV\cite{Sirunyan_2018, PhysRevD.94.112002}, uses a deep neural network. The input is the same set of observables used by the existing CSVv2 b-tagger\cite{Weiser:927399}, with the extension that it uses information of more tracks. Also, the training strategy was adapted and about 50 million jets are used for the training of the deep neural network. The new DeepCSV algorithm outperforms the CSVv2 tagger, with an absolute b-tagging efficiency improvement of about 4$\%$ for a misidentification probability for light flavour jets of 1$\%$. 
+A new algorithm, DeepCSV\cite{Sirunyan_2018, PhysRevD.94.112002}, uses a deep neural network. The input is the same set of observables used by the existing CSVv2 b-tagger (Table \ref{tab:csvv2var})\cite{Weiser:927399}, but using more hidden layers, more nodes per layer, and a simultaneous training in all vertex categories and for all jet flavours. Also, the training strategy was adapted and about 50 million jets are used for the training of the deep neural network. The new DeepCSV algorithm outperforms the CSVv2 tagger, with an absolute b-tagging efficiency improvement of about 4$\%$ for a misidentification probability for light flavour jets of 1$\%$. 
 
-This algorithm is based on a deep neural network, with four hidden layers (i.e. six hidden layers altogether) of a width of 10 nodes each. The tagger can categorize individual jets in so-called `Tight' (DeepCSVT), `Medium'(DeepCSVM), and ``Loose''(DeepCSVL) categories or working points. These working points correspond to 0.1, 1, and 10 $\%$ misidentification rates, respectively.
+\begin{table}[htbp]
+    \caption{Input variables used for the CSVv2 algorithm.}
+    \centering
+    \begin{tabular}{l}
+        \hline
+        %\multirow{2}{*}{Cut Variable}               & Cut Value \\\cline{2-2}
+        Input variable                                            \\ 
+        \hline 
+        Secondary vertex 2D flight distance significance\\
+        Number of secondary vertices\\
+        Track $\eta_{rel}$\\
+        Corrected secondary vertex mass\\
+        Number of track from secondary vertex\\
+        Secondary vertex enegry ratio\\
+        $\Delta R (Secondary vertex, jet)$ \\
+        3D interaction point significance of the first four tracks\\
+        Track $p_{T,rel}$\\
+        $\Delta R (track, jet)$ \\
+        Track $p_{T,rel}$ ratio\\
+        Track distance\\
+        Track decay length\\
+        Summed tracks $E_{T}$ ratio\\
+        $\Delta R$(summed tracks, jet)\\
+        First track 2D interaction point significance above c threshold\\
+        Number of selected tracks\\
+        Jet $p_{T}$\\
+        Jet $\eta$\\
+        \hline 
+    \end{tabular}
+    \label{tab:csvv2var}
+\end{table}
+
+This algorithm uses the reconstructed tracks and secondary vertices found by using the \textit{inclusive vertex finding} (IVF) algorithm \cite{ADAM2007781}. The same input variables used for the CSVv2 tagger are used, with the difference that the track-based variables use up to six tracks in the training of the DeepCSV. Jets are randomly selected in such a way that similar jet $p_{T}$ and $\eta$ distributions are obtained for all jet flavours. These distributions are also used as input variables in the training to take into account the correlation between the jet kinematics and the other variables. The distribution of all input variables is preprocessed to center the mean of each distribution around zero and to obtain a root-mean-square value of unity. All of the variables are presented to the multivariable analysis (MVA) in the same way because of the prerpocessing.
+
+The training is performed using jets with $p_{T}$ between 20 GeV and 1 TeV, and within the tracker acceptance. The relative ratio of jets of each flavour is set to 2:1:4 for b:c:udsg jets. a mixture of $t\bar{t}$ and multijet events is used to reduce the possible dependency of the training on the heavy-flavour quark production process.
+
+The training of the deep neural network is performed using the KERAS\cite{chollet2015keras} deep learning library, interfaced with the TENSORFLOW\cite{tensorflow2015-whitepaper} library that is used for low-level operations such as convolutions. The neural network uses four hidden layers that are fully connected, each with 100 nodes. For the nodes in the last layer, a normalized exponential function is used for the activation to be able to interpret the output value as a probability for a certain jet flavour category, $P(f)$. The output layer contains five nodes corresponding to five jet flavour categories used in the training. These categories are defined according to whether the jet contains exactly one b hadron, at least two b hadrons, exactly one c hadron and no b hadrons, at leaset two c hadrons and no b hadrons, or none of the aforementioned categories. Each of these categories is completely independent of the others, and the reasoning behind the chosen categorization has to do with the ability to provide analysis to identify jets containing two b or c hadrons. 
+
+The tagger can categorize individual jets in so-called `Tight' (DeepCSVT), `Medium'(DeepCSVM), and ``Loose''(DeepCSVL) categories or working points. These working points correspond to 0.1, 1, and 10 $\%$ misidentification rates, respectively.
 
 Figure \ref{fig:deepcsv} shows the b-jet efficiency as a function of the jet $p_{T}$ for the DeepCSV algorithm at different working points. These efficiencies are obtianed on simulated $t\bar{t}$ events using jets within tracker acceptance with $p_{T}$ > 30 GeV.
 
@@ -307,6 +345,50 @@ Figure \ref{fig:deepcsv} shows the b-jet efficiency as a function of the jet $p_
  \end{figure}
 
 \section{Event Generation}
+Searching for new physics can basically be reduced to a search for deviations from the SM. For this reason, extremely accurate signal and SM background predictions are required. For a given analysis, these predctions ake the form of samples of events representing various physics scenarios, as they would be seen in the CMS detector. Monte Carlo (MC) event generators are used to simulate proton-proton collisions reulsitng in a variety of final states. The passage of these final states through the CMS detector is then simulated, and the resulting detector level data is analyzed. The reconstruction algorithms described in the previous section are then run on the simulated data, allowing for a direct comparison with real data.
 
-\section{Detector Simulation}
+\subsection{Event Generators}
+Event generators are software packages which take as input a desired initial state and simulate all possible outcomes, or a selected subset of outcomes, from an interaction between the specified initial state particles. Bare partons produced in the hard scattering undergo gluon radiation or splitting, and subsequently undergo hadronization to form colorless hadrons. Unstable particle produced in the hard interaction or parton shower are made to decay to stable particles according to their known, or imposed, branching fractions and lifetimes.
+
+During the event generation process, partons which take part in hard scattering interactions with large momentum transfer can be considered free due to asymptotic freedom. The large energy scale involved allows treatment of the interaction using perturbative methods. Under these assumptions, the proton-proton cross section at te LHC for a given $N$ particle final state is given by
+
+\begin{equation}
+\sigma_{N} = \sum_{a,b}\integral_{0}^{1}dx_{1}\integral_{0}^{1}dx_{2}f_{a}(x_{1},\mu^{2})f_{b}(x_{2},\mu^{2})\hat{\sigma}^{N}^{ab}
+\end{equation}
+
+where the sum is over all parton species $a$ and $b$ within protons 1 and 2. $f_{i}(x_{j},\mu^{2})$ is the probability (calculated at renormalization scale $\mu^{2}$) of finding parton species $i$ carrying a momentum fraction $x_{j}$ of the parent proton $j$, and $\hat{\sigma}^{N}^{ab}$ is the partonic cross section for initial state $a+b$. The function $f_{i}(x_{j},\mu^{2})$ is referred to as a parton distribution funciton (PDF). The main task involved in simulation of the hard interaction is the evaluation of this integral. The partonic cross section is itself given by
+
+\begin{equation}
+\begin{split}\label{eq:event_generation_partonic_cross_section}
+\hat{\sigma}_{N}^{ab}=\int_{cuts}d\hat{\sigma}_{N}^{ab}={}&\frac{\left(2\pi\right)^{4}S}{4\sqrt{\left(p_{1}{\cdot}p_{2}\right)^{2}-m_{1}^{2}m_{2}^{2}}}\times \\ &\int_{cuts} \left[\prod_{i=1}^{N}\frac{d^{3}q_{i}}{\left(2\pi\right)^{3}2E_{i}}\right]\delta^{4}\left(p_{1}+p_{2}-\sum_{i}^{N}q_{i}\right)|\mathcal{M}_{p_{1}p_{2}\rightarrow\{\vec{q}\}}^{ab}|^{2}
+\end{split}
+\end{equation}
+
+where $p_{i}$ are the incoming particle four-momenta, $q_{i}(E_{i})$ are the outgoing particle four-momenta, $S$ is a product of factors $1/j!$ for each set of $j$ identical particles in the final state, and $\mathcal{M}_{p_{1}p_{2}\rightarrow\{\vec{q}\}}^{ab}$ is the parton level matrix element (ME) for the process. The event generator must build and evaluate all Feynman diagrams associated with the given process to determine the parton level ME, or these must be hardcoded by the package authors. 
+
+The number of diagrams is directly proportional to the final state multiplicity and therefore becomes a complex problem very quickly. Next-to-leadin-order (NLO) generators have recently been developed which include loop diagrams. This inclusion complicates the matter enormously as divergencies arise in real and virtual contributions which must cancel. 
+
+Once the MEs have been evaluated, the evaluation of the multidimensional phase space integration required for the random sampling is performed using MC techniques. The spectator partons which did not take part in the initial hard interaction can undergo semi-hard interactions with each other, which is refered to as the underlying event (UE). Because these spectator interactions are typically soft, they are not calculable by perturbative methods and empirical models are used to describe them.
+
+Bare partons may be produced as a result of the hard interaction. These partons are perturbatively evolved from the scale of the hard interaction through successive branchings down to a lower energy scale at which they combine to form colorless hadrons, the hadronization scale. These successive branchings are the origin of hadronic jets, whereby individual partons lead to a cascade of partons moving in the general direction of the original parton and sharing its momentum. The probability for a parton to branch into two partons as it evolves from scale $t$ to $t'<t$ and the kinematics of such a branching can ce calculated form first principles, accurate to fixed order in the strong coupling; the results of which are known as the DGLAP evolution equations. Thus, the partons are recursively evolved down to the hadronization scale through successive branchings. Care must be taken to avoid double counting of regions in phase-space. After showering of an N-1 particle final state, an additional hard parton can be radiated, thus producing overlap with an $N$ particle interaction hard state. The colored proton remnants which did not take part in the hard interaction can produce showers as well. 
+
+At the hadronization scale, the showering ceases and the colored partons group to form colorsless hadrons. This regime is not amenable to perturbative calculations, and no first-principle theory is viable. Various phenomelogical methods have been developed to model hadronization, including the \textit{Lund-string-model} and the \textit{cluster hadronization model}. In the Lund model, color string attach to a pair of quarks, and as these strings strech, energy is built up in the elctromagnetic field until vacuum excitation of a quark-antiquark pair becomes possible. Ultimately, color connected pairs of quarks form hadrons. 
+
+The cluster hadronization model assumes a local parton-hadron duality, this hadronic quantum numbers result from the quantum numbers of local partons with minimal disruption needed to produce colorless hadrons. Regardless of the hadronization model choice, the produced hadrons are often unstable, and are then decayed to stable hadrons.
+
+\subsubsection{Pythia}
+
+PYTHIA is a general purpose, tree level partonic ME generator capable of performing parton showering, hadronization, and UE simulation. A variety of $2\rightarrow1,2,3$ processes are included. Full spin correlations are included in the decays of unstable resonances. Shower evolution proceeds in terms of decreasing timelike virtuality, and imposes angular ordering by veto. Shower evolution is accurate to the LL level. The Lund string model is used for hadronization. UE interactions are described perturbatively as multiple nearly-independent $2\rightarrow 2$ scatterings. PYTHIA 8 is used in this analysis to simulate signal samples with $xqcut=30$ and $qcut=60$.
+
+\subsubsection{MADGRAPH}
+
+MADGRAPH is another generator that is used in this analysis for simulating hard parton emission (ie. ISR and FSR), but must be interfaced with PYTHIA for showering and collinear radiation.
+
+\subsection{Detector Simulation}
+
+The next step in the simulation of events chain is the simulation of how particles will interact with the detector and its constituent materials or how the readoyut electronics will behave. To simulate the response of the CMS detector, the generators are interfaced with a sophisticated detector simulation based on the GEANT4 software package, which takes into account the exact detector geometry as well as all materials used.
+
+The alignement, calibration, and other conditions which may change over time are periodically checked and stored in a database. These conditions are used for both offline simulation and reconstruction as well as for online activities. A snapshot of the conditions at some point in time is called a global tag. For reference, this analysis uses the 80X_dataRun2_2016LegacyRepro_v4 and 80X_mcRun2_asymptotic_2016_TrancheIV_v8 global tags for data and simulation, respectively. 
+
+The final state particles from the event generator are sent to the detector simulation, which tracks the particles as they move through the detector depositing energy into what are called simulated hits. While the models of electromagnetic interactions are extremely precise, the hadronic interactions have a greater uncertainty associated with them. The simulation goes through the data acquisition process, event simulating the responses of the photodetectors and readout electronics. The resulting information is then analyzed by the same reconstruction process that the real data goes thorugh and is stored using the ROOT software library. 
 
