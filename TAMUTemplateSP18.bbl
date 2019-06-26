@@ -202,9 +202,54 @@ T.~Sakuma, ``A cutaway diagram of the cms detector.''
   \url{https://en.wikipedia.org/wiki/Compact_Muon_Solenoid}, 2013.
 \newblock [Online; accessed May 29, 2019.
 
+\bibitem{trackeradd}
+C.~collaboration, ``The cms tracker: addendum to the technical design report,''
+  {\em CERN/LHCC}, vol.~16, 01 2000.
+
+\bibitem{Sirunyan_2017}
+T.~C. Collaboration, ``Particle-flow reconstruction and global event
+  description with the {CMS} detector,'' {\em Journal of Instrumentation},
+  vol.~12, pp.~P10003--P10003, oct 2017.
+
+\bibitem{CERN-LHCC-97-033}
+{\em {The CMS electromagnetic calorimeter project: Technical Design Report}}.
+\newblock Technical Design Report CMS, Geneva: CERN, 1997.
+
+\bibitem{Ingram_2007}
+Q.~Ingram, ``Energy resolution of the barrel of the {CMS} electromagnetic
+  calorimeter,'' {\em Journal of Instrumentation}, vol.~2, pp.~P04004--P04004,
+  apr 2007.
+
+\bibitem{CMS:1997tfa}
+``{CMS: The hadron calorimeter technical design report},'' 1997.
+
+\bibitem{Yazgan_2009}
+E.~Yazgan and the CMS ECAL/HCAL~Collaborations, ``The {CMS} barrel calorimeter
+  response to particle beams from 2 to 350 {GeV}/c,'' {\em Journal of Physics:
+  Conference Series}, vol.~160, p.~012056, apr 2009.
+
+\bibitem{Acquistapace:1997fm}
+G.~Acquistapace {\em et~al.}, ``{CMS, the magnet project: Technical design
+  report},'' 1997.
+
 \bibitem{Chatrchyan:2012xi}
 S.~Chatrchyan {\em et~al.}, ``{Performance of CMS muon reconstruction in $pp$
   collision events at $\sqrt{s}=7TeV$},'' {\em JINST}, vol.~7, p.~P10002, 2012.
+
+\bibitem{CMSdatatier}
+``{Detector data flow through Hardware tiers}.''
+  \url{https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookComputingModel},
+  July 2018.
+
+\bibitem{CMSSlice}
+``{The CMS Detector and the Token Bit Manager}.''
+  \url{https://www.phys.ksu.edu/reu2014/wabehn/}, Jan 2017.
+
+\bibitem{BUSKULIC1995481}
+T.~A. Collaboration, ``Performance of the aleph detector at lep,'' {\em Nuclear
+  Instruments and Methods in Physics Research Section A: Accelerators,
+  Spectrometers, Detectors and Associated Equipment}, vol.~360, no.~3, pp.~481
+  -- 506, 1995.
 
 \bibitem{TRK-11-001}
 S.~Chatrchyan {\em et~al.}, ``{Description and performance of track and
@@ -230,18 +275,86 @@ R.~Mankel, ``{A Concurrent track evolution algorithm for pattern recognition in
 R.~Fruhwirth, ``{Application of Kalman filtering to track and vertex
   fitting},'' {\em Nucl. Instrum. Meth.}, vol.~A262, pp.~444--450, 1987.
 
-\bibitem{Speer:927395}
-T.~Speer, K.~Prokofiev, R.~Frühwirth, W.~Waltenberger, and P.~Vanlaer,
-  ``{Vertex Fitting in the CMS Tracker},'' Tech. Rep. CMS-NOTE-2006-032, CERN,
-  Geneva, Feb 2006.
+\bibitem{CMS:2009nxa}
+``{Particle-Flow Event Reconstruction in CMS and Performance for Jets, Taus,
+  and MET},'' 2009.
 
-\bibitem{726788}
-K.~{Rose}, ``Deterministic annealing for clustering, compression,
-  classification, regression, and related optimization problems,'' {\em
-  Proceedings of the IEEE}, vol.~86, pp.~2210--2239, Nov 1998.
+\bibitem{Bentley1975MultidimensionalBS}
+J.~L. Bentley, ``Multidimensional binary search trees used for associative
+  searching,'' {\em Commun. ACM}, vol.~18, pp.~509--517, 1975.
 
-\bibitem{Fruhwirth:1027031}
-R.~Frühwirth, W.~Waltenberger, and P.~Vanlaer, ``{Adaptive Vertex Fitting},''
-  Tech. Rep. CMS-NOTE-2007-008, CERN, Geneva, Mar 2007.
+\bibitem{CMS-PAS-PFT-09-001}
+``{Particle-Flow Event Reconstruction in CMS and Performance for Jets, Taus,
+  and MET},'' Tech. Rep. CMS-PAS-PFT-09-001, CERN, Geneva, Apr 2009.
+
+\bibitem{Cacciari:2008gp}
+M.~Cacciari, G.~P. Salam, and G.~Soyez, ``{The anti-$k_t$ jet clustering
+  algorithm},'' {\em JHEP}, vol.~04, p.~063, 2008.
+
+\bibitem{Cacciari:2011ma}
+M.~Cacciari, G.~P. Salam, and G.~Soyez, ``{FastJet user manual},'' {\em Eur.
+  Phys. J. C}, vol.~72, p.~1896, 2012.
+
+\bibitem{JINST2011}
+{The CMS Collaboration}, ``Determination of jet energy calibration and
+  transverse momentum resolution in cms,'' {\em Journal of Instrumentation},
+  2011.
+\newblock http://iopscience.iop.org/1748-0221/6/11/P11002/.
+
+\bibitem{Cacciari2007}
+M.~Cacciari and G.~P. Salam, ``Pileup subtraction using jet areas,'' {\em
+  Physics Letters B}, 2008.
+
+\bibitem{CMS-AN-2010-003}
+N.~Saoulidou, ``Particle flow jet identification criteria,'' CMS Analysis Note
+  CMS-AN-2010-003, CERN, Geneva, Jun 2010.
+
+\bibitem{PFJetID}
+``Jet identification.''
+  \url{https://twiki.cern.ch/twiki/bin/viewauth/CMS/JetID#Recommendations_for_13_TeV_2016},
+  2018.
+
+\bibitem{wiki:btag}
+{Wikipedia contributors}, ``B-tagging --- {Wikipedia}{,} the free
+  encyclopedia,'' 2019.
+\newblock [Online; accessed 19-June-2019].
+
+\bibitem{BTV-12-001}
+S.~Chatrchyan {\em et~al.}, ``{Identification of b-quark jets with the CMS
+  experiment},'' {\em JINST}, vol.~8, p.~P04013, 2013.
+
+\bibitem{Sirunyan_2018}
+T.~C. Collaboration, ``Identification of heavy-flavour jets with the {CMS}
+  detector in pp collisions at 13 {TeV},'' {\em Journal of Instrumentation},
+  vol.~13, pp.~P05011--P05011, may 2018.
+
+\bibitem{PhysRevD.94.112002}
+D.~Guest, J.~Collado, P.~Baldi, S.-C. Hsu, G.~Urban, and D.~Whiteson, ``Jet
+  flavor classification in high-energy physics with deep neural networks,''
+  {\em Phys. Rev. D}, vol.~94, p.~112002, Dec 2016.
+
+\bibitem{Weiser:927399}
+C.~Weiser, ``{A Combined Secondary Vertex Based B-Tagging Algorithm in CMS},''
+  Tech. Rep. CMS-NOTE-2006-014, CERN, Geneva, Jan 2006.
+
+\bibitem{ADAM2007781}
+W.~Adam, ``Track and vertex reconstruction in cms,'' {\em Nuclear Instruments
+  and Methods in Physics Research Section A: Accelerators, Spectrometers,
+  Detectors and Associated Equipment}, vol.~582, no.~3, pp.~781 -- 784, 2007.
+\newblock VERTEX 2006.
+
+\bibitem{chollet2015keras}
+F.~Chollet {\em et~al.}, ``Keras.'' \url{https://keras.io}, 2015.
+
+\bibitem{tensorflow2015-whitepaper}
+M.~Abadi, A.~Agarwal, P.~Barham, E.~Brevdo, Z.~Chen, C.~Citro, G.~S. Corrado,
+  A.~Davis, J.~Dean, M.~Devin, S.~Ghemawat, I.~Goodfellow, A.~Harp, G.~Irving,
+  M.~Isard, Y.~Jia, R.~Jozefowicz, L.~Kaiser, M.~Kudlur, J.~Levenberg,
+  D.~Man\'{e}, R.~Monga, S.~Moore, D.~Murray, C.~Olah, M.~Schuster, J.~Shlens,
+  B.~Steiner, I.~Sutskever, K.~Talwar, P.~Tucker, V.~Vanhoucke, V.~Vasudevan,
+  F.~Vi\'{e}gas, O.~Vinyals, P.~Warden, M.~Wattenberg, M.~Wicke, Y.~Yu, and
+  X.~Zheng, ``{TensorFlow}: Large-scale machine learning on heterogeneous
+  systems,'' 2015.
+\newblock Software available from tensorflow.org.
 
 \end{thebibliography}

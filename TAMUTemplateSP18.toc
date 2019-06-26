@@ -7,7 +7,7 @@
 \contentsline {chapter}{NOMENCLATURE}{vi}{chapter*.5}
 \contentsline {chapter}{TABLE OF CONTENTS}{vii}{section*.6}
 \contentsline {chapter}{LIST OF FIGURES}{ix}{section*.7}
-\contentsline {chapter}{LIST OF TABLES}{x}{section*.8}
+\contentsline {chapter}{LIST OF TABLES}{xi}{section*.8}
 \contentsline {chapter}{\numberline {1}\uppercase {Introduction}}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}THEORETICAL FRAMEWORK}{2}{chapter.2}
 \vskip +10pt
@@ -37,16 +37,24 @@
 \contentsline {subsection}{\numberline {3.2.2}Tracker and Pixel Detector}{33}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Electromagnetic Calorimeter}{35}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Hadron Calorimeter}{36}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Solenoid}{36}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Muon System}{37}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}Trigger}{39}{subsection.3.2.7}
-\contentsline {subsection}{\numberline {3.2.8}Luminosity Measurement}{40}{subsection.3.2.8}
+\contentsline {subsection}{\numberline {3.2.5}Solenoid}{37}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Muon System}{38}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}Luminosity Measurement}{39}{subsection.3.2.7}
 \contentsline {chapter}{\numberline {4}EVENT RECONSTRUCTION }{42}{chapter.4}
 \vskip +10pt
-\contentsline {section}{\numberline {4.1}Tracks and Vertices}{43}{section.4.1}
-\contentsline {section}{\numberline {4.2}Particle Flow}{45}{section.4.2}
-\contentsline {section}{\numberline {4.3}Jets}{45}{section.4.3}
-\contentsline {section}{\numberline {4.4}b-tagging}{45}{section.4.4}
-\contentsline {section}{\numberline {4.5}Event Generation}{45}{section.4.5}
-\contentsline {section}{\numberline {4.6}Detector Simulation}{45}{section.4.6}
-\contentsline {chapter}{REFERENCES}{46}{section*.23}
+\contentsline {section}{\numberline {4.1}Data Acquisition}{42}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}L1 Trigger and HLT}{43}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}T1 sites and data storage}{43}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Particle Flow Event Reconstruction}{44}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Iterative Tracking}{46}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Calorimeter Clustering}{47}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Linking Tracks and Clusters}{48}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Physics Object Reconstruction}{49}{section.4.3}
+\contentsline {section}{\numberline {4.4}Jets}{49}{section.4.4}
+\contentsline {section}{\numberline {4.5}b-tagging}{55}{section.4.5}
+\contentsline {section}{\numberline {4.6}Event Generation}{58}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Event Generators}{59}{subsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.1.1}Pythia}{61}{subsubsection.4.6.1.1}
+\contentsline {subsubsection}{\numberline {4.6.1.2}MADGRAPH}{62}{subsubsection.4.6.1.2}
+\contentsline {subsection}{\numberline {4.6.2}Detector Simulation}{62}{subsection.4.6.2}
+\contentsline {chapter}{REFERENCES}{63}{section*.33}

@@ -4,3 +4,6 @@
 \contentsline {table}{\numberline {2.1}{\ignorespaces Quantum numbers of the SM fermions\relax }}{11}{table.caption.10}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\vskip -10pt
+\contentsline {table}{\numberline {4.1}{\ignorespaces Cut based PF jet identification requirements for the tight working point.\relax }}{55}{table.caption.29}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Input variables used for the CSVv2 algorithm.\relax }}{57}{table.caption.31}
