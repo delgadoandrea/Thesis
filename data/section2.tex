@@ -16,7 +16,7 @@
 
 \chapter{THEORETICAL FRAMEWORK}
 \section{The Standard Model}
-Particle physics is the study of the fundamental constituents of matter and the forces between them. For more than 40 years these have been described by the so-called standard model of particle physics (SM), which aims to provide, at least in principle, a basis for understanding most particle interactions, with the only exception of gravity. The SM fails to include gravity due to the difficult task that combining the quantum theory used to describe the microscopic world and the general theory of relativity used to describe the macroscopic world entails. Furthermore, its theorized force carrier, the graviton hasn't been found experimentally.
+Particle physics is the study of the fundamental constituents of matter and the forces between them. For more than 40 years these have been described by the so-called standard model of particle physics (SM), which aims to provide, at least in principle, a basis for understanding all known particle interactions, excepting gravity. The SM fails to include gravity due to the difficult task that combining the quantum theory used to describe the microscopic world and the general theory of relativity used to describe the macroscopic world entails since general relativity is a continuous (not quantized) theory. Furthermore, its theorized force carrier, the graviton hasn't been found experimentally.
 
 The SM can also be understood as a gauge theory combining the theory of electroweak (EW) interactions and quantum chromodynamics (QCD), or $SU(3)_{C}\times SU(2)_{L} \times U(1)_{EM}$. 
 
@@ -27,7 +27,7 @@ In this section, the particle content of the SM will be introduced, along with t
 
     \begin{figure}[h]
  	\centering
- 	\includegraphics[width=0.5\textwidth]{figures/STDM.png}
+ 	\includegraphics[width=0.75\textwidth]{figures/SMall.png}
  	\singlespace
  	\caption{Particles of the Standard Model of particle physics. Reprinted from \cite{StandardModelDiagram}}
  	\label{fig:stdmcer}
@@ -60,14 +60,14 @@ There are six known leptons, and they occur in pairs called generations, which w
 
 The three charged leptons ($e^{-}, \mu^{-},\tau^{-}$) all have electric charge $Q=-e$. Associated with them are three neutral leptons, or neutrinos, called the electron neutrino, mu neutrino, and tau neutrino, respectively, all of which have very small masses. The six distinct types of leptons are also referred to as having different "flavors". 
 
-The charged leptons interact via both the electromagnetic and weak forces, whereas for neutral leptons only weak interactions have been observed. We should note that each generation of leptons has an associated quantum number. For example, the electron number, which is defined for any state by
+The charged leptons interact via both the electromagnetic and weak forces, whereas for neutral leptons only weak interactions have been observed. We should note that each generation of leptons has an associated quantum number. The electron number, which is defined for any state by
 
 \begin{equation}
 \label{lepn}
 L_{e}\equiv N(e^{-}) - N(e^{+}) + N(\nu_{e}) - N(\bar{\nu_{e}}),
 \end{equation}
 
-where $N(e^{-})$ is the number of electrons present, and so on. For single-particle states, $L_{e} = 1$ for $e^{-}$ and $\nu_{e}$, $L_{e}=-1$ for $e^{+}$ and $\bar{\nu_{e}}$, and $L_{e}=0$ for all other particles. Conservation of $L_{e}$ reduces to the conservation of $N(e^{-}) - N(e^{+})$, since neutrinos are not involved. This has a very important consequence, which is that electrons and positions can only be created or annihilated in pairs.
+where $N(e^{-})$ is the number of electrons present, and so on. For single-particle states, $L_{e} = 1$ for $e^{-}$ and $\nu_{e}$, $L_{e}=-1$ for $e^{+}$ and $\bar{\nu_{e}}$, and $L_{e}=0$ for all other particles.
 
 The form of Equation \ref{lepn} follows for the heavier lepton generations. Finally, in the SM, lepton numbers are individually conserved in all known interactions.
 
@@ -92,7 +92,7 @@ Currently, there are six known quarks in the SM. Like the leptons, these six dis
 Each generation consists of a quark with electromagnetic charge +2/3 ($u$,$c$, or $t$) together with a quark of charge -1/3 ($d$,$s$,$b$), in units of $e$. They are called the down($d$), up($u$), strange($s$), charmed($c$), bottom($b$) and top($t$) quarks. 
 
 %Although there is no evidence for the existence of free quarks, or any other fractionally charged particle, close to two hundred of their bound states have been discovered. All of them having integer electric charges. 
-Quarks are known to bind into triplets with overall spin-1/2 and doublets with spin-1, called baryons and mesons, respectively. They are collectively referred to as hadrons.
+Quarks are known to bind into triplets, called baryons and mesons, respectively. They are collectively referred to as hadrons. Recently, the LHCb collaboration reported the observation of a new type of hadron, a so-called \textit{pentaquark}, which is a bound state composed of four quarks and one antiquark\cite{PhysRevLett.115.072001}.
 
 %These bound states of quarks (hadrons) have several quantum numbers associated with them, referring to their quark content. For example, the \textit{strangeness} $S$ is defined by
 
@@ -112,7 +112,7 @@ Quarks are known to bind into triplets with overall spin-1/2 and doublets with s
 
 
 \subsection{Bosons}
-The SM bosons are the mediators of the interaction between the matter content of the SM, but also within themselves. They have integer spin quantum numbers and follow Bose-Einstein statistics, which means that they are not limited to single occupancy of the same quantum state. There are 5 named bosons: the gluon, the photon, the W, and the Z, which have spin 1; and the Higgs boson, which corresponds to a scalar field and therefore has spin 0.
+The SM bosons are the mediators of the interaction between the matter content of the SM, but also within themselves. They have integer spin quantum numbers and follow Bose-Einstein statistics, which means that they are not limited to single occupancy of the same quantum state. There are 6 named bosons: the gluon, the photon, the $W^{\pm}$, and the Z, which have spin 1; and the Higgs boson, which corresponds to a scalar field and therefore has spin 0.
 
 \section{Particle Interactions}
 The interactions of the particles described in the previous section can be described in the mathematical framework of gauge field theory. Three of the four fundamental forces of nature are described in the SM (electromagnetism, the strong and the weak force). To each of these forces belongs a physical theory, its corresponding charge, (i.e. electric charge, color or flavor) and an associated boson as mediator. 
@@ -191,6 +191,8 @@ where $i=e,\mu,\tau,u,d,c,s,t,b$.
 The story of weak interactions starts with Henri Becquerel's discovery of radioactivity in 1896 and its subsequent classification into alpha, beta and gamma decays of the nucleus by Ernest Rutherford and others. But the real understanding of beta-decay in the sense we now know it came only after Enrico Fermi formulated a physical mechanism for such process in 1934.
 
 The main ingredient for Fermi's theory had been provided by Wolfgang Pauli. To solve the puzzle of the continuous energy spectrum of the electrons emitted in the beta-decay of the nuclei, Pauli had suggested that along with the electron, an almost massless neutral particle was also emitted. Fermi succeeded in incorporating Pauli's suggestion and thus was born the theory of weak interactions \cite{Rajasekaran:2014vza}.
+
+In the 1960s Glashow, Salam, and Weinberg had developed a theory\cite{Glashow:1961tr,PhysRevLett.19.1264,salam} that unified electromagnetic and wek interactions in a way that is often compared to the unification of electric and magnetic interactions by Faraday and Maxwell a century earlier. This new theory made several remarkable predictions, including the existence of a neutral vector boson $Z^{0}$ and of weak reactions arising from its exchange.
 
 The EW interaction is based on a local $SU(2)_{L}\times U(1)_{Y}$ gauge symmetry where $L$ and $Y$ are the generators of the symmetry. Here, electromagnetic and weak interactions are unified into a single non-abelian gauge theory. In order to understand this unification, we will start with a fermionic doublet representing an $SU(2)$ symmetry
 
