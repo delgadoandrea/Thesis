@@ -15,6 +15,11 @@ D.~Dominguez, ``Particles of the standard model of particle physics.''
   \url{https://home.cern/science/physics/standard-model}, 2016.
 \newblock [Online; accessed June 7, 2019.
 
+\bibitem{PhysRevLett.115.072001}
+R.~Aaij {\em et~al.}, ``Observation of $j\psi$ resonances consistent with
+  pentaquark states in ${\mathrm{\Lambda}}_{b}^{0}\rightarrow j\psi{K}^{-}p$
+  decays,'' {\em Phys. Rev. Lett.}, vol.~115, p.~072001, Aug 2015.
+
 \bibitem{wiki:charge}
 {Wikipedia contributors}, ``Charge (physics) --- {Wikipedia}{,} the free
   encyclopedia,'' 2019.
@@ -43,6 +48,18 @@ M.~E. Peskin and D.~V. Schroeder, {\em {An Introduction to quantum field
 \bibitem{Rajasekaran:2014vza}
 G.~Rajasekaran, ``{Fermi and the Theory of Weak Interactions},'' {\em Resonance
   J. Sci. Educ.}, vol.~19, no.~1, pp.~18--44, 2014.
+
+\bibitem{Glashow:1961tr}
+S.~L. Glashow, ``{Partial Symmetries of Weak Interactions},'' {\em Nucl.
+  Phys.}, vol.~22, pp.~579--588, 1961.
+
+\bibitem{PhysRevLett.19.1264}
+S.~Weinberg, ``A model of leptons,'' {\em Phys. Rev. Lett.}, vol.~19,
+  pp.~1264--1266, Nov 1967.
+
+\bibitem{salam}
+A.~Salam, ``Weak and electromagnetic interactions,'' in {\em Elementary
+  particle theory} (N.~Svartholm, ed.), pp.~367--377, Almquist \& Wiksell.
 
 \bibitem{PhysRev.82.914}
 J.~Schwinger, ``The theory of quantized fields. i,'' {\em Phys. Rev.}, vol.~82,
@@ -287,6 +304,12 @@ J.~L. Bentley, ``Multidimensional binary search trees used for associative
 ``{Particle-Flow Event Reconstruction in CMS and Performance for Jets, Taus,
   and MET},'' Tech. Rep. CMS-PAS-PFT-09-001, CERN, Geneva, Apr 2009.
 
+\bibitem{jetCMS}
+Q.~D. Blog, ``Jets at cms.''
+  \url{https://www.quantumdiaries.org/2011/06/01/anatomy-of-a-jet-in-cms/},
+  2010.
+\newblock [Online; accessed June 27, 2019.
+
 \bibitem{Cacciari:2008gp}
 M.~Cacciari, G.~P. Salam, and G.~Soyez, ``{The anti-$k_t$ jet clustering
   algorithm},'' {\em JHEP}, vol.~04, p.~063, 2008.
@@ -304,6 +327,10 @@ M.~Cacciari, G.~P. Salam, and G.~Soyez, ``{FastJet user manual},'' {\em Eur.
 \bibitem{Cacciari2007}
 M.~Cacciari and G.~P. Salam, ``Pileup subtraction using jet areas,'' {\em
   Physics Letters B}, 2008.
+
+\bibitem{JetEnergyResolutionTwiki}
+``{Jet Energy Resolution}.''
+  \url{https://twiki.cern.ch/twiki/bin/viewauth/CMS/JetResolution}, 2017.
 
 \bibitem{CMS-AN-2010-003}
 N.~Saoulidou, ``Particle flow jet identification criteria,'' CMS Analysis Note
@@ -333,10 +360,6 @@ D.~Guest, J.~Collado, P.~Baldi, S.-C. Hsu, G.~Urban, and D.~Whiteson, ``Jet
   flavor classification in high-energy physics with deep neural networks,''
   {\em Phys. Rev. D}, vol.~94, p.~112002, Dec 2016.
 
-\bibitem{Weiser:927399}
-C.~Weiser, ``{A Combined Secondary Vertex Based B-Tagging Algorithm in CMS},''
-  Tech. Rep. CMS-NOTE-2006-014, CERN, Geneva, Jan 2006.
-
 \bibitem{ADAM2007781}
 W.~Adam, ``Track and vertex reconstruction in cms,'' {\em Nuclear Instruments
   and Methods in Physics Research Section A: Accelerators, Spectrometers,
@@ -356,5 +379,34 @@ M.~Abadi, A.~Agarwal, P.~Barham, E.~Brevdo, Z.~Chen, C.~Citro, G.~S. Corrado,
   X.~Zheng, ``{TensorFlow}: Large-scale machine learning on heterogeneous
   systems,'' 2015.
 \newblock Software available from tensorflow.org.
+
+\bibitem{Martin:2009iq}
+A.~D. Martin, W.~J. Stirling, R.~S. Thorne, and G.~Watt, ``{Parton
+  distributions for the LHC},'' {\em Eur. Phys. J.}, vol.~C63, pp.~189--285,
+  2009.
+
+\bibitem{Altarelli:1977zs}
+G.~Altarelli and G.~Parisi, ``{Asymptotic Freedom in Parton Language},'' {\em
+  Nucl. Phys.}, vol.~B126, pp.~298--318, 1977.
+
+\bibitem{ANDERSSON198331}
+B.~Andersson, G.~Gustafson, G.~Ingelman, and T.~Sjöstrand, ``Parton
+  fragmentation and string dynamics,'' {\em Physics Reports}, vol.~97, no.~2,
+  pp.~31 -- 145, 1983.
+
+\bibitem{Sjostrand:2014zea}
+T.~Sjöstrand, S.~Ask, J.~R. Christiansen, R.~Corke, N.~Desai, P.~Ilten,
+  S.~Mrenna, S.~Prestel, C.~O. Rasmussen, and P.~Z. Skands, ``{An Introduction
+  to PYTHIA 8.2},'' {\em Comput. Phys. Commun.}, vol.~191, pp.~159--177, 2015.
+
+\bibitem{Alwall:1647049}
+J.~Alwall, C.~Duhr, B.~Fuks, O.~Mattelaer, D.~G. Öztürk, and C.-H. Shen,
+  ``{Computing decay rates for new physics theories with FeynRules and MadGraph
+  5},'' {\em Comput. Phys. Commun.}, vol.~197, pp.~312--323. 29 p, Feb 2014.
+\newblock Comments: 29 pages, 2 figures.
+
+\bibitem{geant4sim}
+S.~Agostinelli {\em et~al.}, ``Geant4 a simulation toolkit,'' {\em Nucl.
+  Instrum. Meth. A}, vol.~506, no.~3, pp.~250 -- 303, 2003.
 
 \end{thebibliography}

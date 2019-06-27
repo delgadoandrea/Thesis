@@ -17,44 +17,44 @@
 \contentsline {subsubsection}{\numberline {2.2.1.1}Leptons}{3}{subsubsection.2.2.1.1}
 \contentsline {subsubsection}{\numberline {2.2.1.2}Quarks}{4}{subsubsection.2.2.1.2}
 \contentsline {subsection}{\numberline {2.2.2}Bosons}{4}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Particle Interactions}{4}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Quantum Electrodynamics}{5}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.3}Particle Interactions}{5}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Quantum Electrodynamics}{6}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Electroweak Interaction}{7}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Strong Interaction}{14}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Brout-Englert-Higgs Mechanism and the Higgs Boson}{15}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Beyond the Standard Model}{20}{section.2.4}
-\contentsline {section}{\numberline {2.5}Lepton universality}{21}{section.2.5}
+\contentsline {subsection}{\numberline {2.3.4}Brout-Englert-Higgs Mechanism and the Higgs Boson}{16}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Beyond the Standard Model}{21}{section.2.4}
+\contentsline {section}{\numberline {2.5}Lepton universality}{22}{section.2.5}
 \contentsline {section}{\numberline {2.6}B-hadron anomalies}{23}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}$b\rightarrow s$ quark transitions}{24}{subsection.2.6.1}
 \contentsline {section}{\numberline {2.7}The Z'}{25}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}4b Bottom Fermion Fusion}{26}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.1}4b Bottom Fermion Fusion}{27}{subsection.2.7.1}
 \contentsline {subsection}{\numberline {2.7.2}Flavour-violating coupling $\delta _{bs}$}{27}{subsection.2.7.2}
-\contentsline {chapter}{\numberline {3}The LHC and CMS Detector}{29}{chapter.3}
+\contentsline {chapter}{\numberline {3}The LHC and CMS Detector}{30}{chapter.3}
 \vskip +10pt
-\contentsline {section}{\numberline {3.1}The Large Hadron Collider}{29}{section.3.1}
-\contentsline {section}{\numberline {3.2}The CMS Detector}{31}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Coordinate System}{32}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Tracker and Pixel Detector}{33}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Electromagnetic Calorimeter}{35}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Hadron Calorimeter}{36}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Solenoid}{37}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Muon System}{38}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}Luminosity Measurement}{39}{subsection.3.2.7}
-\contentsline {chapter}{\numberline {4}EVENT RECONSTRUCTION }{42}{chapter.4}
+\contentsline {section}{\numberline {3.1}The Large Hadron Collider}{30}{section.3.1}
+\contentsline {section}{\numberline {3.2}The CMS Detector}{32}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Coordinate System}{33}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Tracker and Pixel Detector}{34}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Electromagnetic Calorimeter}{36}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Hadron Calorimeter}{37}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Solenoid}{38}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Muon System}{39}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}Luminosity Measurement}{40}{subsection.3.2.7}
+\contentsline {chapter}{\numberline {4}EVENT RECONSTRUCTION }{43}{chapter.4}
 \vskip +10pt
-\contentsline {section}{\numberline {4.1}Data Acquisition}{42}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}L1 Trigger and HLT}{43}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}T1 sites and data storage}{43}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Particle Flow Event Reconstruction}{44}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Iterative Tracking}{46}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Calorimeter Clustering}{47}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Linking Tracks and Clusters}{48}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Physics Object Reconstruction}{49}{section.4.3}
-\contentsline {section}{\numberline {4.4}Jets}{49}{section.4.4}
-\contentsline {section}{\numberline {4.5}b-tagging}{55}{section.4.5}
-\contentsline {section}{\numberline {4.6}Event Generation}{58}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Event Generators}{59}{subsection.4.6.1}
-\contentsline {subsubsection}{\numberline {4.6.1.1}Pythia}{61}{subsubsection.4.6.1.1}
-\contentsline {subsubsection}{\numberline {4.6.1.2}MADGRAPH}{62}{subsubsection.4.6.1.2}
-\contentsline {subsection}{\numberline {4.6.2}Detector Simulation}{62}{subsection.4.6.2}
-\contentsline {chapter}{REFERENCES}{63}{section*.33}
+\contentsline {section}{\numberline {4.1}Data Acquisition}{43}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}L1 Trigger and HLT}{44}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}T1 sites and data storage}{44}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Particle Flow Event Reconstruction}{45}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Iterative Tracking}{47}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Calorimeter Clustering}{48}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Linking Tracks and Clusters}{49}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Physics Object Reconstruction}{50}{section.4.3}
+\contentsline {section}{\numberline {4.4}Jets}{50}{section.4.4}
+\contentsline {section}{\numberline {4.5}b-tagging}{56}{section.4.5}
+\contentsline {section}{\numberline {4.6}Event Generation}{59}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Event Generators}{60}{subsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.1.1}Pythia}{63}{subsubsection.4.6.1.1}
+\contentsline {subsubsection}{\numberline {4.6.1.2}MADGRAPH}{63}{subsubsection.4.6.1.2}
+\contentsline {subsection}{\numberline {4.6.2}Detector Simulation}{63}{subsection.4.6.2}
+\contentsline {chapter}{REFERENCES}{65}{section*.34}

@@ -3,26 +3,27 @@
 \vskip -10pt
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Particles of the Standard Model of particle physics. Reprinted from \cite {StandardModelDiagram}\relax }}{3}{figure.caption.9}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Lowest order Feynmann diagrams for $b\rightarrow s$ quark transition.\relax }}{25}{figure.caption.11}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Feynman diagram for bottom fermion fusion (BFF).\relax }}{27}{figure.caption.12}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces PDF for the LHC Run II. Reprinted from \cite {Ball:2014uwa}.\relax }}{28}{figure.caption.13}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Feynman diagram for bottom fermion fusion (BFF).\relax }}{28}{figure.caption.12}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces PDF for the LHC Run II. Reprinted from \cite {Ball:2014uwa}.\relax }}{29}{figure.caption.13}
 \addvspace {10\p@ }
 \vskip -10pt
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Schematic diagram for the LHC experiment at CERN. Retrieved from \cite {LHC-schematic}.\relax }}{30}{figure.caption.14}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematic diagram for the CMS experiment with its sub-detector systems and a person for scale. Retrieved from \cite {CMS-schematic}.\relax }}{32}{figure.caption.15}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagram for the CMS detector coordinate system.\relax }}{33}{figure.caption.16}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Layout of the CMS detector tracker with subsystems labeled.\relax }}{34}{figure.caption.17}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces A schematic of the CMS ECAL detector with its subsystems labeled.\relax }}{35}{figure.caption.18}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Structure and position of the CMS HCAL sub-detector systems.\relax }}{37}{figure.caption.19}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Layout of the CMS muon system.\relax }}{39}{figure.caption.20}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces A muon, in the plane perpendicular to the LHC beams, leaves a curved trajectory in four layers of muon detectors or stations.\relax }}{40}{figure.caption.21}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Schematic diagram for the LHC experiment at CERN. Retrieved from \cite {LHC-schematic}.\relax }}{31}{figure.caption.14}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Schematic diagram for the CMS experiment with its sub-detector systems and a person for scale. Retrieved from \cite {CMS-schematic}.\relax }}{33}{figure.caption.15}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Diagram for the CMS detector coordinate system.\relax }}{34}{figure.caption.16}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Layout of the CMS detector tracker with subsystems labeled.\relax }}{35}{figure.caption.17}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces A schematic of the CMS ECAL detector with its subsystems labeled.\relax }}{36}{figure.caption.18}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Structure and position of the CMS HCAL sub-detector systems.\relax }}{38}{figure.caption.19}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Layout of the CMS muon system.\relax }}{40}{figure.caption.20}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces A muon, in the plane perpendicular to the LHC beams, leaves a curved trajectory in four layers of muon detectors or stations.\relax }}{41}{figure.caption.21}
 \addvspace {10\p@ }
 \vskip -10pt
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Schematic diagram for an event at the LHC.\relax }}{42}{figure.caption.22}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Flow of CMS detector data through the tiers. Reprinted from \cite {CMSdatatier}\relax }}{44}{figure.caption.23}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Cross-sectional view of the CMS detector with all of the sub-detectors labeled. The colored lines correspond to different particle types. Each particle interacts with different pieces of the detector and may or may not be bent by the magnetic field. Reprinted from \cite {CMSSlice}\relax }}{45}{figure.caption.24}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces CMS Particle Flow algorithm. The diagram shows how collisions lead to particle decays and final state particles. On the right side of the diagram the tracks and deposits in the CMS detector are shown. The left side shows that PF candidates are derived from detector information and then become input for the PF algorithm that uses them to construct high-level physics objects like electrons, which are then used by analysts to reconstruct the collision event. Reprinted from \cite {CMS-PAS-PFT-09-001}\relax }}{50}{figure.caption.25}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagram of proton-proton collision producing a jet\relax }}{50}{figure.caption.26}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Jet composition\relax }}{51}{figure.caption.27}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces A sample parton-level event clustered with the anti-$k_{T}$ algorithm. Reprinted from \cite {Cacciari:2008gp}\relax }}{53}{figure.caption.28}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Diagram showing the common principle of identification of jets initiated by B hadron decays. Reprinted from \cite {wiki:btag}\relax }}{56}{figure.caption.30}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces b-jet efficiency as a function of jet $p_{T}$ for the DeepCSV algorithm. \cite {Sirunyan_2018}\relax }}{58}{figure.caption.32}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Schematic diagram for an event at the LHC.\relax }}{43}{figure.caption.22}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Flow of CMS detector data through the tiers. Reprinted from \cite {CMSdatatier}\relax }}{45}{figure.caption.23}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Cross-sectional view of the CMS detector with all of the sub-detectors labeled. The colored lines correspond to different particle types. Each particle interacts with different pieces of the detector and may or may not be bent by the magnetic field. Reprinted from \cite {CMSSlice}\relax }}{46}{figure.caption.24}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces CMS Particle Flow algorithm. The diagram shows how collisions lead to particle decays and final state particles. On the right side of the diagram the tracks and deposits in the CMS detector are shown. The left side shows that PF candidates are derived from detector information and then become input for the PF algorithm that uses them to construct high-level physics objects like electrons, which are then used by analysts to reconstruct the collision event. Reprinted from \cite {CMS-PAS-PFT-09-001}\relax }}{51}{figure.caption.25}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Schematic view of a jet with tracks and calorimeter deposits at CMS. Reprinted from \cite {jetCMS}\relax }}{52}{figure.caption.26}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Particle composition for a jet. The energy fraction is relatively constant as a function of $p_{T}^{jet}$ and corresponds to roughly 65$\%$, 25$\%$, and 10$\%$ charged hadrons, photons, and neutral hadrons, respectively. Reprinted from \cite {Cacciari:2008gp}\relax }}{53}{figure.caption.27}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces A sample parton-level event clustered with the anti-$k_{T}$ algorithm. Reprinted from \cite {Cacciari:2008gp}\relax }}{54}{figure.caption.28}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Diagram showing the common principle of identification of jets initiated by B hadron decays. Reprinted from \cite {wiki:btag}\relax }}{57}{figure.caption.30}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces b-jet efficiency as a function of jet $p_{T}$ for the DeepCSV algorithm for different working points. \cite {Sirunyan_2018}\relax }}{59}{figure.caption.32}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Parton distribution functions at the $\mu ^{2}=10^{4}GeV^{2}$ mass scale. Reprinted from \cite {Martin:2009iq}\relax }}{61}{figure.caption.33}
