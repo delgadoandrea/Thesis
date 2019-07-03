@@ -17,10 +17,49 @@
 \chapter{ANALYSIS \label{cha:analysis}}
 
 %Here an overview of the strategy, decribe signal generaly, what does it look like. Then the background, how to discriminate s/b to motivate following subsections.
+This study presents the search for a heavy boson resonance decaying into two $b$ quarks. Suchs prticle arising from the fusion of two $b$ quarks which are in turn a result of gluon splitting. The final state then consists of four $b$ quarks, two of them being direct decay products of the resonance and two additional associated quarks from the initial gluon splitting.
 
-The mass and b flavour properties of the leading jets are used to suppress the multijet QCD background.
+Any signal for the process of interest would be buried under an inmense background of multi-jet events produced by QCD interactions and this analysis seeks to detect it using $b$-tagging and a data-driven estimation of the background.
+
+Data for this analysis were collected using a HLT that uses multi-jet and $b$-tagging requirements as described in Section. The Z' decay is reconstructed offline through PF jets clustered using the anti-$k_{T}$ algorithm with a size parameter of 0.4 that are tagged by the DeepCSV algorithm to be consisten with $b$-jets. This is described in Section. A signal region is identified by means of a specific $b$-tagging selection on the 4 leading jets on $p_{T}$ and an offline trigger which will be described in Section. The background control regions are orthogonal to the SR in terms of the trigger and $b$-tagging selectrion used for the SR. Then, a data-driven method is used to estimate the background contribution due to the poorly-understood multi-jet QCD backgrounds. 
+
+Once the contribution from undertainties is well understood and the data-driven method is alidated, the SR will be unblinded and the limits on the production cross section are calculated.
 
 \section{Data and Monte Carlo Samples}
+\subsection{Data}
+
+\begin{table}[hbtp]\footnotesize
+\centering
+\begin{tabular}{l l l}
+\hline
+ Dataset & Run Range & Integrated Luminosity \\
+\hline
+/BTagCSV/Run2016B-07Aug17-v*/AOD & 272007-275376 & 5.8$\fbinv$ \\
+/BTagCSV/Run2016C-07Aug17-v1/AOD & 275657-276283 & 2.5$\fbinv$ \\
+/BTagCSV/Run2016D-07Aug17-v1/AOD & 276315-276811 & 4.3$\fbinv$ \\
+/BTagCSV/Run2016E-07Aug17-v1/AOD & 276831-277420 & 4.1$\fbinv$ \\
+/BTagCSV/Run2016F-07Aug17-v1/AOD & 277772-278808 & 3.1$\fbinv$ \\
+/BTagCSV/Run2016G-07Aug17-v1/AOD & 278820-280385 & 7.5$\fbinv$ \\
+/BTagCSV/Run2016H-07Aug17-v1/AOD & 280919-284044 & 8.5$\fbinv$ \\
+{\bf Total BTagCSV} & {\bf 272007--284044} & {\bf 35.9$\fbinv$} \\
+\hline
+/SingleMu/Run2016B-07Aug17-v*/AOD & 272007-275376 & 5.8$\fbinv$ \\
+/SingleMu/Run2016C-07Aug17-v1/AOD & 275657-276283 & 2.5$\fbinv$ \\
+/SingleMu/Run2016D-07Aug17-v1/AOD & 276315-276811 & 4.3$\fbinv$ \\
+/SingleMu/Run2016E-07Aug17-v1/AOD & 276831-277420 & 4.1$\fbinv$ \\
+/SingleMu/Run2016F-07Aug17-v1/AOD & 277772-278808 & 3.1$\fbinv$ \\
+/SingleMu/Run2016G-07Aug17-v1/AOD & 278820-280385 & 7.5$\fbinv$ \\
+/SingleMu/Run2016H-07Aug17-v1/AOD & 280919-284044 & 8.5$\fbinv$ \\
+{\bf Total SingleMu} & {\bf 272007--284044} & {\bf 35.9$\fbinv$} \\
+\hline
+\end{tabular}
+\caption{The datasets analyzed for this analysis.}
+\label{tab:dataSamples}
+\end{table}
+
+Table \ref{tab:dataSamples} summarizes the $\sqrt{s}$= 13 TeV datasets from data collected during 2016 used in this analysis. Data is processed in the CMSSW_9_4_9 framework to yield \textit{n-tuples} using a subset of the information contained in the official CMS datasets and was anlyzed using privately created analysis software.
+
+\subsection{Monte Carlo}
 
 MC simulations are used to provide: predictions of background processes, optimization of the event selection, and cross-checks of data-based background estimations.
 
@@ -32,10 +71,13 @@ Different samples are generated for $m_{X}$ ranging from 250 GeV to 1 TeV.
 
 All generated events are processed through a simulation of the CMS apparatus based on GEANT4. Additional proton-proton interactions within a bunch crossing(pileup) are added to the simulation, with a frequency distribution chosen to match that observed in data. During this data-taking period the mean number of interactions per bunch crossing is 25.
 
-The analysis is based on data from proton-proton interactions observed with the CMS detector at $sqrt{s}$ = 13 TeV. The data corresponds to an integrated luminosity of 31.31 $fb^{-1}. Events are collected using at least one of the two specific trigger conditions based on jets reconstructed online:
+The analysis is based on data from proton-proton interactions observed with the CMS detector at $sqrt{s}$ = 13 TeV. The data corresponds to an integrated luminosity of 35.9 $fb^{-1}. Events are collected using at least one of the two specific trigger conditions based on jets reconstructed online:
 
 
 \section{Event and Object Selection}
+
+The event selection begins with identifying events containing at least 4 central jets with a $p_{T}>$ 30 GeV. Two of these jets (the most energetic ones) are expected to be associated with the resonance and therefore their reconstructed invariant mass is used as the discriminant variable.
+
 \section{Trigger}
 \subsection{Trigger Efficiency Estimation}
 \section{Data-driven Background Estimation}
