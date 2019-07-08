@@ -16,14 +16,14 @@
 
 \chapter{THEORETICAL FRAMEWORK}
 \section{The Standard Model}
-Particle physics is the study of the fundamental constituents of matter and the forces between them. For more than 40 years these have been described by the so-called standard model of particle physics (SM), which aims to provide, at least in principle, a basis for understanding all known particle interactions, excepting gravity. The SM fails to include gravity due to the difficult task that combining the quantum theory used to describe the microscopic world and the general theory of relativity used to describe the macroscopic world entails since general relativity is a continuous (not quantized) theory. Furthermore, its theorized force carrier, the graviton hasn't been found experimentally.
+Particle physics is the study of the fundamental constituents of matter and the forces between them. For more than 40 years these have been described by the so-called standard model of particle physics (SM), which aims to provide, at least in principle, a basis for understanding all known particle interactions. The SM currently fails to include gravity due to the difficult task of combining the quantum theory used to describe the microscopic world and the general theory of relativity. Furthermore, its theorized force carrier, the graviton hasn't been found experimentally.
 
-The SM can also be understood as a gauge theory combining the theory of electroweak (EW) interactions and quantum chromodynamics (QCD), or $SU(3)_{C}\times SU(2)_{L} \times U(1)_{EM}$. 
+The SM can be understood as arising from an underlying symmetry of the universe, which combines the theory of electroweak (EW) interactions and that of quantum chromodynamics (QCD). In mathematical terms, the SM is formed from the gauge groups $SU(3)_{C}\times SU(2)_{L} \times U(1)_{EM}$. 
 
 \section{Structure and Particle Content}
 All the phenomena described by particle physics can be explained in terms of the properties and interactions of a small number of particles of four distinct types: two spin-1/2 families of fermions called leptons and quarks; one family of spin-1 bosons (called gauge bosons) which act as "force carriers", and a spin-0 particle, called the Higgs boson \cite{20121}, \cite{201230}. We should note that all particles in the SM are assumed to be elementary, i.e. they do not have internal structure or excited states.
 
-In this section, the particle content of the SM will be introduced, along with the various force carriers. In the following section, the specifics of particle-particle interactions will be explained in detail.
+In this section, the particle content of the SM will be introduced, along with the various force carriers. In the following sections, the specifics of particle-particle interactions will be explained in detail.
 
     \begin{figure}[h]
  	\centering
@@ -58,7 +58,7 @@ There are six known leptons, and they occur in pairs called generations, which w
 	\end{pmatrix}
 \end{equation}
 
-The three charged leptons ($e^{-}, \mu^{-},\tau^{-}$) all have electric charge $Q=-e$. Associated with them are three neutral leptons, or neutrinos, called the electron neutrino, mu neutrino, and tau neutrino, respectively, all of which have very small masses. The six distinct types of leptons are also referred to as having different "flavors". 
+The three charged leptons ($e^{-}, \mu^{-},\tau^{-}$) all have electric charge $Q=-q$. Associated with them are three neutral leptons, or neutrinos, called the electron neutrino, mu neutrino, and tau neutrino, respectively, all of which have very small masses. The six distinct types of leptons are also referred to as having different "flavors". 
 
 The charged leptons interact via both the electromagnetic and weak forces, whereas for neutral leptons only weak interactions have been observed. We should note that each generation of leptons has an associated quantum number. The electron number, which is defined for any state by
 
@@ -69,7 +69,7 @@ L_{e}\equiv N(e^{-}) - N(e^{+}) + N(\nu_{e}) - N(\bar{\nu_{e}}),
 
 where $N(e^{-})$ is the number of electrons present, and so on. For single-particle states, $L_{e} = 1$ for $e^{-}$ and $\nu_{e}$, $L_{e}=-1$ for $e^{+}$ and $\bar{\nu_{e}}$, and $L_{e}=0$ for all other particles.
 
-The form of Equation \ref{lepn} follows for the heavier lepton generations. Finally, in the SM, lepton numbers are individually conserved in all known interactions.
+The form of Equation \ref{lepn} also applies to the heavier lepton generations. Finally, in the SM, lepton numbers are individually conserved in all known interactions.
 
 \subsubsection{Quarks}
 Currently, there are six known quarks in the SM. Like the leptons, these six distinct types, or flavors, occur in pairs, or generations, denoted
@@ -89,10 +89,10 @@ Currently, there are six known quarks in the SM. Like the leptons, these six dis
 	\end{pmatrix}
 \end{equation}
 
-Each generation consists of a quark with electromagnetic charge +2/3 ($u$,$c$, or $t$) together with a quark of charge -1/3 ($d$,$s$,$b$), in units of $e$. They are called the down($d$), up($u$), strange($s$), charmed($c$), bottom($b$) and top($t$) quarks. 
+Each generation consists of a quark with electromagnetic charge +2/3 ($u$,$c$, or $t$) together with a quark of charge -1/3 ($d$,$s$,$b$), in units of $q$. They are called the down($d$), up($u$), strange($s$), charmed($c$), bottom($b$) and top($t$) quarks. Each of these particles has an anti-particle version, with the same quantum numbers, but opposite charge. Furthermore, each quark also carries a \textit{color charge} which can be red, green, or blue. This is a result of the strong force interaction of the quarks and will be explained in more detail in Section \ref{strongint}.
 
 %Although there is no evidence for the existence of free quarks, or any other fractionally charged particle, close to two hundred of their bound states have been discovered. All of them having integer electric charges. 
-Quarks are known to bind into triplets, called baryons and mesons, respectively. They are collectively referred to as hadrons. Recently, the LHCb collaboration reported the observation of a new type of hadron, a so-called \textit{pentaquark}, which is a bound state composed of four quarks and one antiquark\cite{PhysRevLett.115.072001}.
+Quarks are known to bound to other quarks in states that we call hadrons. Hadrons can be bound states of two or three quarks called mesons and baryons, respectively. Recently, the LHCb collaboration reported the observation of a new type of hadron, a so-called \textit{pentaquark}, which is a bound state composed of four quarks and one anti-quark\cite{PhysRevLett.115.072001}.
 
 %These bound states of quarks (hadrons) have several quantum numbers associated with them, referring to their quark content. For example, the \textit{strangeness} $S$ is defined by
 
@@ -160,7 +160,7 @@ In order to restore local gauge invariance, a gauge field $A_{\mu}$ representing
 D_{\mu} = \partial_{\mu} + iq A_{\mu}
 \end{equation} 
 
-, where $q = -e$ (electric charge) are introduced. The new gauge field transforms as
+, where $q$ (electric charge) are introduced. The new gauge field transforms as
 
 \begin{equation}
 A_{\mu}\rightarrow A'_{\mu} = A_{\mu} + \partial_{\mu}\chi(x)
@@ -192,7 +192,7 @@ The story of weak interactions starts with Henri Becquerel's discovery of radioa
 
 The main ingredient for Fermi's theory had been provided by Wolfgang Pauli. To solve the puzzle of the continuous energy spectrum of the electrons emitted in the beta-decay of the nuclei, Pauli had suggested that along with the electron, an almost massless neutral particle was also emitted. Fermi succeeded in incorporating Pauli's suggestion and thus was born the theory of weak interactions \cite{Rajasekaran:2014vza}.
 
-In the 1960s Glashow, Salam, and Weinberg had developed a theory\cite{Glashow:1961tr,PhysRevLett.19.1264,salam} that unified electromagnetic and wek interactions in a way that is often compared to the unification of electric and magnetic interactions by Faraday and Maxwell a century earlier. This new theory made several remarkable predictions, including the existence of a neutral vector boson $Z^{0}$ and of weak reactions arising from its exchange.
+In the 1960s Glashow, Salam, and Weinberg had developed a theory\cite{Glashow:1961tr,PhysRevLett.19.1264,salam} that unified electromagnetic and weak interactions in a way that is often compared to the unification of electric and magnetic interactions by Faraday and Maxwell a century earlier. This new theory made several remarkable predictions, including the existence of a neutral vector boson $Z^{0}$ and of weak reactions arising from its exchange.
 
 The EW interaction is based on a local $SU(2)_{L}\times U(1)_{Y}$ gauge symmetry where $L$ and $Y$ are the generators of the symmetry. Here, electromagnetic and weak interactions are unified into a single non-abelian gauge theory. In order to understand this unification, we will start with a fermionic doublet representing an $SU(2)$ symmetry
 
@@ -412,7 +412,8 @@ On the other hand, the EW Lagrangian is not invariant under charge conjugation $
 
 Although $CP$ is not conserved, there is good reason to believe that all interactions are invariant under the combined operation of $CPT$, taken in any order. This result is called the $CPT$ theorem\cite{PhysRev.82.914} and can be shown to hold in any relativistic quantum theory in which signals cannot propagate faster than the speed of light.
 
-\subsection{Strong Interaction}
+\subsection{Strong Interaction\label{strongint}}
+
 
 QCD is the theory that describes the interaction between quarks via the strong force. It is represented by a local $SU(3)_{C}$ gauge symmetry and the interaction mediator is the gluon.
 
@@ -624,7 +625,7 @@ where $i$ runs over the three generations, $\mu$ and $\nu$ are Lorentz indices, 
 
 The SM evolved in response to a series of experimental discoveries over a period of several decades, and it turned out to be a remarkably successful theory. At the present time, provided non-zero neutrino masses are incorporated, all experimental observations in particle physics are consistent with the SM, but there is no reason to suppose that there will not be more surprises in the future, as higher energy regions are explored.
 
-Also, there are a few experimental hints which suggest that the SM may not be a complete theory of nature. For example, there is strong evidence that the particles of the SM can only account for a small fraction of the matter in the Universe, and the observed predominance of matter over antimatter cannot be understood in the framework of the SM.
+Also, there are a few experimental facts which suggest that the SM may not be a complete theory of nature. For example, there is strong evidence that the particles of the SM can only account for a small fraction of the matter in the Universe, and the observed predominance of matter over antimatter cannot be understood in the framework of the SM.
 
 Moreover, there is still an incompatibility between general relativity (GR) (which can be thought of as the theory of gravitation) and the SM (the theory that describes the other three fundamental forces) because space-time is not quantized in GR.
 
@@ -632,7 +633,7 @@ Finally, the SM itself embodies many assumptions and more than twenty free param
 
 \begin{itemize}
  \item Can the number of parameters be reduced?
- \item Why are there three families of quarks and leptons, rather than just the one that is required to describe "ordinary matter", i.e. the neutrons and protons?
+ \item Why are there three generations of quarks and leptons, rather than just the one that is required to describe "ordinary matter", i.e. the neutrons and protons?
  \item Are the quarks really point-like particles, or will they turn out to be composite when we are able to explore a higher energy regime?
  \item Why does the weak interaction violate CP invariance, but not the strong interaction?
 \end{itemize}
@@ -714,6 +715,14 @@ Many theories have been proposed to try to answer these and other questions, and
 
 	Over a broad range of $q^{2}$ the SM accurately predicts $R_{k}=R_{k^{*}}=1$, with theoretical uncertainties on the order of 1$\%$\cite{Bordone2016} which contradict experimental results which show a deviation from the expected SM value in the 2.4-2.6 $\sigma$ range. A more recent study\cite{D’Amico2017}, \cite{Capdevila2018} combined the results for $R_{K}$ and $R_{K^{*}}$, resulting in a 4$\sigma$ deviation from the SM. 
 
+	\begin{figure}[h]
+ 	\centering
+ 	\includegraphics[width=0.75\textwidth]{figures/rkall.jpg}
+ 	\singlespace
+ 	\caption{Summary of the ${R}_{{K}^{(*)}}$ measurements performed at the $B$-factories and by the LHCb experiment. Results are presented using different colored markers. The (yellow) vertical line corresponds to the SM prediction. Reprinted from \cite{Bifani_2018}}
+ 	\label{fig:rkratio}
+ \end{figure}
+
 
 \subsection{$b\rightarrow s$ quark transitions}
 As we have seen from the previous section, over the last few years, many observables related to the flavour-changing neutral-current(FCNC) transitions $b\rightarrow l^{+}l^{-}$ have exhibited important deviations from SM expectations. Therefore, in this section, we will take a closer look at these transitions and their sensitivity to potential new physics.
@@ -732,7 +741,7 @@ Within the SM, the lowest order processes that could mediate the $b\rightarrow s
  \end{figure}
 
 \section{The Z'}
-There is a multitude of new-physics models that could explain some or all of the $b$ decay anomalies. One example of an extension to the SM that could explain these deviations involves a heavy version of the Z boson, denoted Z'\cite{Buras:2013}. Such an extension to the model must satisfy direct searches for such particles at the CMS\cite{201757}, \cite{Sirunyan:2018exx} and ATLAS \cite{ATLAS-CONF-2016-045} experiments, which in practice means either that the Z' candidate must be at least 30 times heavier than the SM Z boson, or that it must have small couplings to the up and down quarks. If the Z' is very heavy, it would not have a sizable impact on the decay compared with the SM contribution, unless it could change the flavour of quarks directly without going through a quantum-loop transition.
+There is a multitude of new-physics models that could explain some or all of the $b$ decay anomalies. One example of an extension to the SM that could explain these deviations involves a heavy version of the Z boson, denoted Z'\cite{Buras:2013}. Such an extension to the model must satisfy direct searches for such particles at the CMS\cite{201757}, \cite{Sirunyan:2018exx} and ATLAS \cite{ATLAS-CONF-2016-045} experiments, which in practice means either that the Z' candidate must be at least 30 times heavier than the SM Z boson, or that it must have small couplings to the up and down quarks. If the Z' is very heavy, it would not have a sizable impact on the decay compared with the SM contribution, unless it could change the flavor of quarks directly without going through a quantum-loop transition.
 
 A generic framework of a minimal extension to the SM which explains B anomalies has been introduced in \cite{Dalchenko:2017shg} and we collect here only those formulae of that paper that are essential for our study. The new physics contribution to rare B decays can be described by the following effective Lagrangian 
 
@@ -764,7 +773,7 @@ The Z' mass is constrained to be less than 5.5(10) TeV in the 1(2)$\sigma$ range
 
 As we can conclude from Equation \ref{Zlag}, the Z' does not significantly couple to first or second generation quarks, which could explain why it has not been observed experimentally yet. However, the Z' can be produced through its couplings to $b$ quarks originating either from sea quarks, or gluon-splitting. 
 
-Therefore, the Z' is associated either with two one, or no $b$-jets depending on the number of quarks from gluon splitting. The Z' can decay into pairs of $b$ quarks, muons, muon neutrinos, and, if kinematically allowed, top quarks. 
+Therefore, the Z' is associated either with two,one, or no $b$-jets depending on the number of quarks from gluon splitting. The Z' can decay into pairs of $b$ quarks, muons, muon neutrinos, and, if kinematically allowed, top quarks. 
 
 The relevant final states at the LHC are dimuon or di-$b$ resonances. The cross sections behave as follows:
 
@@ -778,7 +787,7 @@ The relevant final states at the LHC are dimuon or di-$b$ resonances. The cross 
 \sigma(pp\rightarrow Z' \rightarrow b\bar{b})\propto3g_{b}^{4}(1+k\delta_{bs}^{2})
 \end{equation}
 
-where $k$ contains the $s$-quark PDF effect since the production of Z' may occur through $bs$ fusion.
+where $\delta_{bs}$ regulates the possible production of Z' through b-s quark fusion, and where $k$ contains the $s$-quark PDF contributions. 
 
 For this analysis, the special case when the Z' is associated with two $b$-jets coming from gluon splitting (a process we will refer to as Bottom Fermion fusion (BFF) (see Figure \ref{fig:bff}))and has a di-$b$ jet final state is considered.
 

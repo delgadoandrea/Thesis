@@ -42,15 +42,16 @@ The other two detectors, ALICE and LHCb are designed for specific purposes, like
 
  The beams circulating the LHC ring are not continuous streams of particles, but rather trains of regularly spaced proton bunches. The experiment was designed to operate with 2,808 bunches of protons per beam, containing about $1.5\times10^{11}$ protons per bunch separated by 25 ns, corresponding to a collision frequency of 40 MHz. 
 
-The LHC was planned to start in September 2008, but due to an incident damaging the machine, this was not the case. The startup was delayed until November 23, 2009. Through its 2010-2011 run, the LHC operated at a center-of-mass energy of 7 TeV. Then in 2012, the energy was increased to 8 TeV, and again to 13 TeV in 2015, after a shutdown in 2013 that lasted two years.
+The LHC started operation in November 23, 2009. Through its 2010-2011 run, the LHC operated at a center-of-mass energy of 7 TeV. Then in 2012, the energy was increased to 8 TeV, and again to 13 TeV in 2015, after a shutdown in 2013 that lasted two years.
 
 
 \section{The CMS Detector}
 
-The central feature of the CMS apparatus is a superconducting solenoid of 6 m internal diameter, providing a magnetic field of 3.8 T. The solenoidal volume contains a silicon pixel and strip tracker, a lead tungstate crystal electromagnetic calorimeter (EMCAL) and a brass and scintillator hadron calorimeter (HCAL). Each layer of the detector exploits a property of the particle to be detected to measure its energy or its momentum. 
-The CMS detector was not built on site like other giant detectors of the LHC experiment, but it was constructed in 15 sections at ground level before being lowered into an underground cavern near Cessy in France and then reassembled. The complete detector is 21 m long, 12 m wide and 15 m high.
+The CMS detectors was designed with the goal of identifying the particles coming out of the proton-proton collisions as well as to characterize their momentum, position, and trajectory at the moment of the collision. The goals of the CMS physics program range from studying the SM (including the Higgs boson) to searching for extra dimensions and dark matter. It even has a very successful heavy ion program.
 
-The goals of the CMS physics program range from studying the SM (including the Higgs boson) to searching for extra dimensions and dark matter. It even has a very successful heavy ion program.
+In particular, the central feature of the CMS apparatus is a superconducting solenoid of 6 m internal diameter, providing a magnetic field of 3.8 T. The solenoidal volume contains a silicon pixel and strip tracker, a lead tungstate crystal electromagnetic calorimeter (EMCAL) and a brass and scintillator hadron calorimeter (HCAL). Each layer of the detector exploits a property of the particle to be detected to measure its energy, momentum, position, and direction. 
+
+The CMS detector was not built on site like other giant detectors of the LHC experiment, but it was constructed in 15 sections at ground level before being lowered into an underground cavern near Cessy in France and then reassembled. The complete detector is 21 m long, 12 m wide and 15 m high.
 
 The layout of the detector can be seen in Figure \ref{fig:cmsdia}. The following sections will describe each of the sub-detectors and its properties.
 
@@ -64,7 +65,7 @@ The layout of the detector can be seen in Figure \ref{fig:cmsdia}. The following
 
  \subsection{Coordinate System}
 
- The CMS experiment uses a right-handed coordinate system, with the origin at the nominal collision point, the $x$-axis pointing to the center of the LHC ring, the $y$-axis pointing up (perpendicular to the LHC plane), and the $z$-axis along the anticlockwise beam direction. The polar angle $\theta$ is measured from the positive $z-axis$ and the azimuthal angle $\phi$ is measured from the positive $x$-axis in the $x-y$ plane. The radius $r$ denotes the distance from the $z$-axis and the pseudorapidity $\eta$ is defined as $\eta=-log[tan(\theta \ 2)]$. $\eta$ is preferently used by CMS particle physicists to measure forward-ness of relativistic particles in the detector since any differences in this coordinate are invariant under boosts in the $z-$direction and particle production is roughly uniform in $\eta$. See Figure \ref{fig:cmscor} for reference.
+ The CMS experiment uses a right-handed coordinate system, with the origin at the nominal collision point, the $x$-axis pointing to the center of the LHC ring, the $y$-axis pointing up (perpendicular to the LHC plane), and the $z$-axis along the anticlockwise beam direction. The polar angle $\theta$ is measured from the positive $z$-axis and the azimuthal angle $\phi$ is measured from the positive $x$-axis in the $x-y$ plane. The radius $r$ denotes the distance from the $z$-axis and the pseudorapidity $\eta$ is defined as $\eta=-log[tan(\theta /2)]$. $\eta$ is preferently used by CMS particle physicists to measure forward-ness of relativistic particles in the detector since any differences in this coordinate are invariant under boosts in the $z-$direction and particle production is roughly uniform in $\eta$. See Figure \ref{fig:cmscor} for reference.
 
   \begin{figure}[H]
  	\centering
@@ -74,10 +75,28 @@ The layout of the detector can be seen in Figure \ref{fig:cmsdia}. The following
  	\label{fig:cmscor}
  \end{figure}
 
- \subsection{Tracker and Pixel Detector}
- Momentum analysis in CMS makes use of the magnetic field provided by its super-conducting solenoid. The tracker sub-detector is not only able to measure the momentum of charged particles but also determines their direction at their production vertex.
+ \subsection{Solenoid}
 
- The full sillicon inner tracking system\cite{trackeradd} is a cylinder-shaped detector with an outer radius of 1.2 m and a length of 5.6 m. The barrel(each of the two endcaps) includes three(two) layers of pixel detectors, surrounded by ten(twelve) layers of micro-strip detectors. The 16,588 silicon sensor moduels are finely segmented into 66 million 150$\times$100 $\mu$m pixels and 9.6 million 80-to180 $\mu$m-wide strips. Figure \ref{fig:cmstracker} shows the layout of the tracker and its subsystems.
+ The CMS magnet\cite{Acquistapace:1997fm} is one of the main features of the experiment. It delivers a 4T magnetic field, which is 100,000 times stronger than that of Earth over a length of 12.5 m and a free-bore radius of 3.15 m.
+
+ Its job is to bend the paths of charged particles emerging from high-energy collisions in the LHC. The higher momentum particles get their path curved less than the lighter ones, and as a result, curvature is an important tool for momentum measurements. 
+
+ The strong magnetic field, combined with the high-precision position measurements in the tracker and muon detectors, allows for accurate measurement of the momentum of high-energy particles.
+
+ The CMS solenoid magnet is made of coils of wire that produce a uniform magnetic field when electricity flows through them.It is the largest superconducting magnet ever built, weighting about 12,000 tonnes. In order for it to be superconducting, it needs to be colled down to -268.5 C, which is a degree warmer than outer space.
+
+ The tracker and calorimeter detectors fit inside the magnet while the muon detectors are interleaved with a 12-sided iron structure that surrounds the magnet coils and contains and guides the field. Made up of three layers, this "return yoke" reaches out 14 meters in diameter and also acts as a filter, allowing through only muons and weakly interacting particles such as neutrinos. The enormous magnet also provides most of the experiment's structural support, and must be very strong itself to withstand the forces of its own magnetic field.
+
+ \subsection{Tracker and Pixel Detector}
+The main purpose of the tracker sub-detector system is to reconstruct the trajectory of charged particles. Charged particles move in a helicoidal way which can be parameterized as a function of $p_{T}$, $\eta$, $\phi$, $z_{0}$, and $d_{0}$. Here, $z_{0}$ and $d_{0}$ are the maximum longitudinal and transverse impact parameters relative to the centre of the beam spot, respectively. The beam spot is the luminous region produced by the collisions of proton beams.
+
+As particles traverse the detector, they leave a ionization trail or \textit{hits}. Without further analysis, it is not known which particle triggered which hits. Particle tracking consists in reconstructing the trajectories of the charged particles from the tracker measurements. 
+
+ Momentum analysis in CMS makes use of the magnetic field provided by its super-conducting solenoid. The tracker sub-detector is not only able to measure the momentum of charged particles but also determines their direction at their production vertex. 
+
+ A description of the hardware used for tracking is described in the following pharagraphs and the algorithms used for reconstructing and analyzing particle tracks can be found in Section \ref{sec:track}.
+
+ The full sillicon inner tracking system\cite{trackeradd} is a cylinder-shaped detector with an outer radius of 1.2 m and a length of 5.6 m. The barrel(each of the two endcaps) includes three(two) layers of pixel detectors, surrounded by ten(twelve) layers of micro-strip detectors. The 16,588 silicon sensor modules are finely segmented into 66 million 150$\times$100 $\mu$m pixels and 9.6 million 80-to180 $\mu$m-wide strips. Figure \ref{fig:cmstracker} shows the layout of the tracker and its subsystems.
 
    \begin{figure}[H]
  	\centering
@@ -93,9 +112,18 @@ Likewise, the silicon strip detector is made up of four subsystems. The Tracker 
 
 The tracker measures the $p_{T}$ of charged hadrons at normal incidence with a resolution of 1$\%$ for $p_{T}<$ 20 GeV\cite{Sirunyan_2017}. The relative resolution then degrades with increasing $p_{T}$ to reach the calorimeter energy resolution for track momenta of several hundred GeV.
 
- \subsection{Electromagnetic Calorimeter}
+\subsection{Calorimeters}
+Calorimeters are an important class of detector used for measuring the energy and direction of a particle (or collection of particles) by its total absorption. They differ from most other detectors in that the nature of the particle is changed by the detector. Moreover, calorimeters can detecto both neutral and charged particles.
 
- The CMS ECAL\cite{CERN-LHCC-97-033} is a homogeneous calorimeter made out of lead tungstate ($PbWO_{4}$) crystals totaling 75,848 units. The detector is divided up into two sections which provide a coverage of $|\eta| < 1.479$ in the barrel region (EB) and $1.479 < |\theta| < 3.0$ in two endcap regions (EE). There are also preshower detectors (PS) in each of the endcaps, in fornt of the EE, which cover a pseudorapidity range of $1.653 < |\eta| < 2.6$. Figure \ref{fig:cmsecal} shows the structure of the ECAL.
+During the interaction with this type of detector, the particle will generate a cascade(s) of secondary particles by a  process we will refer to as \textit{showering}.
+
+The absorption of a particle in a calorimeter is a statistical process governed by the Poisson distribution and therefore, the relative precision of energy measurements $\Delta E / E$ varies like $E^{-1/2}$ for large $E$.
+
+Since the characteristics of electromagnetic and hadronic showers are somewhat different it is convenient to describe each subsystem separately.
+
+ \subsubsection{Electromagnetic Calorimeter}
+
+ Electromagnetic calorimeters are designed to measure the energy of electrons and photons. The CMS ECAL\cite{CERN-LHCC-97-033} is a homogeneous calorimeter made out of lead tungstate ($PbWO_{4}$) crystals totaling 75,848 units. The detector is divided up into two sections which provide a coverage of $|\eta| < 1.479$ in the barrel region (EB) and $1.479 < |\theta| < 3.0$ in two endcap regions (EE). There are also preshower detectors (PS) in each of the endcaps, in fornt of the EE, which cover a pseudorapidity range of $1.653 < |\eta| < 2.6$. Figure \ref{fig:cmsecal} shows the structure of the ECAL.
 
     \begin{figure}[H]
  	\centering
@@ -115,9 +143,9 @@ The intrinsic energy resolution ($\sigma$) of the ECAL barrel was measured with 
 \frac{\sigma_{E}}{E} = \frac{2.8\%}{E[GeV]} \oplus \frac{12\%}{\sqrt{E[GeV]}} \oplus 0.3\%
 \end{equation}
 
- \subsection{Hadron Calorimeter}
+ \subsubsection{Hadron Calorimeter}
 
- The CMS HCAL\cite{CMS:1997tfa} is a sampling calorimeter, meaning it finds a particle's position, energy and arrival time using alternating layers of "absorber" and fluorescent scintillator or "active" materials that produce a rapid light pulse when the particle passes through.The produced light is then collected by optic fibers that feed it into readout boxes where photodetectors amplify the signal. The amount of light in a given region is summed up over many layers of tiles in depth, called a "tower". 
+Hadronic calorimeters measure the energy of hadrons, as their name suggests. The CMS HCAL\cite{CMS:1997tfa} is a sampling calorimeter, meaning it finds a particle's position, energy and arrival time using alternating layers of "absorber" and fluorescent scintillator or "active" materials that produce a rapid light pulse when the particle passes through.The produced light is then collected by optic fibers that feed it into readout boxes where photodetectors amplify the signal. The amount of light in a given region is summed up over many layers of tiles in depth, called a "tower". 
 
  The HCAL is organized into barrel (HB and HO), endcap (HE), and forward (HF). There are 36 barrel "wedges", each weighting 26 tonnes. These form the last layer of detector inside the magnetic coil. A few additional layers, the outer barrel (HO), sit outside the coil, ensuring no energy leaks out the back of the HB undetected. Similarly, 36 endcap wedges measure particle energies as they emerge through the ends of the solenoid magnet. In the barrel, the HCAL absorber thickness amounts to almost six interaction lengths at normal incidence, and increases to over ten interaction lengths at larger pseudorapidities. The HO material corresponds to 1.4 interaction lengths at normal incidence.
 
@@ -133,21 +161,8 @@ The intrinsic energy resolution ($\sigma$) of the ECAL barrel was measured with 
 
 Combined, the ECAL and HCAL can measure the energy deposited by a charged pion with a resolution of $\sigma/E\approx100\%/\sqrt{E[GeV]}\oplus5\%$ \cite{Yazgan_2009}, assuming an average jet particle composition.
 
- \subsection{Solenoid}
-
- The CMS magnet\cite{Acquistapace:1997fm} is the central device around which the experiment is built. It delivers a 4T magnetic field, which is 100,000 times stronger than that of Earth over a length of 12.5 m and a free-bore radius of 3.15 m.
-
- Its job is to bend the paths of charged particles emerging from high-energy collisions in the LHC. The higher momentum particles get their path curved less than the lighter ones, and as a result, curvature is an important tool for momentum measurements. 
-
- The strong magnetic field, combined with the high-precision position measurements in the tracker and muon detectors, allows for accurate measurement of the momentum of high-energy particles.
-
- The CMS solenoid magnet is made of coils of wire that produce a uniform magnetic field when electricity flows through them. Also, it is superconducting, the largest ever built, with a weight of 12,000 tonnes. In order for it to be superconducting, it needs to be colled down to -268.5 C, which is a degree warmer than outer space.
-
- The tracker and calorimeter detectors fit inside the magnet while the muon detectors are interleaved with a 12-sided iron structure that surrounds the magnet coils and contains and guides the field. Made up of three layers, this "return yoke" reaches out 14 meters in diameter and also acts as a filter, allowing through only muons and weakly interacting particles such as neutrinos. The enormous magnet also provides most of the experiment's structural support, and must be very strong itself to withstand the forces of its own magnetic field.
-
-
  \subsection{Muon System}
- After its magnet, the main feature of the CMS experiment is its capability of detecting muons. Since they can penetrate several meters of iron without interacting, gas-ionization detector chambers were placed at the very edge of the experiment embedded in the steel flux-return yoke in order to detect them. This allows for a pseudorapidity coverage of $|\eta| < 2.4$.
+ Since muons can penetrate several meters of iron without interacting, gas-ionization detector chambers were placed at the very edge of the experiment embedded in the steel flux-return yoke in order to detect them. This allows for a pseudorapidity coverage of $|\eta| < 2.4$.
 
  The muon system consists of 1400 muon chambers which can be classified into three categories, according to the technology used: 250 drift tubes (DTs), 540 cathode strip chambers(CSCs), and 610 resistive plate chambers(RPCs).
 
@@ -178,7 +193,7 @@ The muon system on its own has a resolution of 15-40$\%$ depending on $\eta$. Ma
 
 \subsection{Luminosity Measurement}
 
-The two most important features of a particle accelerator are its center of mass energy and its instantaneous luminosity ($\mathcal{L}$). The latter provides a measurement of the number of collisions that can be produced in the accelerator per squared centimeter and per second.
+Two important features of a particle accelerator are its center of mass energy and its instantaneous luminosity ($\mathcal{L}$). The lrgest the center of mass energy the more massive particles can be created and found, therefore, the largest the luminosity, the higher the chances of creating the particle.
 
 Besides measuring the kinematics of each of the particles traversing the detector, CMS must also measure the instantaneous luminosity delivered by the LHC. Both the pixel detector, and the HF are able to measure the luminosity to varying degrees of accuracy.
 
