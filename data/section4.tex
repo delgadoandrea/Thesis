@@ -21,16 +21,18 @@ During proton-proton collisions, interactions happen in a small longitudinal reg
  	\centering
  	\includegraphics[width=0.75\textwidth]{figures/eventvertex.png}
  	\singlespace
- 	\caption{Schematic diagram for an event at the LHC.}
+ 	\caption{Schematic diagram for a reconstructed event at the LHC.}
  	\label{fig:vertex}
  \end{figure}
 
 
 \section{Data Acquisition}
-The CMS Data Acquisition (DAQ) and trigger system was specifically designed to collect and analyze data at a rate of 40MHz, which corresponds to a 25 ns collision rate. Unfortunately, the electronics system is only able to record a few hundreds of Hz of events. Therefore, events are filtered online by so-called trigger systems, so that only interesting events are written to disk. The collision triggering the readout is called the primary vertex, while other collisions from the beams are called pile-up. Secondary vertices refer to the other production points, when particles are created from decay or hard-scattering. This is shown in Figure \ref{fig:vertex}. Particles from the primary vertex usually have a high transverse momentum ($p_{T}$), making them interesting and easier to study.
+The CMS Data Acquisition (DAQ) and trigger system was specifically designed to collect and analyze data at a rate of 40MHz, which corresponds to a 25 ns collision rate. Unfortunately, it would be impossible to record all the acquired data and therefore only a small fraction of events are written to disk. Events filtering is performed online by the so-called trigger systems.
+
+ The collision triggering the readout is called the primary vertex, while other collisions from the beams are called pile-up. Secondary vertices refer to those production points where particles are created from decay or hard-scattering of the particles associated with a particular primary vertex. This is shown in Figure \ref{fig:vertex}. Because higher energy collisions are more likely to produce something not yet seen, that makes them more interesting, so triggers are attuned to prefer higher momentum objects.
 
 \subsection{L1 Trigger and HLT}
- Whenever CMS is performing at its peak, about one billion proton-proton interactions take place every second inside the detector. The triggers system allows to record only those events generated from energetic, head-on collisions.
+ Whenever the LHC is performing at its peak, about one billion proton-proton interactions take place every second inside the CMS detector. The triggers system allows to record only a fraction of those events, hoping they are generated from energetic, head-on collisions.
 
 Level 1 of the trigger is an extremely fast, hardware-based process that looks for simple signs of interesting physics, e.g. particles with a large amount of energy or in unusual combinations. The L1 trigger selects events at a rate of around 100 kHz within a time interval of 4$\mu$s. The next step is the HLT, which combines the information from different parts of the detector to recreate the entire event and send it to a farm of more than 1000 computers to filter out even more events, reducing the event rate to less than 1 kHz before recording them on tape.
 
