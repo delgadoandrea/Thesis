@@ -1,5 +1,63 @@
 \begin{thebibliography}{10}
 
+\bibitem{StandardModelDiagram}
+D.~Dominguez, ``Particles of the standard model of particle physics.''
+  \url{https://home.cern/science/physics/standard-model}, 2016.
+\newblock [Online; accessed June 7, 2019.
+
+\bibitem{Ball:2014uwa}
+R.~D. Ball {\em et~al.}, ``{Parton distributions for the LHC Run II},'' {\em
+  JHEP}, vol.~04, p.~040, 2015.
+
+\bibitem{LHC-schematic}
+K.~Andersen and T.~Eberle, ``The genesis 2.0 project.''
+  \url{http://media.vanityfair.com/photos/54cbf6ad1ca1cf0a23ac6c85/master/w_690,c_limit/image.jpg},
+  2010.
+\newblock [Online; accessed May 29, 2019.
+
+\bibitem{CMS-schematic}
+T.~Sakuma, ``A cutaway diagram of the cms detector.''
+  \url{https://en.wikipedia.org/wiki/Compact_Muon_Solenoid}, 2013.
+\newblock [Online; accessed May 29, 2019.
+
+\bibitem{CMSdatatier}
+``{Detector data flow through Hardware tiers}.''
+  \url{https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookComputingModel},
+  July 2018.
+
+\bibitem{CMSSlice}
+``{The CMS Detector and the Token Bit Manager}.''
+  \url{https://www.phys.ksu.edu/reu2014/wabehn/}, Jan 2017.
+
+\bibitem{CMS-PAS-PFT-09-001}
+``{Particle-Flow Event Reconstruction in CMS and Performance for Jets, Taus,
+  and MET},'' Tech. Rep. CMS-PAS-PFT-09-001, CERN, Geneva, Apr 2009.
+
+\bibitem{jetCMS}
+Q.~D. Blog, ``Jets at cms.''
+  \url{https://www.quantumdiaries.org/2011/06/01/anatomy-of-a-jet-in-cms/},
+  2010.
+\newblock [Online; accessed June 27, 2019.
+
+\bibitem{Cacciari:2008gp}
+M.~Cacciari, G.~P. Salam, and G.~Soyez, ``{The anti-$k_t$ jet clustering
+  algorithm},'' {\em JHEP}, vol.~04, p.~063, 2008.
+
+\bibitem{wiki:btag}
+{Wikipedia contributors}, ``B-tagging --- {Wikipedia}{,} the free
+  encyclopedia,'' 2019.
+\newblock [Online; accessed 19-June-2019].
+
+\bibitem{Sirunyan_2018}
+T.~C. Collaboration, ``Identification of heavy-flavour jets with the {CMS}
+  detector in pp collisions at 13 {TeV},'' {\em Journal of Instrumentation},
+  vol.~13, pp.~P05011--P05011, may 2018.
+
+\bibitem{Martin:2009iq}
+A.~D. Martin, W.~J. Stirling, R.~S. Thorne, and G.~Watt, ``{Parton
+  distributions for the LHC},'' {\em Eur. Phys. J.}, vol.~C63, pp.~189--285,
+  2009.
+
 \bibitem{20121}
 G.~Aad {\em et~al.}, ``Observation of a new particle in the search for the
   standard model higgs boson with the atlas detector at the lhc,'' {\em Physics
@@ -9,11 +67,6 @@ G.~Aad {\em et~al.}, ``Observation of a new particle in the search for the
 S.~Chatrchyan {\em et~al.}, ``Observation of a new boson at a mass of 125 gev
   with the cms experiment at the lhc,'' {\em Physics Letters B}, vol.~716,
   no.~1, pp.~30 -- 61, 2012.
-
-\bibitem{StandardModelDiagram}
-D.~Dominguez, ``Particles of the standard model of particle physics.''
-  \url{https://home.cern/science/physics/standard-model}, 2016.
-\newblock [Online; accessed June 7, 2019.
 
 \bibitem{PhysRevLett.115.072001}
 R.~Aaij {\em et~al.}, ``Observation of $j\psi$ resonances consistent with
@@ -141,6 +194,11 @@ B.~Capdevila, A.~Crivellin, S.~Descotes-Genon, J.~Matias, and J.~Virto,
   the light of recent data,'' {\em Journal of High Energy Physics}, vol.~2018,
   p.~93, Jan 2018.
 
+\bibitem{Bifani_2018}
+S.~Bifani, S.~Descotes-Genon, A.~R. Vidal, and M.-H. Schune, ``Review of lepton
+  universality tests in b decays,'' {\em Journal of Physics G: Nuclear and
+  Particle Physics}, vol.~46, p.~023001, dec 2018.
+
 \bibitem{NatFCNC}
 F.~Archilli, M.~O. Bettler, P.~Owen, and K.~A. Petridis, ``Flavour-changing
   neutral currents making and breaking the standard model,'' {\em Nature},
@@ -182,10 +240,6 @@ W.~Altmannshofer, S.~Gori, M.~Pospelov, and I.~Yavin, ``Quark flavor
   transitions in ${L}_{\mu}-{L}_{\tau}$ models,'' {\em Phys. Rev. D}, vol.~89,
   p.~095033, May 2014.
 
-\bibitem{Ball:2014uwa}
-R.~D. Ball {\em et~al.}, ``{Parton distributions for the LHC Run II},'' {\em
-  JHEP}, vol.~04, p.~040, 2015.
-
 \bibitem{Breskin:1244506}
 A.~Breskin and R.~Voss, {\em {The CERN Large Hadron Collider: Accelerator and
   Experiments}}.
@@ -208,16 +262,9 @@ K.~Aamodt {\em et~al.}, ``{The ALICE experiment at the CERN LHC},'' {\em
 A.~A. Alves, Jr. {\em et~al.}, ``{The LHCb Detector at the LHC},'' {\em JINST},
   vol.~3, p.~S08005, 2008.
 
-\bibitem{LHC-schematic}
-K.~Andersen and T.~Eberle, ``The genesis 2.0 project.''
-  \url{http://media.vanityfair.com/photos/54cbf6ad1ca1cf0a23ac6c85/master/w_690,c_limit/image.jpg},
-  2010.
-\newblock [Online; accessed May 29, 2019.
-
-\bibitem{CMS-schematic}
-T.~Sakuma, ``A cutaway diagram of the cms detector.''
-  \url{https://en.wikipedia.org/wiki/Compact_Muon_Solenoid}, 2013.
-\newblock [Online; accessed May 29, 2019.
+\bibitem{Acquistapace:1997fm}
+G.~Acquistapace {\em et~al.}, ``{CMS, the magnet project: Technical design
+  report},'' 1997.
 
 \bibitem{trackeradd}
 C.~collaboration, ``The cms tracker: addendum to the technical design report,''
@@ -245,22 +292,18 @@ E.~Yazgan and the CMS ECAL/HCAL~Collaborations, ``The {CMS} barrel calorimeter
   response to particle beams from 2 to 350 {GeV}/c,'' {\em Journal of Physics:
   Conference Series}, vol.~160, p.~012056, apr 2009.
 
-\bibitem{Acquistapace:1997fm}
-G.~Acquistapace {\em et~al.}, ``{CMS, the magnet project: Technical design
-  report},'' 1997.
-
 \bibitem{Chatrchyan:2012xi}
 S.~Chatrchyan {\em et~al.}, ``{Performance of CMS muon reconstruction in $pp$
   collision events at $\sqrt{s}=7TeV$},'' {\em JINST}, vol.~7, p.~P10002, 2012.
 
-\bibitem{CMSdatatier}
-``{Detector data flow through Hardware tiers}.''
-  \url{https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookComputingModel},
-  July 2018.
+\bibitem{Khachatryan_2017}
+T.~C. Collaboration, ``The {CMS} trigger system,'' {\em Journal of
+  Instrumentation}, vol.~12, pp.~P01020--P01020, jan 2017.
 
-\bibitem{CMSSlice}
-``{The CMS Detector and the Token Bit Manager}.''
-  \url{https://www.phys.ksu.edu/reu2014/wabehn/}, Jan 2017.
+\bibitem{cmsglobaltrigger}
+J.~Brooke, D.~Cussans, R.~Frazier, G.~Heath, D.~Machin, D.~Newbold,
+  S.~Galagadera, S.~Madani, and A.~Shah, ``Hardware and firmware for the cms
+  global calorimeter trigger,'' 07 2019.
 
 \bibitem{BUSKULIC1995481}
 T.~A. Collaboration, ``Performance of the aleph detector at lep,'' {\em Nuclear
@@ -300,20 +343,6 @@ R.~Fruhwirth, ``{Application of Kalman filtering to track and vertex
 J.~L. Bentley, ``Multidimensional binary search trees used for associative
   searching,'' {\em Commun. ACM}, vol.~18, pp.~509--517, 1975.
 
-\bibitem{CMS-PAS-PFT-09-001}
-``{Particle-Flow Event Reconstruction in CMS and Performance for Jets, Taus,
-  and MET},'' Tech. Rep. CMS-PAS-PFT-09-001, CERN, Geneva, Apr 2009.
-
-\bibitem{jetCMS}
-Q.~D. Blog, ``Jets at cms.''
-  \url{https://www.quantumdiaries.org/2011/06/01/anatomy-of-a-jet-in-cms/},
-  2010.
-\newblock [Online; accessed June 27, 2019.
-
-\bibitem{Cacciari:2008gp}
-M.~Cacciari, G.~P. Salam, and G.~Soyez, ``{The anti-$k_t$ jet clustering
-  algorithm},'' {\em JHEP}, vol.~04, p.~063, 2008.
-
 \bibitem{Cacciari:2011ma}
 M.~Cacciari, G.~P. Salam, and G.~Soyez, ``{FastJet user manual},'' {\em Eur.
   Phys. J. C}, vol.~72, p.~1896, 2012.
@@ -341,19 +370,9 @@ N.~Saoulidou, ``Particle flow jet identification criteria,'' CMS Analysis Note
   \url{https://twiki.cern.ch/twiki/bin/viewauth/CMS/JetID#Recommendations_for_13_TeV_2016},
   2018.
 
-\bibitem{wiki:btag}
-{Wikipedia contributors}, ``B-tagging --- {Wikipedia}{,} the free
-  encyclopedia,'' 2019.
-\newblock [Online; accessed 19-June-2019].
-
 \bibitem{BTV-12-001}
 S.~Chatrchyan {\em et~al.}, ``{Identification of b-quark jets with the CMS
   experiment},'' {\em JINST}, vol.~8, p.~P04013, 2013.
-
-\bibitem{Sirunyan_2018}
-T.~C. Collaboration, ``Identification of heavy-flavour jets with the {CMS}
-  detector in pp collisions at 13 {TeV},'' {\em Journal of Instrumentation},
-  vol.~13, pp.~P05011--P05011, may 2018.
 
 \bibitem{PhysRevD.94.112002}
 D.~Guest, J.~Collado, P.~Baldi, S.-C. Hsu, G.~Urban, and D.~Whiteson, ``Jet
@@ -379,11 +398,6 @@ M.~Abadi, A.~Agarwal, P.~Barham, E.~Brevdo, Z.~Chen, C.~Citro, G.~S. Corrado,
   X.~Zheng, ``{TensorFlow}: Large-scale machine learning on heterogeneous
   systems,'' 2015.
 \newblock Software available from tensorflow.org.
-
-\bibitem{Martin:2009iq}
-A.~D. Martin, W.~J. Stirling, R.~S. Thorne, and G.~Watt, ``{Parton
-  distributions for the LHC},'' {\em Eur. Phys. J.}, vol.~C63, pp.~189--285,
-  2009.
 
 \bibitem{Altarelli:1977zs}
 G.~Altarelli and G.~Parisi, ``{Asymptotic Freedom in Parton Language},'' {\em
