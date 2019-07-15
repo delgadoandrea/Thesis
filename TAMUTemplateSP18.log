@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.5.24)  11 JUL 2019 10:56
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.5.24)  13 JUL 2019 23:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1075,11 +1075,7 @@ Package: doi 2007/07/24 handle doi numbers
 (./TAMUTemplateSP18.aux (./data/titlepage.aux) (./data/abstract.aux)
 (./data/dedication.aux) (./data/acknowledgements.aux) (./data/contributors.aux)
 (./data/nomenclature.aux) (./data/lists.aux) (./data/section1.aux)
-(./data/section2.aux) (./data/section3.aux) (./data/section4.aux
-
-LaTeX Warning: Label `fig:antikt' multiply defined.
-
-))
+(./data/section2.aux) (./data/section3.aux) (./data/section4.aux))
 \openout1 = `TAMUTemplateSP18.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
@@ -1099,7 +1095,8 @@ LaTeX Font Info:    ... okay on input line 99.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
 LaTeX Font Info:    ... okay on input line 99.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 99.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -1397,35 +1394,20 @@ File: figures/The-CMS-Level-1-Trigger.png Graphic file (type QTm)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[45] [46]
+[45]
 File: figures/dataflowtiers_MC.png Graphic file (type QTm)
- <use  "figures/dataflowtiers_MC.png" > [47]
+ <use  "figures/dataflowtiers_MC.png" > [46] [47]
 File: figures/image005.png Graphic file (type QTm)
 
-<use  "figures/image005.png" >
-
-Package caption Warning: \label without proper \caption on input line 90.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:cmsslice' on page 48 undefined on input line 97.
-
-[48]
-Overfull \hbox (1.16512pt too wide) in paragraph at lines 99--100
+<use  "figures/image005.png" > [48]
+Overfull \hbox (1.16512pt too wide) in paragraph at lines 91--92
 []\T1/ptm/m/n/12 The PF con-cept was de-vel-oped and used for the first time by
  the ALEPH ex-per-i-ment at LEP[[]].
  []
 
 [49] [50] [51]
-
-Package caption Warning: \label without proper \caption on input line 164.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:pf' on page 52 undefined on input line 160.
-
 File: figures/jets.png Graphic file (type QTm)
-<use  "figures/jets.png" >
+ <use  "figures/jets.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1435,73 +1417,63 @@ File: figures/cmsjet.png Graphic file (type QTm)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Package caption Warning: \label without proper \caption on input line 186.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:jme' on page 53 undefined on input line 183.
-
 File: figures/jme.png Graphic file (type QTm)
 <use  "figures/jme.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[53]
+[53] [54]
 File: figures/antikt.png Graphic file (type QTm)
  <use  "figures/antikt.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Package caption Warning: \label without proper \caption on input line 292.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:antikt' on page 54 undefined on input line 219.
-
-[54] [55] [56] [57]
+[55] [56] [57]
 File: figures/Btag.png Graphic file (type QTm)
  <use  "figures/Btag.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [58] [59] [60]
-Overfull \hbox (25.93321pt too wide) in paragraph at lines 339--340
+Overfull \hbox (25.93321pt too wide) in paragraph at lines 331--332
 []\T1/ptm/m/n/12 The tag-ger can cat-e-go-rize in-di-vid-ual jets in so-called 
 "Tight" (DeepCSVT), "Medium"(DeepCSVM),
  []
 
-
-Package caption Warning: \label without proper \caption on input line 344.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:deepcsv' on page 61 undefined on input line 341.
-
 File: figures/effvspt_b_deep.png Graphic file (type QTm)
-<use  "figures/effvspt_b_deep.png" > [61] [62]
-Overfull \hbox (5.25131pt too wide) in paragraph at lines 371--372
+<use  "figures/effvspt_b_deep.png" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[61] [62]
+File: figures/pdfs.png Graphic file (type QTm)
+ <use  "figures/pdfs.png" > [63]
+Overfull \hbox (5.25131pt too wide) in paragraph at lines 377--378
 []\T1/ptm/m/n/12 where $\OML/cmm/m/it/12 p[]$ \T1/ptm/m/n/12 are the in-com-ing
  par-ti-cle four-momenta, $\OML/cmm/m/it/12 q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
 2 E[]\OT1/cmr/m/n/12 )$ \T1/ptm/m/n/12 are the out-go-ing par-ti-cle four-momen
 ta,
  []
 
-File: figures/pdfs.png Graphic file (type QTm)
-<use  "figures/pdfs.png" > [63] [64] [65]) [66] (./TAMUTemplateSP18.bbl
+
+Overfull \hbox (2.74055pt too wide) in paragraph at lines 385--386
+\T1/ptm/m/n/12 par-ti-cles are per-tur-ba-tively evolved from the scale of the 
+hard in-ter-ac-tion through suc-ces-sive branch-
+ []
+
+[64] [65]) [66] (./TAMUTemplateSP18.bbl
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 13--17
+Underfull \hbox (badness 10000) in paragraph at lines 18--22
 \T1/pcr/m/n/12 com / photos / 54cbf6ad1ca1cf0a23ac6c85 / master / w _ 690 ,[] c
  _ limit /
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 24--27
+Underfull \hbox (badness 1087) in paragraph at lines 34--37
 []\T1/ptm/m/n/12 ``Detector data flow through Hard-ware tiers.'' []$\T1/pcr/m/n
 /12 https : / / twiki . cern . ch / twiki /
  []
@@ -1509,24 +1481,24 @@ Underfull \hbox (badness 1087) in paragraph at lines 24--27
 [67
 
 
-]
-Underfull \hbox (badness 2460) in paragraph at lines 114--116
+] [68]
+Underfull \hbox (badness 2460) in paragraph at lines 124--126
 []\T1/ptm/m/n/12 A. Salam, ``Weak and elec-tro-mag-netic in-ter-ac-tions,'' in 
 \T1/ptm/m/it/12 El-e-men-tary par-ti-cle the-ory
  []
 
-[68]
 Missing character: There is no − in font cmr8!
 Missing character: There is no − in font cmr8!
 Missing character: There is no − in font cmr8!
 Missing character: There is no − in font cmr8!
 Missing character: There is no − in font cmr8!
 Missing character: There is no − in font ptmr8t!
- [69]
+[69]
 Missing character: There is no ∗ in font ptmr8t!
 Missing character: There is no − in font cmr8!
+ [70]
 Missing character: There is no ′ in font ptmr8t!
- [70] [71] [72]
+ [71] [72]
 Underfull \hbox (badness 10000) in paragraph at lines 369--372
 []\T1/ptm/m/n/12 ``Jet iden-ti-fi-ca-tion.'' []$\T1/pcr/m/n/12 https : / / twik
 i . cern . ch / twiki / bin / viewauth / CMS /
@@ -1541,21 +1513,14 @@ nomenclature.aux) (./data/lists.aux) (./data/section1.aux)
 (./data/section2.aux) (./data/section3.aux) (./data/section4.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 184.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 184.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 26118 strings out of 493706
- 448479 string characters out of 6145769
- 568043 words of memory out of 5000000
- 28831 multiletter control sequences out of 15000+600000
+ 26119 strings out of 493706
+ 448487 string characters out of 6145769
+ 569569 words of memory out of 5000000
+ 28832 multiletter control sequences out of 15000+600000
  25731 words of font info for 47 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 75i,18n,79p,1226b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,18n,79p,1274b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on TAMUTemplateSP18.pdf (85 pages).

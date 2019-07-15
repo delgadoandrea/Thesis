@@ -48,14 +48,12 @@
 \contentsline {subsection}{\numberline {4.1.2}T1 sites and data storage}{46}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Particle Flow Event Reconstruction}{47}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Iterative Tracking}{49}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Calorimeter Clustering}{50}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Calorimeter Clustering}{51}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Linking Tracks and Clusters}{51}{subsection.4.2.3}
 \contentsline {section}{\numberline {4.3}Physics Object Reconstruction}{52}{section.4.3}
-\contentsline {section}{\numberline {4.4}Jets}{52}{section.4.4}
+\contentsline {section}{\numberline {4.4}Jets}{53}{section.4.4}
 \contentsline {section}{\numberline {4.5}b-tagging}{58}{section.4.5}
 \contentsline {section}{\numberline {4.6}Event Generation}{61}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Event Generators}{62}{subsection.4.6.1}
-\contentsline {subsubsection}{\numberline {4.6.1.1}Pythia}{65}{subsubsection.4.6.1.1}
-\contentsline {subsubsection}{\numberline {4.6.1.2}MADGRAPH}{65}{subsubsection.4.6.1.2}
-\contentsline {subsection}{\numberline {4.6.2}Detector Simulation}{65}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.2}Detector Simulation}{66}{subsection.4.6.2}
 \contentsline {chapter}{REFERENCES}{67}{section*.36}

@@ -14,6 +14,7 @@ A level-1 auxiliary file: data/section3.aux
 A level-1 auxiliary file: data/section4.aux
 The style file: ieeetr.bst
 Database file #1: data/myReference.bib
+Warning--empty journal in cmsglobaltrigger
 Warning--empty author in CMS-PAS-PFT-09-001
 Warning--empty year in salam
 Warning--empty publisher in Cheng:1985bj
@@ -21,48 +22,47 @@ Warning--empty journal in Acquistapace:1997fm
 Warning--empty author and editor in CERN-LHCC-97-033
 Warning--empty author in CMS:1997tfa
 Warning--empty journal in CMS:1997tfa
-Warning--empty journal in cmsglobaltrigger
 Warning--empty author in CMS:2009nxa
 Warning--empty journal in CMS:2009nxa
-You've used 88 entries,
+You've used 89 entries,
             1876 wiz_defined-function locations,
-            1006 strings with 17668 characters,
-and the built_in function-call counts, 22321 in all, are:
-= -- 2260
-> -- 797
+            1013 strings with 17796 characters,
+and the built_in function-call counts, 22627 in all, are:
+= -- 2296
+> -- 801
 < -- 3
-+ -- 308
-- -- 220
-* -- 1425
-:= -- 3040
-add.period$ -- 105
-call.type$ -- 88
-change.case$ -- 83
++ -- 310
+- -- 221
+* -- 1446
+:= -- 3079
+add.period$ -- 106
+call.type$ -- 89
+change.case$ -- 84
 chr.to.int$ -- 0
-cite$ -- 98
-duplicate$ -- 1235
-empty$ -- 2053
-format.name$ -- 220
-if$ -- 5617
+cite$ -- 99
+duplicate$ -- 1251
+empty$ -- 2081
+format.name$ -- 221
+if$ -- 5693
 int.to.chr$ -- 0
-int.to.str$ -- 88
-missing$ -- 75
-newline$ -- 284
-num.names$ -- 82
-pop$ -- 282
+int.to.str$ -- 89
+missing$ -- 76
+newline$ -- 287
+num.names$ -- 83
+pop$ -- 283
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1009
+skip$ -- 1024
 stack$ -- 0
-substring$ -- 1217
-swap$ -- 606
+substring$ -- 1249
+swap$ -- 615
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 10
-while$ -- 171
-width$ -- 90
-write$ -- 851
+while$ -- 175
+width$ -- 91
+write$ -- 861
 (There were 10 warnings)

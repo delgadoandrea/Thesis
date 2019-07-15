@@ -5,6 +5,11 @@ D.~Dominguez, ``Particles of the standard model of particle physics.''
   \url{https://home.cern/science/physics/standard-model}, 2016.
 \newblock [Online; accessed June 7, 2019.
 
+\bibitem{Bifani_2018}
+S.~Bifani, S.~Descotes-Genon, A.~R. Vidal, and M.-H. Schune, ``Review of lepton
+  universality tests in b decays,'' {\em Journal of Physics G: Nuclear and
+  Particle Physics}, vol.~46, p.~023001, dec 2018.
+
 \bibitem{Ball:2014uwa}
 R.~D. Ball {\em et~al.}, ``{Parton distributions for the LHC Run II},'' {\em
   JHEP}, vol.~04, p.~040, 2015.
@@ -19,6 +24,11 @@ K.~Andersen and T.~Eberle, ``The genesis 2.0 project.''
 T.~Sakuma, ``A cutaway diagram of the cms detector.''
   \url{https://en.wikipedia.org/wiki/Compact_Muon_Solenoid}, 2013.
 \newblock [Online; accessed May 29, 2019.
+
+\bibitem{cmsglobaltrigger}
+J.~Brooke, D.~Cussans, R.~Frazier, G.~Heath, D.~Machin, D.~Newbold,
+  S.~Galagadera, S.~Madani, and A.~Shah, ``Hardware and firmware for the cms
+  global calorimeter trigger,'' 07 2019.
 
 \bibitem{CMSdatatier}
 ``{Detector data flow through Hardware tiers}.''
@@ -194,11 +204,6 @@ B.~Capdevila, A.~Crivellin, S.~Descotes-Genon, J.~Matias, and J.~Virto,
   the light of recent data,'' {\em Journal of High Energy Physics}, vol.~2018,
   p.~93, Jan 2018.
 
-\bibitem{Bifani_2018}
-S.~Bifani, S.~Descotes-Genon, A.~R. Vidal, and M.-H. Schune, ``Review of lepton
-  universality tests in b decays,'' {\em Journal of Physics G: Nuclear and
-  Particle Physics}, vol.~46, p.~023001, dec 2018.
-
 \bibitem{NatFCNC}
 F.~Archilli, M.~O. Bettler, P.~Owen, and K.~A. Petridis, ``Flavour-changing
   neutral currents making and breaking the standard model,'' {\em Nature},
@@ -300,11 +305,6 @@ S.~Chatrchyan {\em et~al.}, ``{Performance of CMS muon reconstruction in $pp$
 T.~C. Collaboration, ``The {CMS} trigger system,'' {\em Journal of
   Instrumentation}, vol.~12, pp.~P01020--P01020, jan 2017.
 
-\bibitem{cmsglobaltrigger}
-J.~Brooke, D.~Cussans, R.~Frazier, G.~Heath, D.~Machin, D.~Newbold,
-  S.~Galagadera, S.~Madani, and A.~Shah, ``Hardware and firmware for the cms
-  global calorimeter trigger,'' 07 2019.
-
 \bibitem{BUSKULIC1995481}
 T.~A. Collaboration, ``Performance of the aleph detector at lep,'' {\em Nuclear
   Instruments and Methods in Physics Research Section A: Accelerators,
@@ -398,6 +398,10 @@ M.~Abadi, A.~Agarwal, P.~Barham, E.~Brevdo, Z.~Chen, C.~Citro, G.~S. Corrado,
   X.~Zheng, ``{TensorFlow}: Large-scale machine learning on heterogeneous
   systems,'' 2015.
 \newblock Software available from tensorflow.org.
+
+\bibitem{Binder_1997}
+K.~Binder, ``Applications of monte carlo methods to statistical physics,'' {\em
+  Reports on Progress in Physics}, vol.~60, pp.~487--559, may 1997.
 
 \bibitem{Altarelli:1977zs}
 G.~Altarelli and G.~Parisi, ``{Asymptotic Freedom in Parton Language},'' {\em
