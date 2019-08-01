@@ -5,9 +5,9 @@
 \contentsline {chapter}{ACKNOWLEDGMENTS}{iv}{chapter*.3}
 \contentsline {chapter}{CONTRIBUTORS AND FUNDING SOURCES}{v}{chapter*.4}
 \contentsline {chapter}{NOMENCLATURE}{vi}{chapter*.5}
-\contentsline {chapter}{TABLE OF CONTENTS}{vii}{section*.6}
-\contentsline {chapter}{LIST OF FIGURES}{ix}{section*.7}
-\contentsline {chapter}{LIST OF TABLES}{xi}{section*.8}
+\contentsline {chapter}{TABLE OF CONTENTS}{viii}{section*.6}
+\contentsline {chapter}{LIST OF FIGURES}{x}{section*.7}
+\contentsline {chapter}{LIST OF TABLES}{xii}{section*.8}
 \contentsline {chapter}{\numberline {1}\uppercase {Introduction}}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}THEORETICAL FRAMEWORK}{2}{chapter.2}
 \vskip +10pt
@@ -48,12 +48,12 @@
 \contentsline {subsection}{\numberline {4.1.2}T1 sites and data storage}{46}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Particle Flow Event Reconstruction}{47}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Iterative Tracking}{49}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Calorimeter Clustering}{51}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Calorimeter Clustering}{50}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Linking Tracks and Clusters}{51}{subsection.4.2.3}
 \contentsline {section}{\numberline {4.3}Physics Object Reconstruction}{52}{section.4.3}
 \contentsline {section}{\numberline {4.4}Jets}{53}{section.4.4}
-\contentsline {section}{\numberline {4.5}b-tagging}{58}{section.4.5}
+\contentsline {section}{\numberline {4.5}b-tagging}{59}{section.4.5}
 \contentsline {section}{\numberline {4.6}Event Generation}{61}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Event Generators}{62}{subsection.4.6.1}
 \contentsline {subsection}{\numberline {4.6.2}Detector Simulation}{66}{subsection.4.6.2}
-\contentsline {chapter}{REFERENCES}{67}{section*.36}
+\contentsline {chapter}{REFERENCES}{68}{section*.36}

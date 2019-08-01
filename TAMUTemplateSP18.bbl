@@ -305,6 +305,10 @@ S.~Chatrchyan {\em et~al.}, ``{Performance of CMS muon reconstruction in $pp$
 T.~C. Collaboration, ``The {CMS} trigger system,'' {\em Journal of
   Instrumentation}, vol.~12, pp.~P01020--P01020, jan 2017.
 
+\bibitem{brazosc}
+``{Brazos Computational Resource}.''
+  \url{http://brazos.tamu.edu/acknowledge.html}, 2019.
+
 \bibitem{BUSKULIC1995481}
 T.~A. Collaboration, ``Performance of the aleph detector at lep,'' {\em Nuclear
   Instruments and Methods in Physics Research Section A: Accelerators,
@@ -343,6 +347,16 @@ R.~Fruhwirth, ``{Application of Kalman filtering to track and vertex
 J.~L. Bentley, ``Multidimensional binary search trees used for associative
   searching,'' {\em Commun. ACM}, vol.~18, pp.~509--517, 1975.
 
+\bibitem{PhysRevD.94.112002}
+D.~Guest, J.~Collado, P.~Baldi, S.-C. Hsu, G.~Urban, and D.~Whiteson, ``Jet
+  flavor classification in high-energy physics with deep neural networks,''
+  {\em Phys. Rev. D}, vol.~94, p.~112002, Dec 2016.
+
+\bibitem{PFJetID}
+``Jet identification.''
+  \url{https://twiki.cern.ch/twiki/bin/viewauth/CMS/JetID#Recommendations_for_13_TeV_2016},
+  2018.
+
 \bibitem{Cacciari:2011ma}
 M.~Cacciari, G.~P. Salam, and G.~Soyez, ``{FastJet user manual},'' {\em Eur.
   Phys. J. C}, vol.~72, p.~1896, 2012.
@@ -365,19 +379,9 @@ M.~Cacciari and G.~P. Salam, ``Pileup subtraction using jet areas,'' {\em
 N.~Saoulidou, ``Particle flow jet identification criteria,'' CMS Analysis Note
   CMS-AN-2010-003, CERN, Geneva, Jun 2010.
 
-\bibitem{PFJetID}
-``Jet identification.''
-  \url{https://twiki.cern.ch/twiki/bin/viewauth/CMS/JetID#Recommendations_for_13_TeV_2016},
-  2018.
-
 \bibitem{BTV-12-001}
 S.~Chatrchyan {\em et~al.}, ``{Identification of b-quark jets with the CMS
   experiment},'' {\em JINST}, vol.~8, p.~P04013, 2013.
-
-\bibitem{PhysRevD.94.112002}
-D.~Guest, J.~Collado, P.~Baldi, S.-C. Hsu, G.~Urban, and D.~Whiteson, ``Jet
-  flavor classification in high-energy physics with deep neural networks,''
-  {\em Phys. Rev. D}, vol.~94, p.~112002, Dec 2016.
 
 \bibitem{ADAM2007781}
 W.~Adam, ``Track and vertex reconstruction in cms,'' {\em Nuclear Instruments

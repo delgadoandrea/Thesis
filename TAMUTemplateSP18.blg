@@ -24,36 +24,36 @@ Warning--empty author in CMS:1997tfa
 Warning--empty journal in CMS:1997tfa
 Warning--empty author in CMS:2009nxa
 Warning--empty journal in CMS:2009nxa
-You've used 89 entries,
+You've used 90 entries,
             1876 wiz_defined-function locations,
-            1013 strings with 17796 characters,
-and the built_in function-call counts, 22627 in all, are:
-= -- 2296
-> -- 801
+            1016 strings with 17879 characters,
+and the built_in function-call counts, 22732 in all, are:
+= -- 2306
+> -- 802
 < -- 3
-+ -- 310
++ -- 311
 - -- 221
-* -- 1446
-:= -- 3079
-add.period$ -- 106
-call.type$ -- 89
-change.case$ -- 84
+* -- 1450
+:= -- 3089
+add.period$ -- 107
+call.type$ -- 90
+change.case$ -- 85
 chr.to.int$ -- 0
-cite$ -- 99
-duplicate$ -- 1251
-empty$ -- 2081
+cite$ -- 100
+duplicate$ -- 1255
+empty$ -- 2099
 format.name$ -- 221
-if$ -- 5693
+if$ -- 5723
 int.to.chr$ -- 0
-int.to.str$ -- 89
+int.to.str$ -- 90
 missing$ -- 76
-newline$ -- 287
+newline$ -- 290
 num.names$ -- 83
-pop$ -- 283
+pop$ -- 290
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1024
+skip$ -- 1028
 stack$ -- 0
 substring$ -- 1249
 swap$ -- 615
@@ -63,6 +63,6 @@ top$ -- 0
 type$ -- 0
 warning$ -- 10
 while$ -- 175
-width$ -- 91
-write$ -- 861
+width$ -- 92
+write$ -- 868
 (There were 10 warnings)

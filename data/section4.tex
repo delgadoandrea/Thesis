@@ -27,14 +27,16 @@ During proton-proton collisions, interactions happen in a small longitudinal reg
 
 
 \section{Data Acquisition}
-The CMS Data Acquisition (DAQ) and trigger system was specifically designed to collect and analyze data at a rate of 40MHz, which corresponds to a 25 ns collision rate. Unfortunately, it would be impossible to record all the acquired data and therefore only a small fraction of events are written to disk. Event filtering is performed online by the so-called trigger systems.
+The beams circulating the LHC ring during its data-taking period are comprised of bunches of protons with a design spacing of 25 ns, which corresponds to a collision rate of 40 MHz. At this rate, it would be impossible to keep or even transmit all the collected data.
 
- The collision triggering the readout is called the primary vertex,  all other proton-proton interactions that took place during the same bunch crossing are called pile-up. Secondary vertices refer to those production points where particles are created from decay or hard-scattering of the particles associated with a particular primary vertex. This is shown in Figure \ref{fig:vertex}. The higher the collision energy, the more interesting the collision, since higher energy collisions are more likely to produce particles or interactions that have not yet been observed. For this reason, triggers are attuned to prefer higher momentum objects. 
+The CMS Data Acquisition (DAQ) and trigger system was specifically designed to cope with the large amount of data acquired by the detector. Only a small fraction of events are actually written to disk and an event filtering is performed online by the so-called trigger systems.
+
+ The interaction point of a particular proton-proton collision is referred to as the primary vertex (PV), all other proton-proton interactions that took place during the same bunch-crossing are called pile-up. Secondary vertices refer to those production points (other than the PV) where particles are created either from the decay or hard-scattering of the particles associated with a particular PV. This is shown in Figure \ref{fig:vertex}. The higher the collision energy, the more interesting the collision, since higher energy collisions are more likely to produce particles or interactions that have not yet been observed. For this reason, triggers are configured to prefer higher momentum objects. 
 
 \subsection{L1 Trigger and HLT}
- Whenever the LHC is performing at its peak, about one billion proton-proton interactions take place every second inside the CMS detector. To select events of potential physics interest, the CMS trigger\cite{Khachatryan_2017} utilizes a two level system including a L1 hardware trigger and an HLT array of commercially available computers running high-level physics algorithms.
+ Whenever the LHC is performing at its peak, about one billion proton-proton interactions take place every second inside the CMS detector. To select events of potential physics interest, the CMS trigger\cite{Khachatryan_2017} utilizes a two-level system including an L1 hardware trigger and an HLT array of commercially available computers running high-level physics algorithms.
 
-The first level (L1) of the CMS trigger is an extremely fast process that selects events containing candidate objects, e.g. ionization deposits consistent with a muon, or energy clusters consistent with an electron, photon, $\tau$ lepton, missing transverse energy ($E_{T}^{miss}$, defined as the modulus of the verctor sum of the $p_{T}$ of all reconstructed particles), or jet. In some cases, the scalar sum of the jet transverse momenta ($H_{T}$) is also used as a L1 candidate. During this process, only coarsely segmented data from calorimeter and muon detectors is used, while all the high-resolution data is held in pipeline memories in the front-end electronics. The L1 trigger allows to store data for 3.2 $\mu$s, after which no more than 100 kHz of the stored events are forwarded to the next trigger system, the HLT.  
+The L1 of the CMS trigger is an extremely fast process that selects events containing candidate objects, e.g. ionization deposits consistent with a muon, or energy clusters consistent with an electron, photon, $\tau$ lepton, missing transverse energy ($E_{T}^{miss}$, defined as the modulus of the verctor sum of the $p_{T}$ of all reconstructed particles), or jet. During this process, only coarsely segmented data from calorimeter and muon detectors is used, while all the high-resolution data is held in pipeline memories in the front-end electronics. At the end of this process, no more than 100 kHz of the stored events are forwarded to the next trigger system, the HLT.  
 
  \begin{figure}[h]
  	\centering
@@ -44,16 +46,16 @@ The first level (L1) of the CMS trigger is an extremely fast process that select
  	\label{fig:l1trig}
  \end{figure}
 
-The data processing of the HLT is structured around the concept of a \textit{HLT path}, which is a set of algorithmic processing steps run in a predefined order that both reconstructs physics objects and makes selections on these objects. The reconstruction modules and selection filters of the HLT use the software framework that is also used for offline reconstruction and analyses.
+The data processing of the HLT is structured around the concept of an \textit{HLT path}, which is a set of algorithmic processing steps run in a predefined order that rudimentarily reconstruct physics objects based on these HLT objects. The reconstruction modules and selection filters of the HLT use the software framework that is also used for offline reconstruction and analyses.
 
-Upon completion, the average rate of accepted events is reduced to about 400 Hz. Event data is stored locally on disk and eventually transferred to the CMS Tier-0 computing center for offline processing and permanent storage.
+As a result of this procedure, the average rate of accepted events is reduced to about 400 Hz. Event data is stored locally on disk and eventually transferred to the CMS Tier-0 computing center for offline processing and permanent storage.
 
 
 \subsection{T1 sites and data storage}
 
-CMS computing operates on a tiered computing structure. A Tier-0 computing center is located at CERN where the data is transferred from the HLT and a first set of reconstruction occurs. From there, it is transferred to one of seven Tier-1 computing centers located around the world. At the Tier-1 centers, a full reconstruction of the data is performed. Furthermore, there are 55 Tier-2 centers which can be accessed by the collaboration members for data processing and storage.
+CMS computing operates on a tiered computing structure. A Tier-0 computing center is located at CERN where the data is transferred to the HLT and a first set of reconstruction occurs. From there, it is transferred to one of seven Tier-1 computing centers located around the world. At the Tier-1 centers, a full reconstruction of the data is performed. Furthermore, there are 55 Tier-2 centers which can be accessed by the collaboration members for data processing and storage.
 
-The analysis presented here was performed at one of the Tier-3 centers, the Texas A$\&$M University Brazos HPC cluster. 
+The analysis presented here was performed at one of the Tier-3 centers, the Texas A$\&$M University Brazos HPC cluster\cite{brazosc}. 
 
  \begin{figure}[H]
  	\centering
@@ -63,20 +65,20 @@ The analysis presented here was performed at one of the Tier-3 centers, the Texa
  	\label{fig:datatier}
  \end{figure}
 
- The data itself is also processed in three data tiers. The first layer of this is the RAW data, which is created by unpacking detector streams passed on from the L1 and HLT triggers. It is typically composed of measurements from the different subdetectors, as well as some information provided by the L1 trigger. RAW data is then reconstructed into PF objects, as explained in Section \ref{sec:track}. This step is called RECO, which is short for reconstruction and contains both the detector and physics object information. 
+ The data itself is also processed in three data tiers. The first layer of this is the RAW data, which is created by unpacking detector streams passed on from the HLT trigger. It is composed of measurements from the different sub-detectors, as well as some information provided by the HLT and L1 triggers. RAW data is then reconstructed into PF objects, as explained in Section \ref{sec:track}. This step is called RECO, which is short for reconstruction and contains both the detector and physics object information. 
 
- After the RECO step, an \textit{analysis object data} (AOD) is generated from a subset of the RECO information. AOD objects are typically comprised of only high-level physics objects, and therefore, reducing their size. 
+ After the RECO step, \textit{analysis object data} (AOD) is generated from a subset of the RECO information. AOD objects are typically comprised of only high-level physics objects, and therefore, of reduced size. 
 
 \section{Particle Flow Event Reconstruction}
 \label{sec:track}
 
  In the previous section we described how data was managed and stored during the acquisition process. This section will focus on how raw detector information is interpreted.  
 
-Raw detector data is measured in the form of hits in the tracker or energy depositions in the calorimeters. Then, the trajectories of charged particles, or tracks, are reconstructed from the position hits in the tracker. From the collection of tracks in an event, the primary and any secondary vertices are reconstructed. 
+Raw detector data is measured in the form of hits in the tracker or the muon system, as well as energy depositions in the calorimeters. Then, the trajectories of charged particles, or tracks, are reconstructed from the position hits in the tracker. From the collection of tracks in an event, interaction vertices are reconstructed. 
 
 An optimal event description can be achieved by correlating the basic elements from all subdetectors (tracks and clusters) to identify each final-state particle, and by combining the corresponding measurements to reconstruct the particle properties on the basis of this identification. At CMS, this approached is called \textit{particle-flow (PF) reconstruction}.
 
-The reconstructed and identified individual particle list includes muons, electrons, photons, as well as charged  and neutral hadrons. This list of individual particles is then used to build jets (from which the quark and gluon energies and directions are inferred), to determine the $E_{T}^{miss}$ (which gives an estimate of the direction and energy of the neutrinos and other invisible particles), to reconstruct and identify taus from their decay products, etc.
+The reconstructed and identified individual particle list includes muons, electrons, photons, as well as charged  and neutral hadrons. This list of individual particles is then used to build jets (from which the quark and gluon four-momentum in inferred), to determine the $E_{T}^{miss}$ (which gives an estimate of the direction and energy of the neutrinos and other invisible particles), to reconstruct and identify taus from their decay products, etc.
 
  \begin{figure}[h]
  	\centering
@@ -86,13 +88,15 @@ The reconstructed and identified individual particle list includes muons, electr
   	\label{fig:cmsslice} 	
  \end{figure}
 
-During PF reconstruction, photons and neutral hadrons are identified by ECAL and HCAL clusters with no associated tracks. Electrons can be identified by associating a track to an ECAL cluster and from possible Bremsstrahlung photons radiated by the electron in the tracker on its way to the ECAL; with a momentum-to-energy ratio compatible with unity, and not connected to an HCAL cluster. Finally, muons and neutrinos would traverse the calorimeters with little or no interactions. While neutrinos would escape undetected, muons would be identified by a track in the inner tracker connected to a track in the muon detectors. Muons are reconstructed in isolation as well as in jets. Finally, the presence of neutrinos and other weakly interacting particles can be detected by the $E_{T}^{miss}$ in the event. See Figure \ref{fig:cmsslice}.
+During PF reconstruction, photons and neutral hadrons are identified by ECAL and HCAL clusters with no associated tracks, respectively. Electrons can be identified by associating a track to an ECAL cluster and from possible Bremsstrahlung photons radiated by the electron in the tracker on its way to the ECAL; with a momentum-to-energy ratio compatible with unity, and not connected to an HCAL cluster. Finally, muons and neutrinos would traverse the calorimeters with little or no interactions. While neutrinos would escape undetected, muons would be identified by a track in the inner tracker connected to a track in the muon detectors. Muons are reconstructed in isolation as well as in jets. Finally, the presence of neutrinos can be detected by the $E_{T}^{miss}$ in the event. See Figure \ref{fig:cmsslice}.
 
 The PF concept was developed and used for the first time by the ALEPH experiment at LEP\cite{BUSKULIC1995481}. In particular, CMS is very well suited for PF reconstruction due to its highly-segmented tracker,  a fine-grained ECAL, and an hermetic HCAL.
 
-Also, the CMS magnet is large enough to accommodate the tracker and both the ECAL and HCAL, thereby minimizing the amount of material in front of the calorimeters. This particular feature is an advantage for PF reconstruction, as it eliminates the energy losses before the calorimeters caused by particles showering in the coil material and makes it easier to link tracks and calorimeter clusters.
+Also, the CMS magnet is large enough to accommodate the tracker and both the ECAL and HCAL, thereby minimizing the amount of material in front of the calorimeters.
 
-In the following sections, the general PF reconstruction work-flow will be described, starting by the reconstruction of its fundamental elements, the charged particle tracks and the calorimeter clusters. These elements are then linked into blocks and then interpreted in terms of particles.
+% This particular feature is an advantage for PF reconstruction, as it eliminates the potential energy loss before the calorimeters caused by particles showering in the coil material.
+
+In the following sections, the general PF reconstruction work-flow will be described, starting by the reconstruction of its fundamental elements, the charged particle tracks and the calorimeter clusters. These elements are then grouped and interpreted in terms of particles.
 
 \subsection{Iterative Tracking}
 
@@ -102,7 +106,7 @@ The next step is track reconstruction, which refers to the process of using the 
 
 The tracking software at CMS\cite{TRK-11-001} is commonly referred to as the combinatorial Track Finder (CTF), which is an adaptation of the combinatorial Kalman Filter \cite{Billoir:1989mh,BILLOIR1990219,Mankel:1997dy}, which in turn is an extension of the Kalman filter\cite{Fruhwirth:1987fm} to allow pattern recognition and track fitting to occur in the same framework. The collection of reconstructed tracks is produced by multiple passes or iterations of the same CTF track reconstruction sequence, in a process called iterative tracking. 
 
-The basic idea of iterative tracking is that tracks of relatively large $p_{T}$ and those produced near the interaction region (which are relatively easy to find compare to those that are not) are searched for during the initial iteration. During successive iterations, hits unambiguously assigned to candidate found in previous iterations tracks are removed. By doing so, the combinatorial complexity is reduced, and subsequent iterations searching for more difficult types of tracks (e.g., low $p_{T}$, or greatly displaced tracks) is simplified.
+The basic idea of iterative tracking is that tracks of relatively large $p_{T}$ and those produced near the interaction region are searched for during the initial iteration. During successive iterations, hits unambiguously assigned to candidates found in previous iterations tracks are removed. By doing so, the combinatorial complexity is reduced, and subsequent iterations searching for more difficult types of tracks (e.g., low $p_{T}$, or greatly displaced tracks) is simplified.
 
 Each iteration proceeds in four steps:
 
@@ -110,15 +114,15 @@ Each iteration proceeds in four steps:
 	\item Seed generation, which provides track candidates consisting of a few (2 or 3) hits. Seeds are generated in the innermost layers of the tracker and are commonly referred to as \textit{proto-tracks}.
 	\item Track finding, which is based on a Kalman filter. It extrapolates the seed trajectories along the expected flight path of a charged particle, searching for additional hits that can be assigned to the track candidate.
 	\item Track fitting. A module that is used to provide the best possible estimate of the parameters of each trajectory by means of a Kalman filter.
-	\item Track selection. This step sets the quality flags and discards tracks that fails certain specified criteria.
+	\item Track selection. This step sets the quality flags and discards tracks that fail certain specified criteria.
 \end{itemize}
 
-A total of six iterations are used, each with different seed generation, $p_{T}$, and impact parameter requirements. The first iterations follow a strict criterium in order to achieve a negligible small fake rate. Once the hits that are associated with so-called \textit{fake tracks} are removed, the seeding criteria is loosened, and therefore, tracking efficiency is increased. From iteration 4 and on, the constraints on the tracks closer to the interaction point are slowly relaxed. This allows for reconstruction of secondary charged particles created from photon conversions and nuclear interactions in the tracker volume.
+A total of six iterations are used, each with different seed generation, $p_{T}$, and impact parameter requirements. The first iterations follow multiple criteria in order to achieve a negligible small fake rate. Once the hits that are associated with so-called \textit{fake tracks} are removed, the seeding criteria is loosened, and therefore, tracking efficiency is increased. From iteration 4 and on, the constraints on the tracks closer to the interaction point are slowly relaxed. This allows for reconstruction of secondary charged particles created from photon conversions and nuclear interactions in the tracker volume.
 
 \subsection{Calorimeter Clustering}
 Clustering in the calorimeters is the process of grouping detector cells that register hits together with the purpose of (i) detecting and measuring the energy and direction of stable neutral particles, (ii) being able to separate these neutral particles from energy deposits associated with charged hadrons, (iii) reconstructing and identifying electrons and all possible Bremsstrahlung photons, and (iv) helping the energy measurement of charged hadrons for which the track parameters were not determined accurately, which is sometimes the case for high-$p_{T}$ tracks.
 
-The clustering algorithm is performed separately in each sub-detector: ECAL barrel and endcap, HCAL barrel and endcap, and in the pre-shower and proceeds via three steps\cite{CMS:2009nxa}:
+The clustering algorithm is performed separately in each of the following sub-detectors: ECAL barrel and endcap, HCAL barrel and endcap, as well as in the pre-shower. It proceeds via three steps\cite{CMS:2009nxa}:
 
 \begin{enumerate}
 	\item Identify 'cluster seeds'. These are defined as the cell in a calorimeter with a local maximum of energy (above some set threshold).
@@ -129,9 +133,9 @@ The clustering algorithm is performed separately in each sub-detector: ECAL barr
 In this sense, a "seed" gives rise to a "particle-flow cluster". If a cell is identified by two clusters, the energy is shared between the clusters according to the distance from the cell to the center of each cluster. The cluster energies and positions are iteratively determined as new cells are added to the cluster.
 
 \subsection{Linking Tracks and Clusters}
-Once the basic PF elements are available, the next step in reconstructing a particle is the so-called \textit{link algorithm}. This algorithm can test any pair of elements in the event. In order to prevent the computing time of the link algorithm from growing quadratically with the number of particles, the pairs of elements considered by the link procedure are restricted to the nearest neighbors in the ($\eta,\phi$) plane, as obtained with a $k$-dimensional tree\cite{Bentley1975MultidimensionalBS}. The specific conditions required to link two elements depend on their nature.
+Once the basic PF elements are available, the next step in reconstructing a particle is the so-called \textit{link algorithm}. This algorithm can test any pair of elements in the event. In order to prevent the computing time of the link algorithm from growing quadratically with the number of particles, the pairs of elements considered by the link procedure are restricted to the nearest neighbors in the ($\eta,\phi$) plane, as obtained with a $k$-dimensional tree\cite{Bentley1975MultidimensionalBS}. 
 
- If two elements are found to be linked, the algorithm defines a distance between these two elements, aimed at quantifying the quality of the link. The link algorithm then produces \textit{PF blocks} of elements associated either by a direct link or by an indirect link through common elements.
+ If two elements are found to be linked, the algorithm defines a metric between these two elements, aimed at quantifying the quality of the link. The link algorithm then produces \textit{PF blocks} of elements associated either by a direct link or by an indirect link through common elements.
 
  The link between tracks and calorimeter clusters proceeds by extrapolating the last measured hit in the tracker to one of the three detectors\cite{CMS:2009nxa}:
 
@@ -157,7 +161,7 @@ Once the basic PF elements are available, the next step in reconstructing a part
   	\label{fig:pf} 	
  \end{figure}
 
-With the tracks identified, calorimeter clusters formed and the linking of clusters to tracks, particles can then be reconstructed. The PF process begins by reconstructing muons, then electrons and photons, and finally charged hadrons. As each particle is reconstructed, the tracks and clusters associated with it are removed from the collection of blocks used to form candidate particles, which ensures that energy deposits attributed to one particle are not used twice. The hadrons are then clustered together to form \textit{jets}, and these jets can additionally be identified as coming from tau leptons or b quarks (Figure \ref{fig:pf}). There is also Pileup Jet Identification (PU Jet ID), a c-quark jet identification probability, as well as composite jet identification, e.g. a top-jet or a W-jet or Z-jet but these higher level objects are not relevant for this analysis.
+With the tracks identified, calorimeter clusters formed and the linking of clusters to tracks, particles can then be reconstructed. The PF process begins by reconstructing muons, then electrons and photons, and finally charged hadrons. As each particle is reconstructed, the tracks and clusters associated with it are removed from the collection of blocks used to form candidate particles, which ensures that energy deposits attributed to one particle are not used twice. The hadrons are then clustered together to form \textit{jets}, and these jets can additionally be identified as coming from tau leptons or b quarks\cite{Sirunyan_2017,PhysRevD.94.112002} (Figure \ref{fig:pf}). There is also Pileup Jet Identification (PU Jet ID)\cite{PFJetID}, a c-quark jet identification probability, as well as composite jet identification, e.g. a top-jet or a W-jet or Z-jet but these higher level objects are not relevant for this analysis.
 
 \section{Jets}
 
@@ -179,7 +183,7 @@ During proton-proton collisions, the confined state of quarks and gluons is brok
   	\label{fig:jme} 	
  \end{figure}
 
-In practice, jets are the result of clustering groups of charged hadrons, photons, and neutral hadrons. The energy fraction in jets is divided amongst them with a breakdown of roughly 65$\%$, 25$\%$, and 10$\%$ respectively. This is illustrated in Figure \ref{fig:jme}. For this study, jets were reconstructed from PF candidates clusters using the anti-$k_{T}$ algorithm\cite{Cacciari:2008gp} as defined in the FASTJET package\cite{Cacciari:2011ma}.
+In practice, jets are the result of clustering groups of charged hadrons, photons, and neutral hadrons with the occasional muon and electron. The energy fraction in jets is divided amongst them with a breakdown of roughly 65$\%$, 25$\%$, and 10$\%$ respectively. This is illustrated in Figure \ref{fig:jme}. For this study, jets were reconstructed from PF candidates clusters using the anti-$k_{T}$ algorithm\cite{Cacciari:2008gp} as defined in the FASTJET package\cite{Cacciari:2011ma}.
 
 
  Jet clustering algorithms work by defining a distance parameter $d_{ij}$ between PF candidates $i$ and $j$ and the distance between such cluster and the beam $d_{iB}$. These are defined as
@@ -196,7 +200,7 @@ where $\Delta_{ij}^{2} = (y_{i}-y_{j})^{2}+(\phi_{i}-\phi_{j})^{2}$, and $k_{ti}
 d_{ij} = min(\frac{1}{p_{ti}^{2}},\frac{1}{p_{tj}^{2}})\frac{\Delta_{ij}^{2}}{R^{2}}
 \end{equation}
 
-The algorithm loops over all PF candidate objects, calculating $d_{ij}$ for each pair of objects. Once it does this, it selects the two objects with the lowest value of $d_{ij}$ and combines them. This process is repeated until the smallest value of $d_{ij}$ satisfies the condition $d_{ij}>d_{iB}$.
+The algorithm\cite{Cacciari:2011ma} loops over all PF candidate objects, calculating $d_{ij}$ for each pair of objects. Once it does this, it selects the two objects with the lowest value of $d_{ij}$ and combines them. Subsequently, it calculates the distance of any merged clusters to their nearest neighbors. This process is repeated until the smallest value of $d_{ij}$ satisfies the condition $d_{ij}>d_{iB}$.
 
 As a result, the cutoff limit of $1/p_{T}^{2}$ defines a maximum size that the algorithm will look to cluster particles inside. The construction of $d_{ij}$ using the inverse $p_{T}^{2}$ has a result of producing values of $d_{ij}$ that are smaller for objects with a higher $p_{T}$, given equal separation. As a result, softer particles will tend to cluster to higher $p_{T}$ particles long before they would cluster amongst themselves. If no hard particles are present, the jet object will simply cluster soft $p_{T}$ particles in a circle in an $\eta-\phi$ space of radius R.
 
@@ -212,7 +216,7 @@ The clustering of the anti-$k_{T}$ algorithm leads to jets with a large $p_{T}$ 
 
 Finally, the anti-$k_{T}$ algorithm is both infrared and collinear safe. Infrared safety implies that the jet clustering algorithm is insensitive to the emission of soft, wide angle particles. Under this condition, two jets would not be merged due to one of them producing a soft-momentum particle between them. Collinear safety means that if there is a splitting which results in two parallel high-$p_{T}$ particles, a single jet is produced and the jet properties will not be different from a jet where this splitting did not occur. If the algorithm follows these two properties, it is referred to as being IRC safe.
 
-The use of PF candidates, with their built in tracking information for jet reconstruction provides a jet resolution of 15$\%$ at 10 GeV, 8$\%$ at 100 GeV, and 4$\%$ at 1 TeV\cite{CMS-PAS-PFT-09-001}. 
+The use of PF candidates, with their built-in tracking information for jet reconstruction provides a jet resolution of 15$\%$ at 10 GeV, 8$\%$ at 100 GeV, and 4$\%$ at 1 TeV\cite{CMS-PAS-PFT-09-001}. 
 
 After the clustering procedure, the momentum and energy of the reconstructed jets still might not be the same as those from the initial parton. This could be due to out of cone showering, the presence of additional pileup energy produced during the same bunch crossing as the primary vertex, or detector effects. To correct for this, CMS adopted a factorized approach\cite{JINST2011}, where each level of correction targets a specific effect and each correction factor obtained is applied in order. The goal is to make sure each jet has a relative response
 
@@ -278,7 +282,7 @@ A set of quality cuts, collectively called PF jet identification, are applied to
 All cuts on the jet energy fractions are made on the raw jets, before any energy correction is applied. In addition to the PF jet quality cuts, this analysis requires that all jets be within |$\eta$| < 2.6 and to have a $p_{T} > $ 30 GeV. 
 
 \section{b-tagging}
-Some jets are produced from a b-quark that after hadronization enters a bound state with another quark and both become part of a B meson that has a long lifetime, and subsequently decay after it has traveled some distance. B-tagging is the identification of jets at some confidence level as having contained a B meson.
+Some jets are produced from a b-quark that after enters a bound state with another quark becoming part of a B meson that has a long lifetime which subsequently decays after it has traveled some distance. B-tagging is the identification of jets at some confidence level as having contained a B meson.
 
 \begin{figure}[h]
  	\centering
@@ -288,7 +292,7 @@ Some jets are produced from a b-quark that after hadronization enters a bound st
   	\label{fig:btagdia} 	
  \end{figure}
 
-A variety of b-tagging algorithms has been developed by CMS to select b-quark jets\cite{BTV-12-001} based on variables such as the impact parameters of the charged-particle tracks, the properties of reconstructed decay vertices, and the presence or absence of a lepton, or combinations thereof. These algorithms heavily rely on machine learning tools and are thus natural candidates for advanced tools like deep neural networks. In particular CMS makes use of a new algorithm, DeepCSV\cite{Sirunyan_2018, PhysRevD.94.112002}, which uses a deep neural network trained using about 50 million simulated jets. 
+A variety of b-tagging algorithms has been developed by CMS to select b-quark jets\cite{BTV-12-001} based on variables such as the impact parameters of the charged-particle tracks, the properties of reconstructed decay vertices, and the presence or absence of a lepton, or combinations thereof. These algorithms heavily rely on machine learning tools like deep neural networks. In particular, CMS makes use of a new algorithm, DeepCSV\cite{Sirunyan_2018, PhysRevD.94.112002}, which uses a deep neural network trained by using about 50 million simulated jets. 
 
 \begin{table}[htbp]
     \caption{Input variables used for the CSVv2 algorithm.}
@@ -322,7 +326,7 @@ A variety of b-tagging algorithms has been developed by CMS to select b-quark je
     \label{tab:csvv2var}
 \end{table}
 
-The DeepCVS algorithm uses the reconstructed tracks and secondary vertices found by using the \textit{inclusive vertex finding} (IVF) algorithm \cite{ADAM2007781}. The same input variables used for the CSVv2 tagger (Table \ref{tab:csvv2var} from \cite{Sirunyan_2018}) are used, with the difference that the track-based variables use up to six tracks in the training of the DeepCSV. Jets are randomly selected in such a way that similar jet $p_{T}$ and $\eta$ distributions are obtained for all jet flavors. These distributions are also used as input variables in the training to take into account the correlation between the jet kinematics and the other variables. The distribution of all input variables is preprocessed to center the mean of each distribution around zero and to obtain a root-mean-square value of unity. All of the variables are presented to the multi-variable analysis (MVA) in the same way because of the preprocessing.
+The DeepCVS algorithm uses the reconstructed tracks and secondary vertices found by using the \textit{inclusive vertex finding} (IVF) algorithm \cite{ADAM2007781}. The same input variables used for the CSV(Combined Secondary Vertex)v2 tagger (Table \ref{tab:csvv2var} from \cite{Sirunyan_2018}) are used, with the difference that the track-based variables use up to six tracks in the training of the DeepCSV. Jets are randomly selected in such a way that similar jet $p_{T}$ and $\eta$ distributions are obtained for all jet flavors. These distributions are also used as input variables in the training to take into account the correlation between the jet kinematics and the other variables. The distribution of all input variables is preprocessed to center the mean of each distribution around zero and to obtain a root-mean-square value of unity. All of the variables are presented to the multi-variable analysis (MVA) in the same way because of the preprocessing.
 
 The training is performed using jets with $p_{T}$ between 20 GeV and 1 TeV, and within the tracker acceptance. The relative ratio of jets of each flavor is set to 2:1:4 for b:c:udsg jets. a mixture of $t\bar{t}$ and multi-jet events is used to reduce the possible dependency of the training on the heavy-flavor quark production process.
 
@@ -364,7 +368,7 @@ During the event generation process, strongly-interacting particles which take p
  	\label{fig:pdfs}
  \end{figure}
 
-where the sum is over all parton species $a$ and $b$ within protons 1 and 2. $f_{i}(x_{j},\mu^{2})$ is the probability (calculated at renormalization scale $\mu^{2}$) of finding parton species $i$ carrying a momentum fraction $x_{j}$ of the parent proton $j$, and $\hat{\sigma}_{N}^{ab}$ is the partonic cross section for initial state $a+b$. The function $f_{i}(x_{j},\mu^{2})$ is referred to as a parton distribution function (PDF), and usually refers to the probability density for finding a particle with a certain longitudinal momentum fraction $x$ at a resolution scale $\mu^{2}$ (Figure \ref{fig:pdfs} is an example of such distribution at the $10^{4} GeV^{2}$ mass scale).
+where the sum is over all parton species $a$ and $b$ within protons 1 and 2. $f_{i}(x_{j},\mu^{2})$ is the probability (calculated at renormalization scale $\mu^{2}$) of finding parton species $i$ carrying a momentum fraction $x_{j}$ of the parent proton $j$, and $\hat{\sigma}_{N}^{ab}$ is the partonic cross section for initial state $a+b$. The function $f_{i}(x_{j},\mu^{2})$ is referred to as a parton distribution function (PDF), and usually refers to the probability density for finding a particle with a certain longitudinal momentum fraction $x$ at a resolution scale $\mu^{2}$ (Figure \ref{fig:pdfs} is an example of such distribution at the $10^{4}$ GeV$^{2}$ mass scale).
 
  The main task involved in simulation of the hard interaction is the evaluation of the integral in Equation \ref{eq:event_generation_partonic_cross_section}. The partonic cross section is itself given by
 
@@ -386,9 +390,9 @@ Bare partons may be produced as a result of the hard interaction. These strongly
 
 At the hadronization scale, the showering ceases and the colored partons group to form colorless hadrons. This regime is not amenable to perturbative calculations, and no first-principle theory is viable. Various phenomenological methods have been developed to model hadronization, including the \textit{Lund-string-model}\cite{ANDERSSON198331}. In the Lund model, quarks $q$ and anti-quarks $\bar{q}$ are the end points of Lund strings, in a similar way to that of the positive and negative charges of electric dipoles. Unlike the electrodynamic field, the chromodynamic field is self-interacting, and the field lines can be thought of as forming a bundle or a strong. Gluons $g$ are excitations or force carriers on these string lines. Once strings are formed, they dissolve or fragment into hadrons based on a probability distribution derived from data. The number, types, and kinematics of particles produced from the string fragmentation depend upon the number, types and kinematics of partons that form them. 
 
-In this analysis the generation of physical events proceeds in three steps, the first one being the ME calculation using MADGRAPH. Then PYTHIA is used to simulate parton shower and hadronization.
+In this analysis the generation of physical events proceeds in three steps, the first one being the ME calculation using MADGRAPH. Then PYTHIA\cite{Sjostrand:2014zea} is used to simulate parton shower and hadronization.
 
-PYTHIA\cite{Sjostrand:2014zea} is a general purpose, tree level partonic matrix element generator capable of performing parton showering, hadronization, and UE simulation. A variety of $2\rightarrow1,2,3$ processes are included. Full spin correlations are included in the decays of unstable resonances. Shower evolution proceeds in terms of decreasing time-like virtuality, and imposes angular ordering by veto. Shower evolution is accurate to the LL level. The Lund string model is used for hadronization. UE interactions are described perturbatively as multiple nearly-independent $2\rightarrow 2$ scatterings. For this study, PYTHIA 8 is used to simulate signal samples with $xqcut=30$ and $qcut=60$.
+PYTHIA is a general purpose, tree level partonic matrix element generator capable of performing parton showering, hadronization, and UE simulation. A variety of $2\rightarrow1,2,3$ processes are included. Full spin correlations are included in the decays of unstable resonances. Shower evolution proceeds in terms of decreasing time-like virtuality, and imposes angular ordering by veto. Shower evolution is accurate to the LL level. The Lund string model is used for hadronization. UE interactions are described perturbatively as multiple nearly-independent $2\rightarrow 2$ scatterings. For this study, PYTHIA 8 is used to simulate signal samples with $xqcut=30$ and $qcut=60$.
 
 MADGRAPH\cite{Alwall:1647049} is used to simulate hard parton emission (i.e. ISR and FSR) and is interfaced with PYTHIA for showering and collinear radiation.
 
@@ -398,5 +402,5 @@ The next step in the simulation of events chain is the simulation of how particl
 
 The alignment, calibration, and other conditions which may change over time are periodically checked and stored in a database. These conditions are used for both offline simulation and reconstruction as well as for online activities. A snapshot of the conditions at some point in time is called a global tag. For reference, this analysis uses the $80X\_dataRun2\_2016LegacyRepro\_v4$ and $80X\_mcRun2\_asymptotic\_2016\_TrancheIV\_v8$ global tags for data and simulation, respectively. 
 
-The final state particles from the event generator are sent to the detector simulation, which tracks the particles as they move through the detector depositing energy into what are called simulated hits. While the models of electromagnetic interactions are extremely precise, the hadronic interactions have a greater uncertainty associated with them. The simulation goes through the data acquisition process, event simulating the responses of the photo detectors and readout electronics. The resulting information is then analyzed by the same reconstruction process that the real data goes through and is stored using the ROOT software library. 
+The final state particles from the event generator are sent to the detector simulation, which tracks the particles as they move through the detector depositing energy into what are called simulated hits. While the models of electromagnetic interactions are extremely precise, the hadronic interactions have a greater uncertainty associated with them. The simulation goes through the data acquisition process, simulating the responses of the avalanche photodiodes and readout electronics. The resulting information is then analyzed by the same reconstruction process that the real data undergoes and is stored using the ROOT software library. 
 
