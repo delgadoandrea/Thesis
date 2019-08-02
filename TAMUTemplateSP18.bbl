@@ -416,16 +416,16 @@ B.~Andersson, G.~Gustafson, G.~Ingelman, and T.~Sjöstrand, ``Parton
   fragmentation and string dynamics,'' {\em Physics Reports}, vol.~97, no.~2,
   pp.~31 -- 145, 1983.
 
-\bibitem{Sjostrand:2014zea}
-T.~Sjöstrand, S.~Ask, J.~R. Christiansen, R.~Corke, N.~Desai, P.~Ilten,
-  S.~Mrenna, S.~Prestel, C.~O. Rasmussen, and P.~Z. Skands, ``{An Introduction
-  to PYTHIA 8.2},'' {\em Comput. Phys. Commun.}, vol.~191, pp.~159--177, 2015.
-
 \bibitem{Alwall:1647049}
 J.~Alwall, C.~Duhr, B.~Fuks, O.~Mattelaer, D.~G. Öztürk, and C.-H. Shen,
   ``{Computing decay rates for new physics theories with FeynRules and MadGraph
   5},'' {\em Comput. Phys. Commun.}, vol.~197, pp.~312--323. 29 p, Feb 2014.
 \newblock Comments: 29 pages, 2 figures.
+
+\bibitem{Sjostrand:2014zea}
+T.~Sjöstrand, S.~Ask, J.~R. Christiansen, R.~Corke, N.~Desai, P.~Ilten,
+  S.~Mrenna, S.~Prestel, C.~O. Rasmussen, and P.~Z. Skands, ``{An Introduction
+  to PYTHIA 8.2},'' {\em Comput. Phys. Commun.}, vol.~191, pp.~159--177, 2015.
 
 \bibitem{geant4sim}
 S.~Agostinelli {\em et~al.}, ``Geant4 a simulation toolkit,'' {\em Nucl.

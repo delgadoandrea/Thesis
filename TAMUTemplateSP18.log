@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.5.24)  1 AUG 2019 09:54
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.5.24)  2 AUG 2019 14:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1407,7 +1407,11 @@ Overfull \hbox (1.16512pt too wide) in paragraph at lines 93--94
 
 [49] [50] [51]
 File: figures/jets.png Graphic file (type QTm)
- <use  "figures/jets.png" > [52]
+ <use  "figures/jets.png" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[52]
 File: figures/cmsjet.png Graphic file (type QTm)
  <use  "figures/cmsjet.png" >
 
@@ -1427,7 +1431,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [55] [56] [57] [58]
 File: figures/Btag.png Graphic file (type QTm)
  <use  "figures/Btag.png" > [59] [60]
-Overfull \hbox (25.93321pt too wide) in paragraph at lines 335--336
+Overfull \hbox (25.93321pt too wide) in paragraph at lines 331--332
 []\T1/ptm/m/n/12 The tag-ger can cat-e-go-rize in-di-vid-ual jets in so-called 
 "Tight" (DeepCSVT), "Medium"(DeepCSVM),
  []
@@ -1439,21 +1443,25 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [61] [62]
 File: figures/pdfs.png Graphic file (type QTm)
- <use  "figures/pdfs.png" > [63]
-Overfull \hbox (5.25131pt too wide) in paragraph at lines 381--382
+ <use  "figures/pdfs.png" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (5.25131pt too wide) in paragraph at lines 378--379
 []\T1/ptm/m/n/12 where $\OML/cmm/m/it/12 p[]$ \T1/ptm/m/n/12 are the in-com-ing
  par-ti-cle four-momenta, $\OML/cmm/m/it/12 q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
 2 E[]\OT1/cmr/m/n/12 )$ \T1/ptm/m/n/12 are the out-go-ing par-ti-cle four-momen
 ta,
  []
 
-
-Overfull \hbox (2.74055pt too wide) in paragraph at lines 389--390
+[63] [64]
+Overfull \hbox (2.74055pt too wide) in paragraph at lines 384--385
 \T1/ptm/m/n/12 par-ti-cles are per-tur-ba-tively evolved from the scale of the 
 hard in-ter-ac-tion through suc-ces-sive branch-
  []
 
-[64] [65]) [66] [67] (./TAMUTemplateSP18.bbl
+[65] [66]) [67] (./TAMUTemplateSP18.bbl
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
