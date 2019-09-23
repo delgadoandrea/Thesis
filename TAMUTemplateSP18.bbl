@@ -431,4 +431,15 @@ T.~Sjöstrand, S.~Ask, J.~R. Christiansen, R.~Corke, N.~Desai, P.~Ilten,
 S.~Agostinelli {\em et~al.}, ``Geant4 a simulation toolkit,'' {\em Nucl.
   Instrum. Meth. A}, vol.~506, no.~3, pp.~250 -- 303, 2003.
 
+\bibitem{PhysRevD.97.075035}
+M.~Abdullah, M.~Dalchenko, B.~Dutta, R.~Eusebi, P.~Huang, T.~Kamon,
+  D.~Rathjens, and A.~Thompson, ``Bottom-quark fusion processes at the lhc for
+  probing ${Z}^{\ensuremath{'}}$ models and $b$-meson decay anomalies,'' {\em
+  Phys. Rev. D}, vol.~97, p.~075035, Apr 2018.
+
+\bibitem{jes_jer}
+T.~C. collaboration, ``Jet energy scale and resolution in the {CMS} experiment
+  in pp collisions at 8 {TeV},'' {\em Journal of Instrumentation}, vol.~12,
+  pp.~P02014--P02014, feb 2017.
+
 \end{thebibliography}

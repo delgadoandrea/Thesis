@@ -1,59 +1,77 @@
 
 \renewcommand {\cftchapleader } {\cftdotfill {1.00}}
-\contentsline {chapter}{ABSTRACT}{ii}{chapter*.1}
-\contentsline {chapter}{DEDICATION}{iii}{chapter*.2}
-\contentsline {chapter}{ACKNOWLEDGMENTS}{iv}{chapter*.3}
-\contentsline {chapter}{CONTRIBUTORS AND FUNDING SOURCES}{v}{chapter*.4}
-\contentsline {chapter}{NOMENCLATURE}{vi}{chapter*.5}
-\contentsline {chapter}{TABLE OF CONTENTS}{viii}{section*.6}
-\contentsline {chapter}{LIST OF FIGURES}{x}{section*.7}
-\contentsline {chapter}{LIST OF TABLES}{xii}{section*.8}
-\contentsline {chapter}{\numberline {1}\uppercase {Introduction}}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}THEORETICAL FRAMEWORK}{2}{chapter.2}
+\contentsline {chapter}{ABSTRACT}{ii}{chapter*.1}% 
+\contentsline {chapter}{DEDICATION}{iii}{chapter*.2}% 
+\contentsline {chapter}{ACKNOWLEDGMENTS}{iv}{chapter*.3}% 
+\contentsline {chapter}{CONTRIBUTORS AND FUNDING SOURCES}{v}{chapter*.4}% 
+\contentsline {chapter}{NOMENCLATURE}{vi}{chapter*.5}% 
+\contentsline {chapter}{TABLE OF CONTENTS}{viii}{section*.6}% 
+\contentsline {chapter}{LIST OF FIGURES}{xi}{section*.7}% 
+\contentsline {chapter}{LIST OF TABLES}{xiii}{section*.8}% 
+\contentsline {chapter}{\numberline {1}\uppercase {Introduction}}{1}{chapter.1}% 
+\contentsline {chapter}{\numberline {2}THEORETICAL FRAMEWORK}{2}{chapter.2}% 
 \vskip +10pt
-\contentsline {section}{\numberline {2.1}The Standard Model}{2}{section.2.1}
-\contentsline {section}{\numberline {2.2}Structure and Particle Content}{2}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Fermions}{2}{subsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.1.1}Leptons}{3}{subsubsection.2.2.1.1}
-\contentsline {subsubsection}{\numberline {2.2.1.2}Quarks}{4}{subsubsection.2.2.1.2}
-\contentsline {subsection}{\numberline {2.2.2}Bosons}{4}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Particle Interactions}{5}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Quantum Electrodynamics}{6}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Electroweak Interaction}{7}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Strong Interaction}{14}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Brout-Englert-Higgs Mechanism and the Higgs Boson}{16}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Beyond the Standard Model}{21}{section.2.4}
-\contentsline {section}{\numberline {2.5}Lepton universality}{22}{section.2.5}
-\contentsline {section}{\numberline {2.6}B-hadron anomalies}{23}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}$b\rightarrow s$ quark transitions}{24}{subsection.2.6.1}
-\contentsline {section}{\numberline {2.7}The Z'}{26}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}4b Bottom Fermion Fusion}{27}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Flavour-violating coupling $\delta _{bs}$}{28}{subsection.2.7.2}
-\contentsline {chapter}{\numberline {3}The LHC and CMS Detector}{30}{chapter.3}
+\contentsline {section}{\numberline {2.1}The Standard Model}{2}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Structure and Particle Content}{2}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Fermions}{2}{subsection.2.2.1}% 
+\contentsline {subsubsection}{\numberline {2.2.1.1}Leptons}{3}{subsubsection.2.2.1.1}% 
+\contentsline {subsubsection}{\numberline {2.2.1.2}Quarks}{4}{subsubsection.2.2.1.2}% 
+\contentsline {subsection}{\numberline {2.2.2}Bosons}{4}{subsection.2.2.2}% 
+\contentsline {section}{\numberline {2.3}Particle Interactions}{5}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Quantum Electrodynamics}{6}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Electroweak Interaction}{7}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Strong Interaction}{14}{subsection.2.3.3}% 
+\contentsline {subsection}{\numberline {2.3.4}Brout-Englert-Higgs Mechanism and the Higgs Boson}{16}{subsection.2.3.4}% 
+\contentsline {section}{\numberline {2.4}Beyond the Standard Model}{21}{section.2.4}% 
+\contentsline {section}{\numberline {2.5}Lepton universality}{22}{section.2.5}% 
+\contentsline {section}{\numberline {2.6}B-hadron anomalies}{23}{section.2.6}% 
+\contentsline {subsection}{\numberline {2.6.1}$b\rightarrow s$ quark transitions}{24}{subsection.2.6.1}% 
+\contentsline {section}{\numberline {2.7}The Z'}{26}{section.2.7}% 
+\contentsline {subsection}{\numberline {2.7.1}4b Bottom Fermion Fusion}{27}{subsection.2.7.1}% 
+\contentsline {subsection}{\numberline {2.7.2}Flavour-violating coupling $\delta _{bs}$}{28}{subsection.2.7.2}% 
+\contentsline {chapter}{\numberline {3}The LHC and CMS Detector}{30}{chapter.3}% 
 \vskip +10pt
-\contentsline {section}{\numberline {3.1}The Large Hadron Collider}{30}{section.3.1}
-\contentsline {section}{\numberline {3.2}The CMS Detector}{32}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Coordinate System}{33}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Solenoid}{34}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Tracker and Pixel Detector}{35}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Calorimeters}{37}{subsection.3.2.4}
-\contentsline {subsubsection}{\numberline {3.2.4.1}Electromagnetic Calorimeter}{37}{subsubsection.3.2.4.1}
-\contentsline {subsubsection}{\numberline {3.2.4.2}Hadron Calorimeter}{39}{subsubsection.3.2.4.2}
-\contentsline {subsection}{\numberline {3.2.5}Muon System}{39}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Luminosity Measurement}{41}{subsection.3.2.6}
-\contentsline {chapter}{\numberline {4}EVENT RECONSTRUCTION }{44}{chapter.4}
+\contentsline {section}{\numberline {3.1}The Large Hadron Collider}{30}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}The CMS Detector}{32}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Coordinate System}{33}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Solenoid}{34}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}Tracker and Pixel Detector}{35}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.4}Calorimeters}{37}{subsection.3.2.4}% 
+\contentsline {subsubsection}{\numberline {3.2.4.1}Electromagnetic Calorimeter}{37}{subsubsection.3.2.4.1}% 
+\contentsline {subsubsection}{\numberline {3.2.4.2}Hadron Calorimeter}{39}{subsubsection.3.2.4.2}% 
+\contentsline {subsection}{\numberline {3.2.5}Muon System}{39}{subsection.3.2.5}% 
+\contentsline {subsection}{\numberline {3.2.6}Luminosity Measurement}{41}{subsection.3.2.6}% 
+\contentsline {chapter}{\numberline {4}EVENT RECONSTRUCTION }{44}{chapter.4}% 
 \vskip +10pt
-\contentsline {section}{\numberline {4.1}Data Acquisition}{44}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}L1 Trigger and HLT}{45}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}T1 sites and data storage}{46}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Particle Flow Event Reconstruction}{47}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Iterative Tracking}{49}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Calorimeter Clustering}{50}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Linking Tracks and Clusters}{51}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Physics Object Reconstruction}{52}{section.4.3}
-\contentsline {section}{\numberline {4.4}Jets}{53}{section.4.4}
-\contentsline {section}{\numberline {4.5}b-tagging}{59}{section.4.5}
-\contentsline {section}{\numberline {4.6}Event Generation}{62}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Event Generators}{62}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Detector Simulation}{66}{subsection.4.6.2}
-\contentsline {chapter}{REFERENCES}{68}{section*.36}
+\contentsline {section}{\numberline {4.1}Data Acquisition}{44}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}L1 Trigger and HLT}{45}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}T1 sites and data storage}{46}{subsection.4.1.2}% 
+\contentsline {section}{\numberline {4.2}Particle Flow Event Reconstruction}{47}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Iterative Tracking}{49}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Calorimeter Clustering}{50}{subsection.4.2.2}% 
+\contentsline {subsection}{\numberline {4.2.3}Linking Tracks and Clusters}{51}{subsection.4.2.3}% 
+\contentsline {section}{\numberline {4.3}Physics Object Reconstruction}{52}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}Jets}{53}{section.4.4}% 
+\contentsline {section}{\numberline {4.5}b-tagging}{59}{section.4.5}% 
+\contentsline {section}{\numberline {4.6}Event Generation}{62}{section.4.6}% 
+\contentsline {subsection}{\numberline {4.6.1}Event Generators}{62}{subsection.4.6.1}% 
+\contentsline {subsection}{\numberline {4.6.2}Detector Simulation}{66}{subsection.4.6.2}% 
+\contentsline {chapter}{\numberline {5}ANALYSIS }{68}{chapter.5}% 
+\vskip +10pt
+\contentsline {section}{\numberline {5.1}Data and Monte Carlo Samples }{69}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Data}{69}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {5.1.2}Monte Carlo}{69}{subsection.5.1.2}% 
+\contentsline {subsubsection}{\numberline {5.1.2.1}Multi-jet QCD Background}{71}{subsubsection.5.1.2.1}% 
+\contentsline {section}{\numberline {5.2}Object Selection}{72}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Data and MC Corrections}{72}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}JEC and Residuals}{72}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}JER Smearing}{73}{subsection.5.3.2}% 
+\contentsline {subsection}{\numberline {5.3.3}Pileup Re-weighting}{73}{subsection.5.3.3}% 
+\contentsline {subsection}{\numberline {5.3.4}CSV Reweighting}{74}{subsection.5.3.4}% 
+\contentsline {section}{\numberline {5.4}Trigger }{74}{section.5.4}% 
+\contentsline {subsection}{\numberline {5.4.1}Trigger Efficiency Estimation}{77}{subsection.5.4.1}% 
+\contentsline {section}{\numberline {5.5}Event Selection }{78}{section.5.5}% 
+\contentsline {section}{\numberline {5.6}Data-driven Background Estimation}{79}{section.5.6}% 
+\contentsline {subsection}{\numberline {5.6.1}Method Validation}{80}{subsection.5.6.1}% 
+\contentsline {section}{\numberline {5.7}Systematic Uncertainties}{81}{section.5.7}% 
+\contentsline {chapter}{REFERENCES}{82}{section*.44}% 

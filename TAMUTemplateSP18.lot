@@ -1,9 +1,19 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \vskip -10pt
-\contentsline {table}{\numberline {2.1}{\ignorespaces Quantum numbers of the SM fermions\relax }}{11}{table.caption.10}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Quantum numbers of the SM fermions\relax }}{11}{table.caption.10}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \vskip -10pt
-\contentsline {table}{\numberline {4.1}{\ignorespaces Cut based PF jet identification requirements for the tight working point.\relax }}{58}{table.caption.31}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Input variables used for the CSVv2 algorithm.\relax }}{60}{table.caption.33}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Cut based PF jet identification requirements for the tight working point.\relax }}{58}{table.caption.31}% 
+\contentsline {table}{\numberline {4.2}{\ignorespaces Input variables used for the CSVv2 algorithm.\relax }}{60}{table.caption.33}% 
+\addvspace {10\p@ }
+\vskip -10pt
+\contentsline {table}{\numberline {5.1}{\ignorespaces The datasets analyzed for this analysis.\relax }}{69}{table.caption.36}% 
+\contentsline {table}{\numberline {5.2}{\ignorespaces List of background MC datasets and cross sections used in the analysis. Every dataset name is followed by /RunIISummer16MiniAODv2-PUMoriond17\_80X\_mcRun2\_asymptotic\_2016\_TrancheIV\_v6-v1/MINIAODSIM.\relax }}{70}{table.caption.37}% 
+\contentsline {table}{\numberline {5.3}{\ignorespaces Working point minimum values for categorization.\relax }}{79}{table.caption.38}% 
+\contentsline {table}{\numberline {5.4}{\ignorespaces List of b-tagging requirements for the four leading jets in $p_{T}$ in the event (T4 tag list).\relax }}{79}{table.caption.39}% 
+\contentsline {table}{\numberline {5.5}{\ignorespaces Control region definition.\relax }}{80}{table.caption.40}% 
+\contentsline {table}{\numberline {5.6}{\ignorespaces List of b-tagging requirements for the two leading jets in $p_{T}$ in the event (T42 tag list).\relax }}{80}{table.caption.41}% 
+\contentsline {table}{\numberline {5.7}{\ignorespaces Control region definition for in-data validation.\relax }}{81}{table.caption.42}% 
+\contentsline {table}{\numberline {5.8}{\ignorespaces List of b-tagging requirements for the three leading jets in $p_{T}$ in the event (T3 tag list).\relax }}{81}{table.caption.43}% 

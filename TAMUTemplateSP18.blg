@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: TAMUTemplateSP18.aux
 A level-1 auxiliary file: data/titlepage.aux
 A level-1 auxiliary file: data/abstract.aux
@@ -12,6 +12,7 @@ A level-1 auxiliary file: data/section1.aux
 A level-1 auxiliary file: data/section2.aux
 A level-1 auxiliary file: data/section3.aux
 A level-1 auxiliary file: data/section4.aux
+A level-1 auxiliary file: data/section5.aux
 The style file: ieeetr.bst
 Database file #1: data/myReference.bib
 Warning--empty journal in cmsglobaltrigger
@@ -24,45 +25,45 @@ Warning--empty author in CMS:1997tfa
 Warning--empty journal in CMS:1997tfa
 Warning--empty author in CMS:2009nxa
 Warning--empty journal in CMS:2009nxa
-You've used 90 entries,
+You've used 92 entries,
             1876 wiz_defined-function locations,
-            1016 strings with 17879 characters,
-and the built_in function-call counts, 22732 in all, are:
-= -- 2306
-> -- 802
+            1025 strings with 18171 characters,
+and the built_in function-call counts, 23515 in all, are:
+= -- 2389
+> -- 832
 < -- 3
-+ -- 311
-- -- 221
-* -- 1450
-:= -- 3089
-add.period$ -- 107
-call.type$ -- 90
-change.case$ -- 85
++ -- 322
+- -- 230
+* -- 1505
+:= -- 3190
+add.period$ -- 109
+call.type$ -- 92
+change.case$ -- 87
 chr.to.int$ -- 0
-cite$ -- 100
-duplicate$ -- 1255
-empty$ -- 2099
-format.name$ -- 221
-if$ -- 5723
+cite$ -- 102
+duplicate$ -- 1297
+empty$ -- 2158
+format.name$ -- 230
+if$ -- 5916
 int.to.chr$ -- 0
-int.to.str$ -- 90
-missing$ -- 76
-newline$ -- 290
-num.names$ -- 83
-pop$ -- 290
+int.to.str$ -- 92
+missing$ -- 78
+newline$ -- 296
+num.names$ -- 85
+pop$ -- 293
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1028
+skip$ -- 1072
 stack$ -- 0
-substring$ -- 1249
-swap$ -- 615
+substring$ -- 1317
+swap$ -- 643
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 10
-while$ -- 175
-width$ -- 92
-write$ -- 868
+while$ -- 181
+width$ -- 94
+write$ -- 888
 (There were 10 warnings)
