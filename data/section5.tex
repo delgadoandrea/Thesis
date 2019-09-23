@@ -237,9 +237,76 @@ P(T|S) &= P(C_{1}\&C_{2}\&C_{3}\&...|S)\\
 
 for an $n$ number of $C_{n}$ cuts in the selection. This means that the efficiency of the trigger $T$ can be evaluated as a product of the efficiency of a single cut given the previous cuts.
 
-Now, we want to estimate the efficiency of a given trigger as a function of the offline variables in order to obtain a set of weights whose product would yield the same effect as requiring the trigger.
+Now, we want to estimate the efficiency of a given trigger as a function of the offline variables in order to obtain a set of weights whose product would yield the same effect as requiring the trigger. For example. if we take the specific case of a trigger which has the following three cuts:
 
-The trigger efficiency is measured in data using the SingleMuon dataset. We start by selecting events which pass the $HLT\_BIT\_HLT\_IsoMu24$ and an additional cut on quality of the event muon: loose muon POG ID and $p_{T}>40GeV$. We also require that there are at least four jets with $p_{T}$ > 30 GeV.
+\begin{itemize}
+	\item $C_{1}$: four calo-jets with $p_{T}$ > 45 GeV
+	\item $C_{2}$: three calo-CSV CSV > 0.3
+	\item $C_{3}$: four PF-jets with $p_{T}$ > 45 GeV
+\end{itemize}
+
+and we want to measure the efficiency as a function of the offline variables. Let's assume that the cuts depend only on the offline variables $CSV_{3}$ and $p_{T4}$ (CSV value of the third jet in decreasing CSV and the $p_{T}$ of the fourth jet in decreasing order of $p_{T}$). We can estimate the trigger efficiency as follows:
+
+\begin{equation}
+P(T|S) &= P(C_{1}|S)\cdot P(C_{2}|S,C_{1})\cdot P(C_{3}|S,C_{1},C_{2})
+\end{equation}
+
+The first term can be evaluated using the events collected by the ZeroBias trigger (or any trigger that is independent from T), and it can be parameterized with a turn-on function:
+
+\begin{equation}
+\mathcal{f}_{1}(p_{T4}) = P(C_{1}|p_{T4})
+\end{equation}
+
+The turn-on of the second term must be evaluated on the events that pass the first cut. Then, we can obtain the efficiency of the third term as:
+
+\begin{equation}
+\mathcal{f}_{3}(p_{T4}) = P(C_{3}|C_{1},C_{2},p_{T4})
+\end{equation}
+
+Once all turn-on curves are fitted we can obtain the trigger efficiency as a function of $p_{T4}$ and $CSV_{3}$ in the following way:
+
+\begin{equation}
+P(T|CSV_{3}, p_{T4}) = P(C_{3}|S,C_{1},C_{2})\cdot P(C_{2}|S,C_{1})\cdot P(C_{1}|S) = \mathcal{f}_{3}(p_{T4}) \cdot \mathcal{f}_{2}(CSV_{3}) \cdot \mathcal{f}_{1}(p_{T4})
+\end{equation}
+
+In other words, if we collected data with the trigger $T$, we get data/MC agreement applying to the simulated events the following weights:
+
+\begin{equation}
+\mathcal{w}(CSV_{3}, p_{T4}) = \mathcal{f}_{3}(p_{T4}) \cdot \mathcal{f}_{2}(CSV_{3}) \cdot \mathcal{f}_{1}(p_{T4})
+\end{equation}
+
+For the particular case of the triggers selected for this analysis, the efficiency is measured in data using the SingleMuon dataset. We start by selecting events which pass the $HLT\_BIT\_HLT\_IsoMu24$ and an additional cut on quality of the event muon: loose muon POG ID and $p_{T}>40GeV$. We also require that there are at least four jets with $p_{T}$ > 30 GeV. Then, we obtain weights for each trigger according to specific selection requirements, which will be explained in detail in the following sections.
+
+\subsubsection{QuadJet45$\_$TripleBTagCSV$_$p087 efficiency}
+
+The weights for the QuadJet45$\_$TripleBTagCSV$_$p087 trigger can be parameterized as follows:
+
+\begin{equation}
+\mathcal{w}_{Quad}(p_{T1},p_{T2},p_{T3},p_{T4},CSV_{3}) = TurnOnL1Pt1Pt2Pt3Pt4(p_{T1}+p_{T2}+p_{T3}+p_{T4})\cdot TurnOnCaloPt4(p_{T4}) \cdot Eff(CSV_{3}) \cdot TurnOnPFPt4(p_{T4})
+\label{eq:weights45}
+\end{equation}
+
+where:
+
+\begin{align}
+	C_{1} &= TurnOnL1Pt1Pt2Pt3Pt4($p_{T1}+p_{T2}+p_{T3}+p_{T4}$): turn-on curve for events passing the L1 trigger requirements, as a function of the $p_{T}$ sum of the four leading calo jets.
+	C_{2} &= TurnOnCaloPt4($p_{T4}$): turn on curve for events passing the hltQuadCentralJet45 trigger and C_{1}, as a function of the fourth leading calo jet in $p_{T}$.
+	C_{3} &= Eff($CSV_{3}$) is the efficiency for events passing C_{1}, C_{2}, and the hltBTagCaloCSVp087Triple trigger, as a function of the third leading jet in offline CSV value.
+	C_{4} &= TurnOnPFPt4($p_{T4}$): turn on curve for events passing the hltQuadPFCentralJetLooseID45 trigger, C_{1}, C_{2}, and C_{3} as a function of the fourth leading PF jet in $p_{T}$.
+\end{itemize}
+
+These turn on curves are shown in Figure. The overall trigger efficiency is validated using the same preselection used for the estimate. We compare distributions derived by applying the weights as computer in \ref{eq:weights45} with what we obtain if we apply the trigger bit, reporting a good agreement which validates the method. REsults can be found in Figure .
+
+\subsubsection{DoubleJet90$\_$Double30$\_$TripleBTagCSV$\_$p087 efficiency}
+
+The weights for the DoubleJet90$\_$Double30$\_$TripleBTagCSV$\_$p087 trigger can be parameterized as follows:
+
+\begin{equation}
+\mathcal{w}_{Di90Di30}(p_{T1},p_{T2},p_{T3},p_{T4},CSV_{3}) = TurnOnL1Pt1Pt2Pt3Pt4(p_{T1}+p_{T2}+p_{T3}+p_{T4})\cdot TurnOnCaloPt4(p_{T4}) \cdot TurnOnCaloPt2(p_{T2}) \cdot Eff(CSV_{3}) \cdot TurnOnPFPt4(p_{T4}) \cdot TurnOnPFPt2(p_{T})
+\label{eq:weightsdi90}
+\end{equation}
+
+where the measured efficiencies for the L1 trigger requirements, calo jets, and PF jets selections are shown in Figure . As in the case for the Quad45 trigger, a closure test was performed to validate the method, as can be seen in Figure .
 
 \section{Event Selection \label{sec:selection}}
 
