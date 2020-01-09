@@ -3,7 +3,7 @@
 \vskip -10pt
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Particles of the Standard Model of particle physics. Reprinted from \cite {StandardModelDiagram}\relax }}{3}{figure.caption.9}% 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Summary of the ${R}_{{K}^{(*)}}$ measurements performed at the $B$-factories and by the LHCb experiment. Results are presented using different colored markers. The (yellow) vertical line corresponds to the SM prediction. Reprinted from \cite {Bifani_2018}\relax }}{25}{figure.caption.11}% 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Lowest order Feynmann diagrams for $b\rightarrow s$ quark transition.\relax }}{26}{figure.caption.12}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Lowest order Feynmann diagrams for $b\rightarrow s$ quark transition.\relax }}{25}{figure.caption.12}% 
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Feynman diagram for bottom fermion fusion (BFF).\relax }}{28}{figure.caption.13}% 
 \contentsline {figure}{\numberline {2.5}{\ignorespaces PDF for the LHC Run II. Reprinted from \cite {Ball:2014uwa}.\relax }}{29}{figure.caption.14}% 
 \addvspace {10\p@ }
@@ -30,3 +30,5 @@
 \contentsline {figure}{\numberline {4.10}{\ignorespaces b-jet efficiency as a function of jet $p_{T}$ for the DeepCSV algorithm for different working points\cite {Sirunyan_2018}\relax }}{62}{figure.caption.34}% 
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Parton distribution functions at the $\mu ^{2}=10^{4}GeV^{2}$ mass scale. Here, the vertical axis is the number density of the parton. Effectively it's a probability density, but normalized to the expected number of a given parton in the proton. The width in each line is the uncertainty in the PDF for that particular parton\cite {Martin:2009iq}\relax }}{64}{figure.caption.35}% 
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Mean number of interactions per bunch crossing for the 2016 proton-proton run at $\sqrt {s}$=13 TeV. The two plots shown here use the same data but different values for the minimum bias cross section were assumed. The left plot uses the "CMS recommended" value of 69.2 mb, which is determined by finding the best agreement with data and is recommended for CMS analyses. The right plot uses the "LHC standard" value of 80 mb, which is taken from the theoretical prediction from Pythia and should be used to compare to other LHC experiments\cite {cmslumitwiki}\relax }}{74}{figure.caption.38}% 
+\vskip -10pt

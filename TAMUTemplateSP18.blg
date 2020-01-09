@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: TAMUTemplateSP18.aux
 A level-1 auxiliary file: data/titlepage.aux
@@ -25,36 +25,36 @@ Warning--empty author in CMS:1997tfa
 Warning--empty journal in CMS:1997tfa
 Warning--empty author in CMS:2009nxa
 Warning--empty journal in CMS:2009nxa
-You've used 92 entries,
+You've used 93 entries,
             1876 wiz_defined-function locations,
-            1025 strings with 18171 characters,
-and the built_in function-call counts, 23515 in all, are:
-= -- 2389
-> -- 832
+            1028 strings with 18264 characters,
+and the built_in function-call counts, 23620 in all, are:
+= -- 2399
+> -- 833
 < -- 3
-+ -- 322
++ -- 323
 - -- 230
-* -- 1505
-:= -- 3190
-add.period$ -- 109
-call.type$ -- 92
-change.case$ -- 87
+* -- 1509
+:= -- 3200
+add.period$ -- 110
+call.type$ -- 93
+change.case$ -- 88
 chr.to.int$ -- 0
-cite$ -- 102
-duplicate$ -- 1297
-empty$ -- 2158
+cite$ -- 103
+duplicate$ -- 1301
+empty$ -- 2176
 format.name$ -- 230
-if$ -- 5916
+if$ -- 5946
 int.to.chr$ -- 0
-int.to.str$ -- 92
+int.to.str$ -- 93
 missing$ -- 78
-newline$ -- 296
+newline$ -- 299
 num.names$ -- 85
-pop$ -- 293
+pop$ -- 300
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1072
+skip$ -- 1076
 stack$ -- 0
 substring$ -- 1317
 swap$ -- 643
@@ -64,6 +64,6 @@ top$ -- 0
 type$ -- 0
 warning$ -- 10
 while$ -- 181
-width$ -- 94
-write$ -- 888
+width$ -- 95
+write$ -- 895
 (There were 10 warnings)

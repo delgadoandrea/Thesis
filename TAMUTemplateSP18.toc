@@ -22,8 +22,8 @@
 \contentsline {subsection}{\numberline {2.3.2}Electroweak Interaction}{7}{subsection.2.3.2}% 
 \contentsline {subsection}{\numberline {2.3.3}Strong Interaction}{14}{subsection.2.3.3}% 
 \contentsline {subsection}{\numberline {2.3.4}Brout-Englert-Higgs Mechanism and the Higgs Boson}{16}{subsection.2.3.4}% 
-\contentsline {section}{\numberline {2.4}Beyond the Standard Model}{21}{section.2.4}% 
-\contentsline {section}{\numberline {2.5}Lepton universality}{22}{section.2.5}% 
+\contentsline {section}{\numberline {2.4}Beyond the Standard Model}{20}{section.2.4}% 
+\contentsline {section}{\numberline {2.5}Lepton universality}{21}{section.2.5}% 
 \contentsline {section}{\numberline {2.6}B-hadron anomalies}{23}{section.2.6}% 
 \contentsline {subsection}{\numberline {2.6.1}$b\rightarrow s$ quark transitions}{24}{subsection.2.6.1}% 
 \contentsline {section}{\numberline {2.7}The Z'}{26}{section.2.7}% 
@@ -64,14 +64,20 @@
 \contentsline {subsubsection}{\numberline {5.1.2.1}Multi-jet QCD Background}{71}{subsubsection.5.1.2.1}% 
 \contentsline {section}{\numberline {5.2}Object Selection}{72}{section.5.2}% 
 \contentsline {section}{\numberline {5.3}Data and MC Corrections}{72}{section.5.3}% 
-\contentsline {subsection}{\numberline {5.3.1}JEC and Residuals}{72}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.1}JEC and Residuals}{73}{subsection.5.3.1}% 
 \contentsline {subsection}{\numberline {5.3.2}JER Smearing}{73}{subsection.5.3.2}% 
 \contentsline {subsection}{\numberline {5.3.3}Pileup Re-weighting}{73}{subsection.5.3.3}% 
-\contentsline {subsection}{\numberline {5.3.4}CSV Reweighting}{74}{subsection.5.3.4}% 
-\contentsline {section}{\numberline {5.4}Trigger }{74}{section.5.4}% 
-\contentsline {subsection}{\numberline {5.4.1}Trigger Efficiency Estimation}{77}{subsection.5.4.1}% 
-\contentsline {section}{\numberline {5.5}Event Selection }{78}{section.5.5}% 
-\contentsline {section}{\numberline {5.6}Data-driven Background Estimation}{79}{section.5.6}% 
-\contentsline {subsection}{\numberline {5.6.1}Method Validation}{80}{subsection.5.6.1}% 
-\contentsline {section}{\numberline {5.7}Systematic Uncertainties}{81}{section.5.7}% 
-\contentsline {chapter}{REFERENCES}{82}{section*.44}% 
+\contentsline {subsection}{\numberline {5.3.4}CSV Reweighting}{75}{subsection.5.3.4}% 
+\contentsline {section}{\numberline {5.4}Trigger }{76}{section.5.4}% 
+\contentsline {subsection}{\numberline {5.4.1}Trigger Efficiency Estimation}{78}{subsection.5.4.1}% 
+\contentsline {subsubsection}{\numberline {5.4.1.1}QuadJet45$\_$TripleBTagCSV$\_$p087 efficiency}{81}{subsubsection.5.4.1.1}% 
+\contentsline {subsubsection}{\numberline {5.4.1.2}DoubleJet90$\_$Double30$\_$TripleBTagCSV$\_$p087 efficiency}{82}{subsubsection.5.4.1.2}% 
+\contentsline {section}{\numberline {5.5}Event Selection }{82}{section.5.5}% 
+\contentsline {section}{\numberline {5.6}Data-driven Background Estimation}{83}{section.5.6}% 
+\contentsline {subsection}{\numberline {5.6.1}Method Validation}{84}{subsection.5.6.1}% 
+\contentsline {section}{\numberline {5.7}Systematic Uncertainties}{85}{section.5.7}% 
+\contentsline {subsection}{\numberline {5.7.1}Detector Simulation - Related}{85}{subsection.5.7.1}% 
+\contentsline {subsubsection}{\numberline {5.7.1.1}LHC Luminosity}{85}{subsubsection.5.7.1.1}% 
+\contentsline {subsubsection}{\numberline {5.7.1.2}Pileup Weights}{87}{subsubsection.5.7.1.2}% 
+\contentsline {subsubsection}{\numberline {5.7.1.3}Jet energy scale}{87}{subsubsection.5.7.1.3}% 
+\contentsline {chapter}{REFERENCES}{88}{section*.47}% 

@@ -80,6 +80,13 @@ This analysis makes use of MC simulation to study the background processes which
 		QCD\_HT50to100 & QCD\_HT50to100\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 246300000.0 \\
 		QCD\_HT100to200 & QCD\_HT100to200\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 28060000.0\\
 		QCD\_HT200to300 & QCD\_HT200to300\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 1710000.0 \\
+		QCD\_HT300to500 & QCD\_HT300to500\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 347500.0\\ 	
+		QCD\_HT500to700 & QCD\_HT500to700\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 32060.0\\ 
+		QCD\_HT700to1000 & QCD\_HT700to1000\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 6829.0\\
+		QCD\_HT1000to1500 & QCD\_HT1000to1500\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 1207.0\\	
+		QCD\_HT1500to2000 & QCD\_HT1500to2000\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 120.0\\ 
+		QCD\_HT2000toInf & QCD\_HT2000toInf\_TuneCUETP8M1\_13TeV-madgraphMLM-pythia8 & 25.25\\ 
+		TTJets & TTJets\_TuneCUETP8M2T4\_13TeV-amcatnloFXFX-pythia8 & 831.76\\
 		\hline
 	\end{tabular}
 	\caption{List of background MC datasets and cross sections used in the analysis. Every dataset name is followed by /RunIISummer16MiniAODv2-PUMoriond17\_80X\_mcRun2\_asymptotic\_2016\_TrancheIV\_v6-v1/MINIAODSIM.}
@@ -102,13 +109,13 @@ Rather than relying on MC for the QCD background sample, a data-driven method to
 
 As described in Chapter 4, CMS provides every user a list of reconstructed objects (i.e. jets, electrons, etc.) which may be used. However, these reconstruction algorithms are intentionally generic so that the objects they return are applicable to a wide array of physics analyses. Specific groups within CMS called physics object groups (POGs) are responsible for developing object quality criteria which must be implemented by each analysis to prevent fake or poorly reconstructed objects. This section will discuss the object selection criteria to identify jets, which all meet or exceed the object requirements as set by the relevant POGs. Only events which contain objects of the right quality and multiplicities will be used in this analysis.
 
-Jets used for this analysis must meet the Tight Jet ID criteria as described in Section \ref{sec:jets}. Moreover, selected jets must have a $p_{T}$ > 30 GeV and $|\eta|$ < 2.6. Since b-jet identification plays a key role in identifying the signal, the four leading jets on the event are required to be b-tagged. 
+Jets used for this analysis must meet the Tight Jet ID criteria as described in Section \ref{sec:jets}. Moreover, selected jets must have a $p_{T}$ > 30 GeV and $|\eta|$ < 2.6. Since b-jet identification plays a key role in identifying the signal,the four leading jets on the event are required to be b-tagged.
 
 \section{Data and MC Corrections}
 
-Often during MC simulation, the exact data taking conditions are not known and advance or the precision of the physics generators is not enough to model data accurately. For these and many more reasons, MC might not model data perfectly and might show some discrepancies when both are compared.
+Despite the efforts to make sure the MC simulation models data properly, there can still exist discrpeancies between the observed data and simulation. OFten this occurs because the exact data taking conditions are not known in advance, like the pileup conditions during the actual run of the experiment. In other cases, this discrepancies arise from the precision of the physics generators, which might not be enough to model data accurately. A significant part of the physics of hadronization is still unkown and hard physics process can often be computed up to NLO precision. Data on the other hand, contains all hadronization effects and all orders of precision. 
 
-In some cases, an additional level of correction must be applied to data or MC, and they are specific to the analysis. In the following sections, an attempt to explain some of these corrections is made.
+In Sections and I have already discussed some object-specific corrections like jet energy corrections and resolution. For other discrepancies, it is often necessary to reweight the full event rather than a specific object and they are specific to the analysis. In the following sections, an attempt to explain some of these corrections is made.
 
 \subsection{JEC and Residuals}
 The details of the factorized approach adopted by CMS for jet energy calibration were discussed in Section. The final step in this chain are the residual corrections applied to data, to account for data to MC differences.
@@ -121,21 +128,35 @@ The jet $p_{T}$ resolution is relatively poor compared to the resolution of many
 A detailed description of the Methods can be found at \cite{jes_jer} but strictly speaking one could say that the measurement of JER is an extension of the methods used for measuring JES, but instead of looking at the mean of the response distribution, we are interested in its width.
 
 \subsection{Pileup Re-weighting}
-The average number of proton-proton interactions per bunch crossing is related to the instantaneous luminosity, which varied over the course of the data taking period. Furthermore, the MC used in this analysis was produced before the data was taken, so the actual pileup conditions were unknown. Thus, MC was generated assuming specific conditions that might not match data that well. 
+Up to this point, pileup has been described as additional proton-proton interactions within an event, besides the interaction that produced the physics objects we are interested in studying, but there are several and other properties of pileup which are worth noting. First, pileup is related to additional objects (tracks or energy) which might be found in the same bunch crossing as the event under study. In reality, there are two different kinds of pileup. There is indeed pileup which comes from additional proton-proton interactions within the same bunch crossing, known as "in-time" pileup, but there is also energy from pileup added to objects becaus eit was left in the sub-detectors from bunch crossing before or after the current one. This is known as "out-of-time" pileup and is largely due to the fact that the integration window of the sub-detectors can be larger than 25 ns. 
 
-At CMS, the true number of proton-proton interactions within a given event is referred to as $\mu$ and is related to the instantaneous luminosity and is therefore expected to change even within a luminosity section. As a benchmark, the average number of proton-proton collisions per bunch crossing in 2016 was 25.
+Second, the true number of proton-proton interactions within an event, $\mu$ is related to the instantaneous luminosity, which can vary within any given data taking period and even within a luminosity section (LS). As a benchmark, the average number of proton-proton interactions per bunch crossing in 2016 was 23.
 
-The anticipated $\mu$ distribution rarely matches the one observed in the data and therefore MC must be re-weighted such that the $\mu$ distributions match.
+Finally, pileup can affect the reconstruction efficiency and even the observed kinematics of all the objects used in the analysis and therefore it is of vital importance that the pileup distribution in MC follows that of data as close as possible. 
 
-%cite 167 in Alexx's thesis
+Since the MC samples used in CMS are usually produced before the data was taken, the actual pileup conditions were unknown during the generation process. Thus, MC was generated assuming specific conditions that might not match data that well. A broad distribution of $\mu$ values, the number of mini-bias pileup events overlaid on the hard scatter event, is generally chosen so as to cover all pileup conditions which mught be ecperienced over the course of a data taking period. Unsurpsisingly, the anticipated $\mu$ distribution rarely matches the observed one in data and thus the MC must be reweighted such that the $\mu$ distributions match.
+ %reference 167 in Alexx' thesis
 
-To generate a histogram for the average number of interactions per bunch crossing coming from data we make use of the approved pileupCalc tool provided by CMS. This tool takes as input the total inelastic cross section $\sigma_{inelastic}$ = , a file in JSON format with every run number and luminosity section matched to a given average instantaneous luminosity and integrated luminosity for that given luminosity section, and another JSON formatted file with the run numbers ans luminosity section used in the given analysis. 
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.45\textwidth]{figures/pileup_pp_2016_69200.png}
+	\includegraphics[width=0.45\textwidth]{figures/pileup_pp_2016_80000.png}
+	\singlespace
+	\caption{Mean number of interactions per bunch crossing for the 2016 proton-proton run at $\sqrt{s}$=13 TeV. The two plots shown here use the same data but different values for the minimum bias cross section were assumed. The left plot uses the "CMS recommended" value of 69.2 mb, which is determined by finding the best agreement with data and is recommended for CMS analyses. The right plot uses the "LHC standard" value of 80 mb, which is taken from the theoretical prediction from Pythia and should be used to compare to other LHC experiments\cite{cmslumitwiki}}.
+	\label{fig:cmspu}
+	
+\end{figure}
+
+To generate a histogram for the average number of interactions per bunch crossing coming from data we make use of the approved pileupCalc tool provided by CMS. This tool takes as input the total inelastic cross section $\sigma_{inelastic}$ = 69.2, a "pileup file" in JSON format (provided centrally by CMS for every data taking period) with every run number and luminosity section matched to a given average instantaneous luminosity and integrated luminosity for that given luminosity section, and another JSON formatted file with the run numbers and luminosity section used in the given analysis. In order to account for the prescaling in the trigger path used in the analysis, the analysis json file was modified.
+
+First, the delivered and recorded luminosity per lumi section for the analysis trigger paths we are calculated by using the brilcalc tool. This step generates a file that is the input to the pileupReCalcl$\_$HLTpaths.py script which generates a new version of the pileup file where weights are applied to each lumi section in the pileup distribution where the recorded luminosity is smaller than nominal due to trigger prescales. 
 
 The per event weights as a function of $\mu$ are created by dividing the normalized distribution from data by the normalized MC based distribution. The weights are then applied to each MC event by looking up the weight for the mean number of pileup interactions used to generate that specific event.
-
 %\cite 168 in Alexx' thesis
 
-The distributions of pileup interactions in MC and data as well as the corresponding pileup weight can be seen in Figure.
+The distributions of pileup interactions in MC and data as well as the corresponding pileup weight can be seen in Figure for MC generated signal for a Z' with a mass of 500 GeV.
 
 \subsection{CSV Reweighting}
 
@@ -143,7 +164,12 @@ In Section, a criterion for tagging a jet as being produced by a $b$ quark and t
 
 This analysis relies heavily in the ability to identify $b$ jets, so it is absolutely crucial that it behave the same in both data and MC and accurately describe the rate of observing a $b$ jet. In ref 169 is noted that the tagging efficiency in data is not the same as that in MC, so a correction to the CSV discriminant must be made. The corrections described there correct both the rate of observing a jet in MC with a CSV value above a given threshold as well as the general shape of the CSV distribution. IF at the end of the procedure the shape of the data and MC distributions agree, then they will also properly assess the rate of events passing a given CSV threshold.
 
-The method is based on calculating a scale factor for both heavy and light flavor quarks which is parameterized by the CSV value, jet $p_{T}$, and, in the case of light flavor quarks, jet $\eta$. We first retrieve the truth level jet flavor in order to determine the correct category: $b$ jet, $c$ jet, or light flavor (anything else). The $c$ jets are given a flat scale factor of 1, meaning that there is no need to correct the CSV value for this flavor. The $b$ jet scale factors are divided into five $p_{T}$ bins.
+The method is based on calculating a scale factor for both heavy and light flavor quarks which is parameterized by the CSV value, jet $p_{T}$, and, in the case of light flavor quarks, jet $\eta$. We first retrieve the truth level jet flavor in order to determine the correct category: $b$ jet, $c$ jet, or light flavor (anything else). The $c$ jets are given a flat scale factor of 1, meaning that there is no need to correct the CSV value for this flavor. The $b$ jet scale factors are divided into five $p_{T}$ bins of $p_{T}$ < 40 GeV, 40 GeV <  $p_{T}$ < 60 GeV, 60 GeV <  $p_{T}$ 100 GeV, 100 GeV <  $p_{T}$ 160 GeV, $p_{T}$ > 160 GeV. The light flavor scale factors are divided into nly three $p_{T}$ bins of $p_{T}$ < 40 GeV, 40 GeV <  $p_{T}$ < 60 GeV, but are also divided in $\eta$ bins of |$\eta$| < 0.8, 0.8 $\geq |\eta|$ < 1.6, and 1.6 $\geq |\eta|$ < 2.4. An individual scale factor is retrieved for each jet, which is then combined as in Equation in order to create an event weight.
+
+\begin{equation}
+SF_{total} = \prod_{i}^{N_{jets}}SF_{jet_{i}} = SF_{jet_{1}}\cdot SF_{jet_{2}}\cdot ... 
+\end{equation}
+The CSV value for each jet is unchanged, but the event is weighted by $SF_{total}$.
 
 \section{Trigger \label{sec:trigger}}
 
@@ -159,7 +185,7 @@ The HLT path structure can be summarized as:
 
 \textbf{DoubleJet90$\_$Double30$\_$TripleBTagCSV$\_$p087:}
 \begin{itemize}
-	\item L1$\_$TripleJet$\_$84$\_$68$\_$48$\_$VBF OR L1$\_$TripleJet$\_$88$\_$72$\_$56$\_$VBF OR L1$\_$TripleJet$\_$92$\_$76$\_$64$\_$VBF OR L1$\_$HTT280 OR L1$\_$HTT300 OR L1$\_$HTT320 OR L1$\_$SingleJet170 OR L1$\_$SingleJet180 OR L1$\_$SingleJet200 OR L1$\_$DoubleJetC100 OR L1$\_$DoubleJetC112 OR L1$\_$DoubleJetC120
+	\item L1$\_$TripleJet$\_$84$\_$68$\_$48$\_$VBF OR L1$\_$TripleJet$\_$88$\_$72$\_$56$\_$VBF OR\\ L1$\_$TripleJet$\_$92$\_$76$\_$64$\_$VBF OR L1$\_$HTT280 OR L1$\_$HTT300 OR L1$\_$HTT320 OR L1$\_$SingleJet170 OR L1$\_$SingleJet180 OR L1$\_$SingleJet200 OR L1$\_$DoubleJetC100 OR L1$\_$DoubleJetC112 OR L1$\_$DoubleJetC120
 	\item Reconstruct anti-$k_{T}$ 0.4 L1FastJet corrected Calo-jets
 	\begin{itemize}
 		\item 2 jets with $|\eta|$ < 2.6 and $p_{T}$ > 90 GeV
@@ -248,63 +274,63 @@ Now, we want to estimate the efficiency of a given trigger as a function of the 
 and we want to measure the efficiency as a function of the offline variables. Let's assume that the cuts depend only on the offline variables $CSV_{3}$ and $p_{T4}$ (CSV value of the third jet in decreasing CSV and the $p_{T}$ of the fourth jet in decreasing order of $p_{T}$). We can estimate the trigger efficiency as follows:
 
 \begin{equation}
-P(T|S) &= P(C_{1}|S)\cdot P(C_{2}|S,C_{1})\cdot P(C_{3}|S,C_{1},C_{2})
+P(T|S) = P(C_{1}|S)\cdot P(C_{2}|S,C_{1})\cdot P(C_{3}|S,C_{1},C_{2})
 \end{equation}
 
 The first term can be evaluated using the events collected by the ZeroBias trigger (or any trigger that is independent from T), and it can be parameterized with a turn-on function:
 
 \begin{equation}
-\mathcal{f}_{1}(p_{T4}) = P(C_{1}|p_{T4})
+f_{1}(p_{T4}) = P(C_{1}|p_{T4})
 \end{equation}
 
 The turn-on of the second term must be evaluated on the events that pass the first cut. Then, we can obtain the efficiency of the third term as:
 
 \begin{equation}
-\mathcal{f}_{3}(p_{T4}) = P(C_{3}|C_{1},C_{2},p_{T4})
+f_{3}(p_{T4}) = P(C_{3}|C_{1},C_{2},p_{T4})
 \end{equation}
 
 Once all turn-on curves are fitted we can obtain the trigger efficiency as a function of $p_{T4}$ and $CSV_{3}$ in the following way:
 
 \begin{equation}
-P(T|CSV_{3}, p_{T4}) = P(C_{3}|S,C_{1},C_{2})\cdot P(C_{2}|S,C_{1})\cdot P(C_{1}|S) = \mathcal{f}_{3}(p_{T4}) \cdot \mathcal{f}_{2}(CSV_{3}) \cdot \mathcal{f}_{1}(p_{T4})
+P(T|CSV_{3}, p_{T4}) = P(C_{3}|S,C_{1},C_{2})\cdot P(C_{2}|S,C_{1})\cdot P(C_{1}|S) = f_{3}(p_{T4}) \cdot f_{2}(CSV_{3}) \cdot f_{1}(p_{T4})
 \end{equation}
 
 In other words, if we collected data with the trigger $T$, we get data/MC agreement applying to the simulated events the following weights:
 
 \begin{equation}
-\mathcal{w}(CSV_{3}, p_{T4}) = \mathcal{f}_{3}(p_{T4}) \cdot \mathcal{f}_{2}(CSV_{3}) \cdot \mathcal{f}_{1}(p_{T4})
+w(CSV_{3}, p_{T4}) = f_{3}(p_{T4}) \cdot f_{2}(CSV_{3}) \cdot f_{1}(p_{T4})
 \end{equation}
 
-For the particular case of the triggers selected for this analysis, the efficiency is measured in data using the SingleMuon dataset. We start by selecting events which pass the $HLT\_BIT\_HLT\_IsoMu24$ and an additional cut on quality of the event muon: loose muon POG ID and $p_{T}>40GeV$. We also require that there are at least four jets with $p_{T}$ > 30 GeV. Then, we obtain weights for each trigger according to specific selection requirements, which will be explained in detail in the following sections.
+For the particular case of the triggers selected for this analysis, the efficiency is measured in data using the SingleMuon dataset. We start by selecting events which pass the \textit{HLT$\_$BIT$\_$HLT$\_$IsoMu24} and an additional cut on quality of the event muon: loose muon POG ID and $p_{T}>40GeV$. We also require that there are at least four jets with $p_{T}$ > 30 GeV. Then, we obtain weights for each trigger according to specific selection requirements, which will be explained in detail in the following sections.
 
-\subsubsection{QuadJet45$\_$TripleBTagCSV$_$p087 efficiency}
+\subsubsection{QuadJet45$\_$TripleBTagCSV$\_$p087 efficiency}
 
-The weights for the QuadJet45$\_$TripleBTagCSV$_$p087 trigger can be parameterized as follows:
+The weights for the QuadJet45$\_$TripleBTagCSV$\_$p087 trigger can be parameterized as follows:
 
-\begin{equation}
-\mathcal{w}_{Quad}(p_{T1},p_{T2},p_{T3},p_{T4},CSV_{3}) = TurnOnL1Pt1Pt2Pt3Pt4(p_{T1}+p_{T2}+p_{T3}+p_{T4})\cdot TurnOnCaloPt4(p_{T4}) \cdot Eff(CSV_{3}) \cdot TurnOnPFPt4(p_{T4})
+\begin{dmath}
+w_{Quad45}(p_{T1},p_{T2},p_{T3},p_{T4},CSV_{3}) = TurnOnL1Pt1Pt2Pt3Pt4(p_{T1}+p_{T2}+p_{T3}+p_{T4}) \cdot TurnOnCaloPt4(p_{T4}) \cdot Eff(CSV_{3}) \cdot TurnOnPFPt4(p_{T4})
 \label{eq:weights45}
-\end{equation}
+\end{dmath}
 
 where:
 
-\begin{align}
-	C_{1} &= TurnOnL1Pt1Pt2Pt3Pt4($p_{T1}+p_{T2}+p_{T3}+p_{T4}$): turn-on curve for events passing the L1 trigger requirements, as a function of the $p_{T}$ sum of the four leading calo jets.
-	C_{2} &= TurnOnCaloPt4($p_{T4}$): turn on curve for events passing the hltQuadCentralJet45 trigger and C_{1}, as a function of the fourth leading calo jet in $p_{T}$.
-	C_{3} &= Eff($CSV_{3}$) is the efficiency for events passing C_{1}, C_{2}, and the hltBTagCaloCSVp087Triple trigger, as a function of the third leading jet in offline CSV value.
-	C_{4} &= TurnOnPFPt4($p_{T4}$): turn on curve for events passing the hltQuadPFCentralJetLooseID45 trigger, C_{1}, C_{2}, and C_{3} as a function of the fourth leading PF jet in $p_{T}$.
+\begin{itemize}
+	\item $C_{1}$ = TurnOnL1Pt1Pt2Pt3Pt4($p_{T1}+p_{T2}+p_{T3}+p_{T4}$): turn-on curve for events passing the L1 trigger requirements, as a function of the $p_{T}$ sum of the four leading calo jets.
+	\item $C_{2}$ = TurnOnCaloPt4($p_{T4}$): turn on curve for events passing the hltQuadCentralJet45 trigger and $C_{1}$, as a function of the fourth leading calo jet in $p_{T}$.
+	\item $C_{3}$ = Eff($CSV_{3}$) is the efficiency for events passing $C_{1}$, $C_{2}$, and the hltBTagCaloCSVp087Triple trigger, as a function of the third leading jet in offline CSV value.
+	\item $C_{4}$ = TurnOnPFPt4($p_{T4}$): turn on curve for events passing the hltQuadPFCentralJetLooseID45 trigger, $C_{1}$, $C_{2}$, and $C_{3}$ as a function of the fourth leading PF jet in $p_{T}$.
 \end{itemize}
 
-These turn on curves are shown in Figure. The overall trigger efficiency is validated using the same preselection used for the estimate. We compare distributions derived by applying the weights as computer in \ref{eq:weights45} with what we obtain if we apply the trigger bit, reporting a good agreement which validates the method. REsults can be found in Figure .
+These turn on curves are shown in Figure. The overall trigger efficiency is validated using the same preselection used for the estimate. We compare distributions derived by applying the weights as computer in \ref{eq:weights45} with what we obtain if we apply the trigger bit, reporting a good agreement which validates the method. Results can be found in Figure .
 
 \subsubsection{DoubleJet90$\_$Double30$\_$TripleBTagCSV$\_$p087 efficiency}
 
 The weights for the DoubleJet90$\_$Double30$\_$TripleBTagCSV$\_$p087 trigger can be parameterized as follows:
 
-\begin{equation}
-\mathcal{w}_{Di90Di30}(p_{T1},p_{T2},p_{T3},p_{T4},CSV_{3}) = TurnOnL1Pt1Pt2Pt3Pt4(p_{T1}+p_{T2}+p_{T3}+p_{T4})\cdot TurnOnCaloPt4(p_{T4}) \cdot TurnOnCaloPt2(p_{T2}) \cdot Eff(CSV_{3}) \cdot TurnOnPFPt4(p_{T4}) \cdot TurnOnPFPt2(p_{T})
+\begin{dmath}
+w_{Di90Di30}(p_{T1},p_{T2},p_{T3},p_{T4},CSV_{3}) = TurnOnL1Pt1Pt2Pt3Pt4(p_{T1}+p_{T2}+p_{T3}+p_{T4})\cdot TurnOnCaloPt4(p_{T4}) \cdot TurnOnCaloPt2(p_{T2}) \cdot Eff(CSV_{3}) \cdot TurnOnPFPt4(p_{T4}) \cdot TurnOnPFPt2(p_{T})
 \label{eq:weightsdi90}
-\end{equation}
+\end{dmath}
 
 where the measured efficiencies for the L1 trigger requirements, calo jets, and PF jets selections are shown in Figure . As in the case for the Quad45 trigger, a closure test was performed to validate the method, as can be seen in Figure .
 
@@ -426,19 +452,84 @@ This allows for a cross-check in data that it is not significantly signal-contam
 Figure shows the $m_{jj}$ distribution in CR1A and prediction (CR1B*CR3A/CR3B) for the data sample. Since the ratio of these two distributions is flat in our region of interest, we can conclude that this method works as expected.
 
 \section{Systematic Uncertainties}
-\begin{itemize}
-	\item Detector-simulation related
-	\begin{itemize}
-		\item Jet energy scale
-		\item Jet energy resolution
-		\item b-tagging efficiency
-	\end{itemize}
-	\item Signal generation uncertainties
-	\begin{itemize}
-		\item PDF uncertainties
-		\item Matching parameter of choice (xqcut, qcut in Pythia)
-	\end{itemize}
-\end{itemize}
+The input to the statistical analysis is a set of histograms of the Z' $m_{jj}$ distributions and their associated systematic uncertainties. Given that this is a shape analysis, it is important to consider systematic uncertainties that may change the expected yields (rate changes), the shape of the discriminant variable, or both. We consider many sources of uncertainty on both the background estimation and the signal normalization.
+
+Table \ref{tab:systematics_summary} summarizes all of the systematic uncertainties considered for this analysis, with one systematic per line. The uncertainties can be categorized in two groups, detector simulation and signal generation - related. Each source of uncertainty will be described in more detail in the sections below.
+
+\begin{sidewaystable}[htbp]
+	\centering
+	\begin{tabular}{lccl}%
+		\hline
+		Source                                            & Type  & Rate Uncertainty [\%] & Notes \\
+		\hline
+		PDF (BFF)                                  & lnN   & temp         & PDF uncertainty for BFF initiated processes  \\
+		\hline
+		QCD                                               & lnN   & temp          & Scale uncertainty for data-driven QCD prediction \\
+		\hline
+		Luminosity 13 TeV                          & lnN   & temp         & Signal and all backgrounds \\
+		Jet Energy Scale                                  & shape & 0-20        & Signal and all backgrounds \\
+		Pileup Weight                                     & shape & 0-8         & Signal and all backgrounds \\
+		DeepCSV Weight                                        & shape & 0-17        & Signal and all backgrounds \\
+		\hline
+	\end{tabular}
+	\caption{Summary of the systematic uncertainties used in this analysis.}
+	\label{tab:systematics_summary}
+\end{sidewaystable}
+
+\subsection{Detector Simulation - Related}
+
+\subsubsection{LHC Luminosity}
+A flat rate uncertainty of 2.5$\%$ is applied to all of the simulated samples to account for the uncertainty on the LHC luminosity and thus the simulation normalizations\cite{CMS-PAS-LUM-17-001}.
+	 
+\subsubsection{Pileup Weights}
+The necessity of the pileup weights was discussed in Section. The number of pileup interactions in a single bunch crossing is given by
+	 
+\begin{equation}
+N_{i} = \frac{\mathcal{L}\cdot \sigma_{minimum bias}}{v_{orbit}}
+\end{equation}
+
+where $\mathcal{L}$ is the instantaneous luminosity, $\sigma_{minimum bias}$ is the total minimum bias cross section for an event at the LHC, and $v_{orbit}$ is the LHC orbit frequency (11246 Hz). In this calculation and the alculation of the pileup weights the minimum bias cross section is used, but it's true value is unkown. 
+
+In order to asses the effect of a systematic uncertainty due to choice of $\sigma_{minimum bias}$ = 69.3 mb, a $\pm 7\%$ variation was used and the pileup weights were recalculated.
+
+The rate changes due to this shift can be seen in Table \red{tab:pu_rate}
+
+\begin{table}[hbtp]\footnotesize
+	\centering
+	\begin{tabular}{l l l l l}
+		\hline
+		\textbf{Process} & SR & CR1 & CR2 & CR3 \\
+		\hline
+		Z' (500 GeV) &  & & &  \\
+		$\delta_{bs}$=0.0, $g_{b}$=1.0  &  & & &  \\
+		\hline
+	\end{tabular}
+	\caption{Change in the expected yields due to the pileup weight uncertainties.}
+	\label{tab:pu_rate}
+\end{table}
+
+
+
+\subsubsection{Jet energy scale}
+The jet energy corrections used to correct the energy scale back to the particle level were discussed in Section. The uncertainty on this correction originates from several uncorrelated sources, but for simplicity we use the total combined uncertainty. For \textit{M} uncorrelated sources, the total uncertainty $S(p_{T},\eta)$ is given by:
+
+%\begin{equation}
+%S(p_{T},\eta)= \sqrt{\sum_{i}^{M}s_{i}^{2}(p_{T},\eta)}
+%\end{equation}
+%		\item Jet energy resolution
+%		\item b-tagging efficiency
+%	\end{itemize}
+%\subsection{Sample generation uncertainties}
+%	 \subsubsection{Sample Cross Sections}
+%The uncertainties on the theoretical cross sections used for the normalizations of the background simulations are taken from %Alexx'thesis 189.
+%Likewise, the signal cross sections, branching ratio, and uncertainties are taken from CERN Yellow Report 3 %Alexx reference 190
+%The uncertainties on the background sample cross sections ranged from 3-5.7$\%$ while the signal cross section uncertainties range from 10-11$\%$ (PDF scale).
+
+%	\begin{itemize}
+%		\item PDF uncertainties
+%		\item Matching parameter of choice (xqcut, qcut in Pythia)
+%	\end{itemize}
+%\end{itemize}
 
 
 

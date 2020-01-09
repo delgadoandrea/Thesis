@@ -68,6 +68,10 @@ A.~D. Martin, W.~J. Stirling, R.~S. Thorne, and G.~Watt, ``{Parton
   distributions for the LHC},'' {\em Eur. Phys. J.}, vol.~C63, pp.~189--285,
   2009.
 
+\bibitem{cmslumitwiki}
+``{CMS Luminosity Public Results}.''
+  \url{https://twiki.cern.ch/twiki/bin/view/CMSPublic/LumiPublicResults}, 2016.
+
 \bibitem{20121}
 G.~Aad {\em et~al.}, ``Observation of a new particle in the search for the
   standard model higgs boson with the atlas detector at the lhc,'' {\em Physics
@@ -434,8 +438,8 @@ S.~Agostinelli {\em et~al.}, ``Geant4 a simulation toolkit,'' {\em Nucl.
 \bibitem{PhysRevD.97.075035}
 M.~Abdullah, M.~Dalchenko, B.~Dutta, R.~Eusebi, P.~Huang, T.~Kamon,
   D.~Rathjens, and A.~Thompson, ``Bottom-quark fusion processes at the lhc for
-  probing ${Z}^{\ensuremath{'}}$ models and $b$-meson decay anomalies,'' {\em
-  Phys. Rev. D}, vol.~97, p.~075035, Apr 2018.
+  probing z' models and $b$-meson decay anomalies,'' {\em Phys. Rev. D},
+  vol.~97, p.~075035, Apr 2018.
 
 \bibitem{jes_jer}
 T.~C. collaboration, ``Jet energy scale and resolution in the {CMS} experiment
