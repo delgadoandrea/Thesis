@@ -490,7 +490,7 @@ where $\mathcal{L}$ is the instantaneous luminosity, $\sigma_{minimum bias}$ is 
 
 In order to asses the effect of a systematic uncertainty due to choice of $\sigma_{minimum bias}$ = 69.3 mb, a $\pm 7\%$ variation was used and the pileup weights were recalculated.
 
-The rate changes due to this shift can be seen in Table \red{tab:pu_rate}
+As it turns out, the shape changes were negligible, but the rate changes due to this shift can be seen in Table \red{tab:pu_rate}
 
 \begin{table}[hbtp]\footnotesize
 	\centering
@@ -511,9 +511,13 @@ The rate changes due to this shift can be seen in Table \red{tab:pu_rate}
 \subsubsection{Jet energy scale}
 The jet energy corrections used to correct the energy scale back to the particle level were discussed in Section. The uncertainty on this correction originates from several uncorrelated sources, but for simplicity we use the total combined uncertainty. For \textit{M} uncorrelated sources, the total uncertainty $S(p_{T},\eta)$ is given by:
 
-%\begin{equation}
-%S(p_{T},\eta)= \sqrt{\sum_{i}^{M}s_{i}^{2}(p_{T},\eta)}
-%\end{equation}
+\begin{equation}
+S(p_{T},\eta)= \sqrt{\sum_{i}^{M}s_{i}^{2}(p_{T},\eta)}
+\end{equation}
+
+where $s_{i}(p_{T},\eta)$ is the uncertainty for a single source $i$. The JES uncertainty varies as a function of $p_{T}$ and $\eta$ and is $\lesseqqgtr 4\%$ in all regions of phase space. %cite Alexx bib 16
+
+To evaluate the effect this uncertainty has on the $m_{jj}$ distribution, the jet energies used to reconstruct the mass were shifted by $\pm 1\sigma$ using the procedures given in 191 and 192. Figure shows the type of variations expected for the signal sample. Additionally, Table lists the size of the yield uncertainty for every mass point considered in the analysis due to the JES.
 %		\item Jet energy resolution
 %		\item b-tagging efficiency
 %	\end{itemize}
